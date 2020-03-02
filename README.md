@@ -1,4 +1,5 @@
 # PFT2
+![alt text](https://i.imgur.com/IWiuyq5.gif)
 ## Description
 Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vita.
 ## Features

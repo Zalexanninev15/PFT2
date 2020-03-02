@@ -14,7 +14,7 @@ Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vit
 1. Install the drivers for your device (usually written in the topic about the device and firmware for it). I use [these](https://mega.nz/#!p9sgQYbB!kJbQnpaPH1LYC9GcP0Ffy1ypS5aDf6xyh-DA3A-8KG0).
 2. We translate our smartphone into flash mode (EDL):
 * ADB: Connect the smartphone to the computer, enable debugging (on the smartphone) and press the "ADB -> EDL" button.
-* DFU: Put the smartphone into DFU mode (I have to hold down 3 buttons), then click on the "DFU" button (make sure that the COM port is found in the text box with the heading "COMpn", if not, enter the port number yourself or click the "UPD" button to get the result).
+* emmcdl (DFU): Put the smartphone into DFU mode (I have to hold down 3 buttons), then click on the "DFU" button (make sure that the COM port is found in the text box with the heading "COMpn", if not, enter the port number yourself or click the "UPD" button to get the result).
 3. Update the COM port number ("UPD" button) or enter it yourself.
 4. In the field with the heading "Section", enter the necessary section of the device (if you do not know which sections are available, then you can click on the "Partition Information" button (requires a smartphone in EDL mode).
 5. Choose actions with the section (dump or firmware), dump format (BIN or IMG). There is a function of indicating which partitions you need to dump (needed if there are many such partitions).

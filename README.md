@@ -26,7 +26,7 @@ Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vit
 6. Go into the settings and specify everything that you need, then apply it
 7. Click "DO IT!
 
-## All Errors of EWT2 (emmcdl)
+## All Errors of Flasher (emmcdl)
 * Status: 21 The device is not ready:
 Most likely your smartphone has left EDL mode, enter this mode again.
 * WARNING: Flash programmer failed to load trying to continue:

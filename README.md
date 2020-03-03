@@ -1,6 +1,9 @@
 # PFT2
+## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/0.1)
+
 ## Description
-Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vita.
+Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vita
+
 ## Features
 * Flash and dump partitions
 * Switching the device to EDL mode in two ways (emmcdl or ADB)
@@ -10,7 +13,7 @@ Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vit
 
 ## System requirements
 * OS: Windows 7/8/8.1/10
-* Additional: Microsoft .NET Framework 4.5
+* Additional: [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653)
 
 ## Using
 1. Install the drivers for your device: [MEGA](https://mega.nz/#!p9sgQYbB!kJbQnpaPH1LYC9GcP0Ffy1ypS5aDf6xyh-DA3A-8KG0)
@@ -18,6 +21,10 @@ Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vit
 * ADB: Connect the smartphone to the computer, enable debugging (on the smartphone) and press the "ADB" button. If you are doing this for the first time, first go to the settings and specify the path to ADB (if it is not specified, then click "Apply").
 * DFU: Put the smartphone into DFU mode (I have to hold down 3 buttons), then click on the "DFU" button (make sure that the COM port is found in the text box with the heading "COM Port Number", if not, enter the port number yourself or click the "UPD" button to get the result).
 3. Update the COM port number ("UPD" button) or enter it yourself.
+4. Choose the desired action
+5. Fill in the required fields (you can use the buttons to facilitate the action)
+6. Go into the settings and specify everything that you need, then apply it
+7. Click "DO IT!
 
 ## All Errors of EWT2 (emmcdl)
 * Status: 21 The device is not ready:

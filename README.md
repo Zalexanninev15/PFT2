@@ -27,8 +27,11 @@ Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vit
 7. Click "DO IT!
 
 ## All Errors of Flasher (emmcdl)
-* Status: 21 The device is not ready:
+#### Status: 21 The device is not ready: 
 Most likely your smartphone has left EDL mode, enter this mode again.
-* WARNING: Flash programmer failed to load trying to continue:
-* Status: 2 The system cannot find the file specified:
-* Status: 6 The handle is invalid:
+#### WARNING: Flash programmer failed to load trying to continue:
+Maybe this is a crash in emmcdl. If the flash/dump is on, then you should not worry, but if not, then it is worth putting your smartphone back into EDL mode.
+#### Status: 2 The system cannot find the file specified:
+An error may occur due to spaces in the path (folder) to something. You should also check for the availability of the file.
+#### Status: 6 The handle is invalid:
+Failure to work with COM port. You should again transfer the smartphone to EDL mode.

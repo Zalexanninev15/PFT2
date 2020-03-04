@@ -1,5 +1,5 @@
 # PFT2
-## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/0.2)
+## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/0.0.0.3)
 
 ## Description
 Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vita

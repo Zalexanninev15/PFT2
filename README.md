@@ -14,12 +14,6 @@ Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vit
 * OS: Windows 7/8/8.1/10
 * Additional: [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653)
 
-## Using
-1. Install the drivers for your device: [MEGA](https://mega.nz/#!p9sgQYbB!kJbQnpaPH1LYC9GcP0Ffy1ypS5aDf6xyh-DA3A-8KG0)
-2. Go to settings and fill in all fields for further work. Click "Apply".
-3. Now choose the necessary way to put your smartphone in EDL mode: ADB | EDL
-4. We begin the flash/dump partitions of the device.
-
 ## All Errors of Flasher (emmcdl)
 #### Status: 21 The device is not ready: 
 Most likely your smartphone has left EDL mode, enter this mode again.

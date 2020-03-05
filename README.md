@@ -2,12 +2,11 @@
 ## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/0.0.0.3)
 
 ## Description
-Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vita
+Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vita. [Commands in BAT files](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands%20in%20BAT%20files%20(PFT2_Flasher).md).
 
 ## Features
 * Flash and dump partitions
 * Switching the device to EDL mode in two ways (emmcdl or ADB)
-* Minimal work with the device via ADB
 * Support for localization in different languages
 * Material Design and black theme
 
@@ -17,14 +16,12 @@ Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vit
 
 ## Using
 1. Install the drivers for your device: [MEGA](https://mega.nz/#!p9sgQYbB!kJbQnpaPH1LYC9GcP0Ffy1ypS5aDf6xyh-DA3A-8KG0)
-2. We translate our smartphone into flash mode (EDL):
-* ADB: Connect the smartphone to the computer, enable debugging (on the smartphone) and press the "ADB" button. If you are doing this for the first time, first go to the settings and specify the path to ADB (if it is not specified, then click "Apply").
-* DFU: Put the smartphone into DFU mode (I have to hold down 3 buttons), then click on the "DFU" button (make sure that the COM port is found in the text box with the heading "COM Port Number", if not, enter the port number yourself or click the "UPD" button to get the result).
-3. Update the COM port number ("UPD" button) or enter it yourself.
-4. Choose the desired action
-5. Fill in the required fields (you can use the buttons to facilitate the action)
-6. Go into the settings and specify everything that you need, then apply it
-7. Click "DO IT!
+2. Go to settings and fill in all fields for further work. Click "Apply".
+3. Now choose the necessary way to put your smartphone in EDL mode:
+3.1. ADB: 
+3.1.1. If the path to the "adb.exe" file is correct, then the translation button will work. If an error pops up, then check the field indicating this file in the application settings. 
+3.1.2.
+3.2.
 
 ## All Errors of Flasher (emmcdl)
 #### Status: 21 The device is not ready: 

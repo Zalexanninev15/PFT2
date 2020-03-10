@@ -3,37 +3,37 @@
 ### DFU → EDL
 
 ```
-emmcdl.exe -p com[com_port] -raw [code]
+[emmcdl.exe] -p com[com_port] -raw [code]
 ```
 
 ### All Partitions
 
 ```
-emmcdl.exe -p COM[com_port] -f [firehose] -gpt
+[emmcdl.exe] -p COM[com_port] -f [firehose] -gpt
 ```
 
 ### Dump
 
 ```
-emmcdl.exe -p COM[com_port] -f [firehose] -d [partition] -o [dump_file]
+[emmcdl.exe] -p COM[com_port] -f [firehose] -d [partition] -o [dump_file]
 ```
 
 ### Full Dump:
 
 ```
-emmcdl.exe -p COM[com_port] -f [firehose] -d "partition" -o "dump_file".[file_extension]
+[emmcdl.exe] -p COM[com_port] -f [firehose] -d "partition" -o "dump_file".[file_extension]
 ```
 
 ### Flash
 
 ```
-emmcdl.exe -p COM[com_port] -f [firehose] -b [partition] [file]
+[emmcdl.exe] -p COM[com_port] -f [firehose] -b [partition] [file]
 ```
 
 ### Disable Google FRP
 
 ```
-emmcdl.exe -p COM[com_port] -f [firehose] -e config
+[emmcdl.exe] -p COM[com_port] -f [firehose] -e config
 ```
 
 ***Information is taken from here:*** [Pikabu](http://tinyurl.com/tewzyyv)

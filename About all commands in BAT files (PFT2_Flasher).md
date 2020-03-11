@@ -1,36 +1,30 @@
 # About all commands in BAT files (PFT2_Flasher)
 
-### DFU → EDL
+### DFU → EDL ([this](https://github.com/Zalexanninev15/PFT2/blob/master/PFT2_Flasher/edl.bat))
 
 ```
 [emmcdl.exe] -p com[com_port] -raw [code]
 ```
 
-### All Partitions
-
-```
-[emmcdl.exe] -p COM[com_port] -f [firehose] -gpt
-```
-
-### Dump
+### Dump ([this](https://github.com/Zalexanninev15/PFT2/blob/master/PFT2_Flasher/dump.bat))
 
 ```
 [emmcdl.exe] -p COM[com_port] -f [firehose] -d [partition] -o [dump_file]
 ```
 
-### Full Dump:
+### Full Dump: ([this](https://github.com/Zalexanninev15/PFT2/blob/master/PFT2_Flasher/full_dump.bat))
 
 ```
 [emmcdl.exe] -p COM[com_port] -f [firehose] -d "partition" -o "dump_file".[file_extension]
 ```
 
-### Flash
+### Flash ([this](https://github.com/Zalexanninev15/PFT2/blob/master/PFT2_Flasher/flash.bat))
 
 ```
 [emmcdl.exe] -p COM[com_port] -f [firehose] -b [partition] [file]
 ```
 
-### Disable Google FRP
+### Disable Google FRP ([this](https://github.com/Zalexanninev15/PFT2/blob/master/PFT2_Flasher/dgfrp.bat))
 
 ```
 [emmcdl.exe] -p COM[com_port] -f [firehose] -e config

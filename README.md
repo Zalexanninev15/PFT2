@@ -5,7 +5,7 @@
 Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vita. [Commands in BAT files](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands%20in%20BAT%20files%20(PFT2_Flasher).md).
 
 ## Features
-* Flash and dump partitions
+* Flash and dump partitions, Disable Google FRP
 * Switching the device to EDL mode in two ways (emmcdl or ADB)
 * Material Design and black theme
 

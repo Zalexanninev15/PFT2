@@ -7,7 +7,6 @@ Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vit
 ## Features
 * Flash and dump partitions
 * Switching the device to EDL mode in two ways (emmcdl or ADB)
-* Support for localization in different languages
 * Material Design and black theme
 
 ## System requirements

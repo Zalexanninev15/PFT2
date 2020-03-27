@@ -1,5 +1,5 @@
 # PFT2
-## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/0.0.7.0) | [All versions](https://github.com/Zalexanninev15/PFT2/releases)
+## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/0.0.9.0) | [All versions](https://github.com/Zalexanninev15/PFT2/releases)
 ## [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
 
 ## Description

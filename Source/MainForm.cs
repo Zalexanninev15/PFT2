@@ -90,7 +90,7 @@ namespace PFT2
                         {
                             Process process = new Process();
                             process.StartInfo.FileName = "cmd.exe";
-                            process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\flasher.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + materialSingleLineTextField2.Text;
+                            process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\flash.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + materialSingleLineTextField2.Text;
                             process.Start();
                             //process.WaitForExit();
                         }

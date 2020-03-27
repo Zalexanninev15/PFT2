@@ -6,7 +6,8 @@
 [Screenshot](https://i.imgur.com/mHzH5Vp.jpg)
 
 ## Description
-Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vita. [Commands in BAT files](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands%20in%20BAT%20files%20(PFT2_Flasher).md).
+Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vita. [Commands in BAT files](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands%20in%20BAT%20files%20(PFT2_Flasher).md). 
+[MBN file for ZTE Blade V9 Vita](https://github.com/Zalexanninev15/PFT-Linux/raw/master/tools/emmc.mbn)
 
 ## Features
 * Flash and dump partitions, Disable Google FRP
@@ -15,7 +16,7 @@ Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vit
 
 ## System requirements
 * OS: Windows 7/8/8.1/10
-* Additional: [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653)
+* Additional: [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653), emmcdl, adb
 
 ## All Errors of Flasher (emmcdl)
 #### Status: 21 The device is not ready: 

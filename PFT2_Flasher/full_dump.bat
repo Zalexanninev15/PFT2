@@ -1,7 +1,7 @@
 @echo off
 title PFT2_Flasher
-@%1 -p COM%2 -f %3 -d userdata -o %4\userdata.%5 // Optional for dump
-@%1 -p COM%2 -f %3 -d system -o %4\system.%5 // Optional for dump
+:: @%1 -p COM%2 -f %3 -d userdata -o %4\userdata.%5
+:: @%1 -p COM%2 -f %3 -d system -o %4\system.%5
 @%1 -p COM%2 -f %3 -d aboot -o %4\aboot.%5
 @%1 -p COM%2 -f %3 -d abootbak -o %4\abootbak.%5
 @%1 -p COM%2 -f %3 -d apdp -o %4\apdp.%5

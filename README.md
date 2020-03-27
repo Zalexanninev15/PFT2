@@ -3,7 +3,7 @@
 ## [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
 
 ## Screenshot
-![Alt](https://i.imgur.com/mHzH5Vp.jpg)
+[Screenshot](https://i.imgur.com/mHzH5Vp.jpg)
 
 ## Description
 Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vita. [Commands in BAT files](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands%20in%20BAT%20files%20(PFT2_Flasher).md).

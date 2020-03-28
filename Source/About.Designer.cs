@@ -38,7 +38,7 @@
             // materialRaisedButton1
             // 
             this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(54, 277);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(54, 271);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
@@ -54,17 +54,17 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(24, 187);
+            this.materialLabel2.Location = new System.Drawing.Point(25, 184);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(177, 76);
+            this.materialLabel2.Size = new System.Drawing.Size(165, 76);
             this.materialLabel2.TabIndex = 14;
-            this.materialLabel2.Text = "PFT2\r\nAuthor: Zalexanninev15\r\nVersion: 0.9 (Final Alpha)\r\nBuild: 27032020";
+            this.materialLabel2.Text = "PFT2\r\nAuthor: Zalexanninev15\r\nVersion: 1.0\r\nBuild: 28032020";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PFT2.Properties.Resources.PFT2;
-            this.pictureBox1.Location = new System.Drawing.Point(54, 73);
+            this.pictureBox1.Location = new System.Drawing.Point(54, 71);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(104, 102);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -74,7 +74,7 @@
             // About
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(217, 324);
+            this.ClientSize = new System.Drawing.Size(217, 322);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialRaisedButton1);

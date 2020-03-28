@@ -207,7 +207,7 @@ namespace PFT2
         private void materialSingleLineTextField4_TextChanged(object sender, EventArgs e)
         {
             if (materialSingleLineTextField4.Text == "") { materialLabel7.Text = "NO"; }
-            if (materialSingleLineTextField4.Text != "") { materialLabel7.Text = "YES"; }
+            if (materialSingleLineTextField4.Text != "") { materialLabel7.Text = "YES"; materialLabel7.Text = "YES"; }
         }
 
         private void materialRadioButton4_CheckedChanged(object sender, EventArgs e)

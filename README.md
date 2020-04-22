@@ -1,4 +1,4 @@
-# PFT2 | [Full FAQ on 4PDA (Russian)](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=93484684)
+# PFT2 | [Full FAQ on 4PDA (Russian to English by Google Translate)](https://translate.google.ru/translate?sl=ru&tl=en&u=https%3A%2F%2F4pda.ru%2Fforum%2Findex.php%3Fshowtopic%3D952274%26st%3D1160%23entry93484684)
 ## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.5) | [All versions](https://github.com/Zalexanninev15/PFT2/releases)
 ## [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip) | [MBN file for ZTE Blade V9 Vita](https://github.com/Zalexanninev15/PFT-Linux/raw/master/tools/emmc.mbn)
 

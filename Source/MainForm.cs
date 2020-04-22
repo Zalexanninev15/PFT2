@@ -7,6 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.IO.Ports;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -20,7 +21,7 @@ namespace PFT2
     public partial class MainForm : MaterialForm
     {
         string[] portal;
-        string theme, adbp, cport, emmcdl, fdump;
+        string theme, adbp, cport, emmcdl, fdump, temp, choose;
         Form f;
 
         public MainForm()
@@ -69,7 +70,7 @@ namespace PFT2
                     catch { MessageBox.Show("COM port not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign); }
                     if (c == 1)             // "/C cd " for simple bat files
                     {
-                        if ((materialRadioButton3.Checked == true)) // FullDump
+                        if ((materialRadioButton3.Checked == true)) // Full Dump
                         {
                             if (fdump == "")
                             {
@@ -77,30 +78,35 @@ namespace PFT2
                             }
                             else
                             {
-                                string ex = Properties.Settings.Default.DumpEx;
                                 Process process = new Process();
                                 process.StartInfo.FileName = "cmd.exe";
-                                process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\full_dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump + " " + ex;
-                                process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\full_dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump + " " + ex;
+                                process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\full_dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump + " " + fdump + " " + fdump + " " + fdump;
                                 process.Start();
-                                //process.WaitForExit();
+                                process.WaitForExit();
+                                MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                             }
                         }
                         if (materialRadioButton2.Checked == true) // Flash
                         {
+                            if (choose == "1") { FDFminiFlash(); }
                             Process process = new Process();
                             process.StartInfo.FileName = "cmd.exe";
-                            process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\flash.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + materialSingleLineTextField2.Text;
+                            process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\flash.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
                             process.Start();
-                            //process.WaitForExit();
+                            process.WaitForExit();
+                            File.Delete(@temp);
+                            MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+
                         }
                         if (materialRadioButton1.Checked == true) // Dump
                         {
                             Process process = new Process();
                             process.StartInfo.FileName = "cmd.exe";
-                            process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + materialSingleLineTextField2.Text;
+                            process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
                             process.Start();
-                            //process.WaitForExit();
+                            process.WaitForExit();
+                            if (choose == "1") { FDFminiDump(); }
+                            MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                         }
                         if (materialRadioButton4.Checked == true) // Disable Google FRP
                         {
@@ -109,6 +115,7 @@ namespace PFT2
                             process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\dgfrp.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn;
                             process.Start();
                             //process.WaitForExit();
+                             MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                         }
                     }
                     // else { MessageBox.Show("COM port not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign); }
@@ -151,7 +158,7 @@ namespace PFT2
                 }
                 else { MessageBox.Show("Something is empty!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign); materialLabel8.Text = "NO"; }
             }
-            else { MessageBox.Show("emmcdl not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign); } 
+            else { MessageBox.Show("emmcdl not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign); }
         }
 
         private void materialRaisedButton4_Click(object sender, EventArgs e)
@@ -178,13 +185,44 @@ namespace PFT2
 
         private void materialRaisedButton8_Click(object sender, EventArgs e)
         {
-            if (materialRadioButton1.Checked == true) {  saveFileDialog1.FileName = materialSingleLineTextField1.Text; saveFileDialog1.Filter = "DumpIMG (*.img)|*.img|DumpBIN (*.bin)|*.bin|Dump (*.dump)| *.dump"; if (saveFileDialog1.ShowDialog() == DialogResult.Cancel) return; materialSingleLineTextField2.Text = saveFileDialog1.FileName; }
-            if (materialRadioButton2.Checked == true) {  openFileDialog1.FileName = materialSingleLineTextField1.Text; openFileDialog1.Filter = "Files for Flash|*.dump;*.bin;*.img"; if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return; materialSingleLineTextField2.Text = openFileDialog1.FileName; }
+            if (materialRadioButton1.Checked == true)  //DUMP (Save file)
+            {
+                saveFileDialog1.FileName = materialSingleLineTextField1.Text;
+                if (materialSingleLineTextField1.Text == "userdata")
+                {
+                    saveFileDialog1.Filter = "IMG|*.img";
+                }
+                else
+                {
+                    saveFileDialog1.Filter = "FDF|*.fdf";
+                    choose = "1";
+                }
+                if (saveFileDialog1.ShowDialog() == DialogResult.Cancel) return;
+                materialSingleLineTextField2.Text = saveFileDialog1.FileName;
+                if (choose == "1") { temp = saveFileDialog1.FileName + ".temp"; }
+                else { temp = saveFileDialog1.FileName; }
+            }
+            if (materialRadioButton2.Checked == true) //FLASH (Open file)
+            {
+                openFileDialog1.FileName = materialSingleLineTextField1.Text; if (materialSingleLineTextField1.Text == "userdata")
+                {
+                    openFileDialog1.Filter = "IMG|*.img";
+                }
+                else
+                {
+                    openFileDialog1.Filter = "FDF|*.fdf";
+                    choose = "1";
+                }
+                if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
+                materialSingleLineTextField2.Text = openFileDialog1.FileName;
+                if (choose == "1") { temp = openFileDialog1.FileName + ".temp"; }
+                else { temp = openFileDialog1.FileName; }
+            }
         }
 
         private void materialRadioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            if (materialRadioButton3.Checked == true) { materialSingleLineTextField2.Clear();  materialSingleLineTextField2.Enabled = false; materialRaisedButton8.Enabled = false; materialSingleLineTextField1.Clear(); materialSingleLineTextField1.Enabled = false; materialRaisedButton9.Visible = true; materialRaisedButton7.Enabled = true; materialRaisedButton10.Visible = true; materialRaisedButton1.Visible = false; ; }
+            if (materialRadioButton3.Checked == true) { materialSingleLineTextField2.Clear(); materialSingleLineTextField2.Enabled = false; materialRaisedButton8.Enabled = false; materialSingleLineTextField1.Clear(); materialSingleLineTextField1.Enabled = false; materialRaisedButton9.Visible = true; materialRaisedButton7.Enabled = true; materialRaisedButton10.Visible = true; materialRaisedButton1.Visible = false; ; }
         }
 
         private void materialRadioButton1_CheckedChanged(object sender, EventArgs e)
@@ -231,5 +269,25 @@ namespace PFT2
             f = new Settings();
             f.Show();
         }
+        public void FDFminiDump()
+        {
+            Process FDFmini = new Process();
+            FDFmini.StartInfo.FileName = "cmd.exe";
+            FDFmini.StartInfo.Arguments = "/C " + Application.StartupPath + "\\FDFmini.exe " + "-img" + " " + temp + " " + materialSingleLineTextField2.Text + " " + "-c";
+            FDFmini.Start();
+            FDFmini.WaitForExit();
+            File.Delete(@temp);
+
+        }
+
+        public void FDFminiFlash()
+        {
+            Process FDFmini = new Process();
+            FDFmini.StartInfo.FileName = "cmd.exe";
+            FDFmini.StartInfo.Arguments = "/C " + Application.StartupPath + "\\FDFmini.exe " + "-fdf" + " " + materialSingleLineTextField2.Text + " " + temp + " " + "-u";
+            FDFmini.Start();
+            FDFmini.WaitForExit();
+        }
     }
+
 }

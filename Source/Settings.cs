@@ -35,9 +35,6 @@ namespace PFT2
             materialSingleLineTextField3.Text = Properties.Settings.Default.MBNFile;
             materialSingleLineTextField4.Text = Properties.Settings.Default.FDump; 
             materialSingleLineTextField5.Text = Properties.Settings.Default.emmcdl;
-            if (Properties.Settings.Default.DumpEx == "bin") { materialRadioButton2.Checked = true; }
-            if (Properties.Settings.Default.DumpEx == "img") { materialRadioButton1.Checked = true; }
-            if (Properties.Settings.Default.DumpEx == "dump") { materialRadioButton3.Checked = true; }
 
         }
         private void B_w_CheckedChanged(object sender, EventArgs e)
@@ -68,9 +65,6 @@ namespace PFT2
             Properties.Settings.Default.FDump = materialSingleLineTextField4.Text;
             Properties.Settings.Default.emmcdl = materialSingleLineTextField5.Text;
             Properties.Settings.Default.Save();
-            if (materialRadioButton2.Checked == true) { Properties.Settings.Default.DumpEx = "bin"; Properties.Settings.Default.Save(); }
-            if (materialRadioButton1.Checked == true) { Properties.Settings.Default.DumpEx = "img"; Properties.Settings.Default.Save(); }
-            if (materialRadioButton3.Checked == true) { Properties.Settings.Default.DumpEx = "dump"; Properties.Settings.Default.Save(); }
         }
 
         private void materialRaisedButton2_Click(object sender, EventArgs e) //RESET
@@ -78,8 +72,7 @@ namespace PFT2
             Properties.Settings.Default.ADB = "";
             Properties.Settings.Default.EDL_Code = "0xFE";
             Properties.Settings.Default.MBNFile = "";
-            Properties.Settings.Default.FDump = "";
-            Properties.Settings.Default.DumpEx = "dump";
+            Properties.Settings.Default.FDump = "";;
             Properties.Settings.Default.DarkMode = "";
             Properties.Settings.Default.emmcdl = "";
             Properties.Settings.Default.Save();
@@ -89,7 +82,6 @@ namespace PFT2
             materialSingleLineTextField3.Clear();
             materialSingleLineTextField4.Clear();
             materialSingleLineTextField5.Clear();
-            materialRadioButton3.Checked = true;
             b_w.Checked = false;
         }
 

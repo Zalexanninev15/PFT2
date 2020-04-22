@@ -8,9 +8,6 @@
     <Setting Name="MBNFile" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="DumpEx" Type="System.String" Scope="User">
-      <Value Profile="(Default)">dump</Value>
-    </Setting>
     <Setting Name="ADB" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>

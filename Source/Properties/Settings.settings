@@ -20,5 +20,20 @@
     <Setting Name="emmcdl" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="ADB_Func" Type="System.String" Scope="User">
+      <Value Profile="(Default)">off</Value>
+    </Setting>
+    <Setting Name="IMGsys" Type="System.String" Scope="User">
+      <Value Profile="(Default)">off</Value>
+    </Setting>
+    <Setting Name="FM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">off</Value>
+    </Setting>
+    <Setting Name="IMGVedro" Type="System.String" Scope="User">
+      <Value Profile="(Default)">off</Value>
+    </Setting>
+    <Setting Name="IMGAll" Type="System.String" Scope="User">
+      <Value Profile="(Default)">off</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

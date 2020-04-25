@@ -94,5 +94,65 @@ namespace PFT2.Properties {
                 this["emmcdl"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("off")]
+        public string ADB_Func {
+            get {
+                return ((string)(this["ADB_Func"]));
+            }
+            set {
+                this["ADB_Func"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("off")]
+        public string IMGsys {
+            get {
+                return ((string)(this["IMGsys"]));
+            }
+            set {
+                this["IMGsys"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("off")]
+        public string FM {
+            get {
+                return ((string)(this["FM"]));
+            }
+            set {
+                this["FM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("off")]
+        public string IMGVedro {
+            get {
+                return ((string)(this["IMGVedro"]));
+            }
+            set {
+                this["IMGVedro"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("off")]
+        public string IMGAll {
+            get {
+                return ((string)(this["IMGAll"]));
+            }
+            set {
+                this["IMGAll"] = value;
+            }
+        }
     }
 }

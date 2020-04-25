@@ -15,7 +15,8 @@ namespace PFT2
 {
     public partial class Settings : MaterialForm
     {
-        string theme;
+        string theme, temp;
+        Form f;
         public Settings()
         {
             InitializeComponent();
@@ -43,7 +44,7 @@ namespace PFT2
             {
                 var materialSkinManager = MaterialSkinManager.Instance;
                 materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
-                materialSkinManager.ColorScheme = new ColorScheme(Primary.Green500, Primary.Green700, Primary.Green100, Accent.Yellow200, TextShade.WHITE);
+                materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green100, Accent.Yellow200, TextShade.WHITE);
                 Properties.Settings.Default.DarkMode = "1";
                 Properties.Settings.Default.Save();
             }
@@ -51,7 +52,7 @@ namespace PFT2
             {
                 var materialSkinManager = MaterialSkinManager.Instance;
                 materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-                materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue700, Primary.Blue800, Primary.Blue500, Accent.Blue200, TextShade.WHITE);
+                materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue600, Primary.Blue700, Primary.Blue500, Accent.Blue200, TextShade.WHITE);
                 Properties.Settings.Default.DarkMode = "";
                 Properties.Settings.Default.Save();
             }
@@ -116,6 +117,22 @@ namespace PFT2
             openFileDialog1.Filter = "emmcdl file|emmcdl.exe";
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
             materialSingleLineTextField5.Text = openFileDialog1.FileName;
+        }
+
+        private void materialSingleLineTextField2_Enter(object sender, EventArgs e)
+        {
+            temp = materialSingleLineTextField2.Text;
+            materialSingleLineTextField2.Clear();
+        }
+
+        private void materialSingleLineTextField2_TextChanged(object sender, EventArgs e)
+        {
+            if (materialSingleLineTextField2.Text == "more") 
+            {
+                materialSingleLineTextField2.Text = temp;
+                f = new More();
+                f.Show();
+            }
         }
     }
 }

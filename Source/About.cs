@@ -30,7 +30,7 @@ namespace PFT2
 
         private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=93484684");
+            System.Diagnostics.Process.Start("https://translate.google.ru/translate?sl=ru&tl=en&u=https%3A%2F%2F4pda.ru%2Fforum%2Findex.php%3Fshowtopic%3D952274%26st%3D1160%23entry93484684");
         }
     }
 }

@@ -37,13 +37,15 @@ namespace PFT2
             if (theme == "")
             {
                 materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-                materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue700, Primary.Blue800, Primary.Blue500, Accent.Blue200, TextShade.WHITE);
+                materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue600, Primary.Blue700, Primary.Blue500, Accent.Blue200, TextShade.WHITE);
             }
             if (theme == "1")
             {
                 materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
-                materialSkinManager.ColorScheme = new ColorScheme(Primary.Green500, Primary.Green700, Primary.Green100, Accent.Yellow200, TextShade.WHITE);
+                materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green100, Accent.Yellow200, TextShade.WHITE);
             }
+            if (Properties.Settings.Default.ADB_Func == "on") { materialRaisedButton11.Visible = true; }
+            if (Properties.Settings.Default.FM == "on") { materialRaisedButton12.Visible = true; }
         }
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
@@ -67,20 +69,20 @@ namespace PFT2
                         }
                         c = 1;
                     }
-                    catch { MessageBox.Show("COM port not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign); }
+                    catch { MessageBox.Show("COM port not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
                     if (c == 1)             // "/C cd " for simple bat files
                     {
                         if ((materialRadioButton3.Checked == true)) // Full Dump
                         {
                             if (fdump == "")
                             {
-                                MessageBox.Show("Folder for Full Dump is missing!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
+                                MessageBox.Show("Folder for Full Dump is missing!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                             }
                             else
                             {
                                 Process process = new Process();
                                 process.StartInfo.FileName = "cmd.exe";
-                                process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\full_dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump + " " + fdump + " " + fdump + " " + fdump;
+                                process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\scripts\\full_dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump + " " + fdump + " " + fdump + " " + fdump;
                                 process.Start();
                                 process.WaitForExit();
                                 MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
@@ -91,7 +93,7 @@ namespace PFT2
                             if (choose == "1") { FDFminiFlash(); }
                             Process process = new Process();
                             process.StartInfo.FileName = "cmd.exe";
-                            process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\flash.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
+                            process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\scripts\\flash.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
                             process.Start();
                             process.WaitForExit();
                             File.Delete(@temp);
@@ -102,7 +104,7 @@ namespace PFT2
                         {
                             Process process = new Process();
                             process.StartInfo.FileName = "cmd.exe";
-                            process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
+                            process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\scripts\\dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
                             process.Start();
                             process.WaitForExit();
                             if (choose == "1") { FDFminiDump(); }
@@ -112,17 +114,17 @@ namespace PFT2
                         {
                             Process process = new Process();
                             process.StartInfo.FileName = "cmd.exe";
-                            process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\dgfrp.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn;
+                            process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\scripts\\dgfrp.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn;
                             process.Start();
                             //process.WaitForExit();
                              MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                         }
                     }
-                    // else { MessageBox.Show("COM port not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign); }
+                    // else { MessageBox.Show("COM port not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
                 }
-                else { MessageBox.Show("Something is empty!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign); }
+                else { MessageBox.Show("Something is empty!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
             }
-            else { MessageBox.Show("emmcdl not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign); }
+            else { MessageBox.Show("emmcdl not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
         }
 
         private void materialRaisedButton3_Click(object sender, EventArgs e)
@@ -136,7 +138,7 @@ namespace PFT2
             }
             else
             {
-                MessageBox.Show("COM port not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
+                MessageBox.Show("COM port not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 materialLabel7.Text = "NO";
             }
         }
@@ -151,14 +153,14 @@ namespace PFT2
                 {
                     Process process = new Process();
                     process.StartInfo.FileName = "cmd.exe";
-                    process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\edl.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + code;
+                    process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\scripts\\edl.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + code;
                     process.Start();
                     process.WaitForExit();
                     materialLabel8.Text = "YES";
                 }
-                else { MessageBox.Show("Something is empty!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign); materialLabel8.Text = "NO"; }
+                else { MessageBox.Show("Something is empty!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); materialLabel8.Text = "NO"; }
             }
-            else { MessageBox.Show("emmcdl not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign); }
+            else { MessageBox.Show("emmcdl not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
         }
 
         private void materialRaisedButton4_Click(object sender, EventArgs e)
@@ -180,7 +182,7 @@ namespace PFT2
                         process2.Kill();
                 }
             }
-            else { MessageBox.Show("ADB not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign); materialLabel8.Text = "NO"; }
+            else { MessageBox.Show("ADB not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); materialLabel8.Text = "NO"; }
         }
 
         private void materialRaisedButton8_Click(object sender, EventArgs e)
@@ -188,7 +190,7 @@ namespace PFT2
             if (materialRadioButton1.Checked == true)  //DUMP (Save file)
             {
                 saveFileDialog1.FileName = materialSingleLineTextField1.Text;
-                if (materialSingleLineTextField1.Text == "userdata")
+                if ((materialSingleLineTextField1.Text == "userdata") || (((Properties.Settings.Default.IMGsys == "on") && (materialSingleLineTextField1.Text == "system")) || ((Properties.Settings.Default.IMGVedro == "on") && (materialSingleLineTextField1.Text == "vendor")) || (Properties.Settings.Default.IMGAll == "on")))
                 {
                     saveFileDialog1.Filter = "IMG|*.img";
                 }
@@ -204,7 +206,8 @@ namespace PFT2
             }
             if (materialRadioButton2.Checked == true) //FLASH (Open file)
             {
-                openFileDialog1.FileName = materialSingleLineTextField1.Text; if (materialSingleLineTextField1.Text == "userdata")
+                openFileDialog1.FileName = materialSingleLineTextField1.Text;
+                if ((materialSingleLineTextField1.Text == "userdata") || (((Properties.Settings.Default.IMGsys == "on") && (materialSingleLineTextField1.Text == "system")) || ((Properties.Settings.Default.IMGVedro == "on") && (materialSingleLineTextField1.Text == "vendor")) || (Properties.Settings.Default.IMGAll == "on")))
                 {
                     openFileDialog1.Filter = "IMG|*.img";
                 }
@@ -246,6 +249,18 @@ namespace PFT2
         {
             if (materialSingleLineTextField4.Text == "") { materialLabel7.Text = "NO"; }
             if (materialSingleLineTextField4.Text != "") { materialLabel7.Text = "YES"; materialLabel7.Text = "YES"; }
+        }
+
+        private void materialRaisedButton11_Click(object sender, EventArgs e)
+        {
+            f = new ADB();
+            f.Show();
+        }
+
+        private void materialRaisedButton12_Click(object sender, EventArgs e)
+        {
+            f = new Firmwares_Manager();
+            f.Show();
         }
 
         private void materialRadioButton4_CheckedChanged(object sender, EventArgs e)

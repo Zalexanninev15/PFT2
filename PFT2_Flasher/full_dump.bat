@@ -1,5 +1,6 @@
 @echo off
 title PFT2_Flasher
+cd ..
 @%1 -p COM%2 -f %3 -d aboot -o %4\aboot.temp
 FDFmini -img %5\aboot.temp %6\aboot.fdf -c
 del %7\aboot.temp

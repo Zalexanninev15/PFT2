@@ -53,7 +53,7 @@
             // materialRaisedButton1
             // 
             this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(169, 273);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(166, 273);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
@@ -79,7 +79,7 @@
             // materialSingleLineTextField3
             // 
             this.materialSingleLineTextField3.Depth = 0;
-            this.materialSingleLineTextField3.Hint = "";
+            this.materialSingleLineTextField3.Hint = "Path to MBN file (\"D\")";
             this.materialSingleLineTextField3.Location = new System.Drawing.Point(95, 119);
             this.materialSingleLineTextField3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField3.Name = "materialSingleLineTextField3";
@@ -96,7 +96,7 @@
             this.b_w.AutoSize = true;
             this.b_w.Depth = 0;
             this.b_w.Font = new System.Drawing.Font("Roboto", 10F);
-            this.b_w.Location = new System.Drawing.Point(29, 229);
+            this.b_w.Location = new System.Drawing.Point(26, 229);
             this.b_w.Margin = new System.Windows.Forms.Padding(0);
             this.b_w.MouseLocation = new System.Drawing.Point(-1, -1);
             this.b_w.MouseState = MaterialSkin.MouseState.HOVER;
@@ -124,7 +124,7 @@
             // materialSingleLineTextField1
             // 
             this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.Hint = "";
+            this.materialSingleLineTextField1.Hint = "Path to the file adb.exe (\"D\")";
             this.materialSingleLineTextField1.Location = new System.Drawing.Point(95, 157);
             this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
@@ -139,11 +139,11 @@
             // materialRaisedButton2
             // 
             this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(338, 228);
+            this.materialRaisedButton2.Location = new System.Drawing.Point(335, 232);
             this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton2.Name = "materialRaisedButton2";
             this.materialRaisedButton2.Primary = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(145, 30);
+            this.materialRaisedButton2.Size = new System.Drawing.Size(145, 25);
             this.materialRaisedButton2.TabIndex = 14;
             this.materialRaisedButton2.Text = "RESET (ALL)";
             this.materialRaisedButton2.UseVisualStyleBackColor = true;
@@ -191,7 +191,7 @@
             // materialSingleLineTextField2
             // 
             this.materialSingleLineTextField2.Depth = 0;
-            this.materialSingleLineTextField2.Hint = "";
+            this.materialSingleLineTextField2.Hint = "EDL code";
             this.materialSingleLineTextField2.Location = new System.Drawing.Point(223, 232);
             this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
@@ -202,6 +202,8 @@
             this.materialSingleLineTextField2.Size = new System.Drawing.Size(99, 23);
             this.materialSingleLineTextField2.TabIndex = 18;
             this.materialSingleLineTextField2.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField2.Enter += new System.EventHandler(this.materialSingleLineTextField2_Enter);
+            this.materialSingleLineTextField2.TextChanged += new System.EventHandler(this.materialSingleLineTextField2_TextChanged);
             // 
             // materialRaisedButton5
             // 
@@ -232,7 +234,7 @@
             // materialSingleLineTextField4
             // 
             this.materialSingleLineTextField4.Depth = 0;
-            this.materialSingleLineTextField4.Hint = "";
+            this.materialSingleLineTextField4.Hint = "Where to store a complete dump? (\"D\")";
             this.materialSingleLineTextField4.Location = new System.Drawing.Point(170, 195);
             this.materialSingleLineTextField4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField4.Name = "materialSingleLineTextField4";
@@ -273,7 +275,7 @@
             // materialSingleLineTextField5
             // 
             this.materialSingleLineTextField5.Depth = 0;
-            this.materialSingleLineTextField5.Hint = "";
+            this.materialSingleLineTextField5.Hint = "Path to the file emmcdl.exe (\"D\")";
             this.materialSingleLineTextField5.Location = new System.Drawing.Point(95, 81);
             this.materialSingleLineTextField5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField5.Name = "materialSingleLineTextField5";

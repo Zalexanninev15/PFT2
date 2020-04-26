@@ -44,7 +44,6 @@ namespace PFT2
                 materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
                 materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green100, Accent.Yellow200, TextShade.WHITE);
             }
-            if (Properties.Settings.Default.ADB_Func == "on") { materialRaisedButton11.Visible = true; }
             if (Properties.Settings.Default.FM == "on") { materialRaisedButton12.Visible = true; }
         }
 
@@ -251,12 +250,6 @@ namespace PFT2
             if (materialSingleLineTextField4.Text != "") { materialLabel7.Text = "YES"; materialLabel7.Text = "YES"; }
         }
 
-        private void materialRaisedButton11_Click(object sender, EventArgs e)
-        {
-            f = new ADB();
-            f.Show();
-        }
-
         private void materialRaisedButton12_Click(object sender, EventArgs e)
         {
             f = new Firmwares_Manager();
@@ -266,6 +259,43 @@ namespace PFT2
         private void materialRadioButton4_CheckedChanged(object sender, EventArgs e)
         {
             if (materialRadioButton4.Checked == true) { materialSingleLineTextField2.Clear(); materialSingleLineTextField2.Enabled = false; materialRaisedButton8.Enabled = false; materialSingleLineTextField1.Clear(); materialSingleLineTextField1.Enabled = false; materialRaisedButton9.Visible = false; materialRaisedButton7.Enabled = false; materialRaisedButton10.Visible = false; materialRaisedButton1.Visible = true; }
+        }
+
+        private void materialRaisedButton18_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField6.Clear();
+            ADBCommander("get-state");
+        }
+
+        private void materialRaisedButton17_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField6.Clear();
+            ADBCommander("reboot");
+        }
+
+        private void materialRaisedButton16_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField6.Clear();
+            ADBCommander("reboot recovery");
+        }
+
+        private void materialRaisedButton14_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "APK|*.apk";
+            if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
+            materialSingleLineTextField5.Text = openFileDialog1.FileName;
+        }
+
+        private void materialRaisedButton15_Click(object sender, EventArgs e)
+        {
+            ADBCommander("install -r " + materialSingleLineTextField5.Text);
+            MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+        }
+
+        private void materialRaisedButton13_Click(object sender, EventArgs e)
+        {
+            ADBCommander("shell pm uninstall -k --user 0 " + materialSingleLineTextField3.Text);
+            MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
         }
 
         private void materialRaisedButton6_Click(object sender, EventArgs e)
@@ -302,6 +332,30 @@ namespace PFT2
             FDFmini.StartInfo.Arguments = "/C " + Application.StartupPath + "\\FDFmini.exe " + "-fdf" + " " + materialSingleLineTextField2.Text + " " + temp + " " + "-u";
             FDFmini.Start();
             FDFmini.WaitForExit();
+        }
+
+        private void ADBCommander(string command)
+        {
+            adbp = Properties.Settings.Default.ADB;
+            if (File.Exists(adbp))
+            {
+                Process process1 = new Process();
+                process1.StartInfo.FileName = "cmd.exe";
+                process1.StartInfo.Arguments = "/C " + @adbp + " " + command;
+                process1.StartInfo.RedirectStandardOutput = true;
+                process1.StartInfo.UseShellExecute = false;
+                process1.StartInfo.CreateNoWindow = true;
+                process1.Start();
+                process1.WaitForExit();
+                if ((command == "get-state") || (command == "reboot") || (command == "reboot recovery")) { materialSingleLineTextField6.Text = process1.StandardOutput.ReadToEnd(); }
+                string str = "adb";
+                foreach (Process process2 in Process.GetProcesses())
+                {
+                    if (process2.ProcessName.ToLower().Contains(str.ToLower()))
+                        process2.Kill();
+                }
+            }
+            else { MessageBox.Show("ADB not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
         }
     }
 

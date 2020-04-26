@@ -98,18 +98,6 @@ namespace PFT2.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("off")]
-        public string ADB_Func {
-            get {
-                return ((string)(this["ADB_Func"]));
-            }
-            set {
-                this["ADB_Func"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("off")]
         public string IMGsys {
             get {
                 return ((string)(this["IMGsys"]));

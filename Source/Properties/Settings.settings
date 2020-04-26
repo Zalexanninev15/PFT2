@@ -20,9 +20,6 @@
     <Setting Name="emmcdl" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="ADB_Func" Type="System.String" Scope="User">
-      <Value Profile="(Default)">off</Value>
-    </Setting>
     <Setting Name="IMGsys" Type="System.String" Scope="User">
       <Value Profile="(Default)">off</Value>
     </Setting>

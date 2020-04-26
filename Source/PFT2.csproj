@@ -59,12 +59,6 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="ADB.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ADB.Designer.cs">
-      <DependentUpon>ADB.cs</DependentUpon>
-    </Compile>
     <Compile Include="Firmwares_Manager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,9 +87,6 @@
     </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ADB.resx">
-      <DependentUpon>ADB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Firmwares_Manager.resx">
       <DependentUpon>Firmwares_Manager.cs</DependentUpon>

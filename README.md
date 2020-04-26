@@ -15,7 +15,7 @@ Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vit
 
 ## System requirements
 * OS: Windows 7/8/8.1/10
-* Additional: [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653), [emmcdl](https://mega.nz/#!Q5kmSI7K!1coqsqWf0SIG6ejFoftd1WU8oyBA3Z0y-oTmnRbQW60), [ADB](https://mega.nz/#!lptQyI5R!HxOVPUO2mYPmI5vWI00c5SRe5883-1H8_ZNiTKnH4J0), [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) and MBN file
+* Additional: [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653), [emmcdl](https://mega.nz/#!Q5kmSI7K!1coqsqWf0SIG6ejFoftd1WU8oyBA3Z0y-oTmnRbQW60), [ADB](https://mega.nz/file/dwdWgYZY#J2LV6nNwIj3jnIsPgCpD2dBAKkkRTk45PXfGnJU6nQY), [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) and MBN file
 
 ## All Errors of Flasher (emmcdl)
 #### Status: 21 The device is not ready: 

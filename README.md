@@ -1,4 +1,4 @@
-# PFT2 | [Full FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=93484684)
+# PFT2 | [Official Telegram Channel (RU)](https://t.me/Zalexanninev15_Channel)
 ## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.11) | [All versions](https://github.com/Zalexanninev15/PFT2/releases)
 ## [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip) | [MBN file for ZTE Blade V9 Vita](https://github.com/Zalexanninev15/PFT-Linux/raw/master/tools/emmc.mbn)
 
@@ -19,7 +19,7 @@ Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vit
 * **OS:** Windows 7/8/8.1/10
 * **Additional:** [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653), [emmcdl](https://mega.nz/#!Q5kmSI7K!1coqsqWf0SIG6ejFoftd1WU8oyBA3Z0y-oTmnRbQW60), [ADB](https://mega.nz/file/dwdWgYZY#J2LV6nNwIj3jnIsPgCpD2dBAKkkRTk45PXfGnJU6nQY), [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device) and MBN file
 
-## How to use it?
+## How to use it? (or [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=93484684))
 
 ### Preparing to configure the app:
 

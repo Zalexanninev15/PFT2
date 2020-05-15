@@ -67,7 +67,6 @@ Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vit
       *If it hasn't changed, try reinstalling the drivers/messing with Windows/changing the USB wire*
 
    5. Repeat **step 2**
-
       
 
     **b) ADB**
@@ -85,7 +84,6 @@ Application for flash/dump partitions for ZTE Blade V9 Vita and ZTE Blade A7 Vit
    4.  Click "UPD" in the app or enter the COM port number yourself from the Device Manager
 
       *It looks like this: COMX, where X is the number*
-
       
 
 3. In the end, it should turn out to the right "**YES YES**", so you have done everything😊

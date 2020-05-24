@@ -6,7 +6,7 @@
 <img src="https://4pda.ru/forum/dl/post/19398943/68747470733a2f2f692e696d6775722e636f6d2f4e7730656955462e6a7067.png" style="zoom:78%;" />
 
 ## Description
-Application for flash/dump partitions for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphone on Qualcomm chipset (like as emmcdl tool) [Commands in BAT files](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands%20in%20BAT%20files%20(PFT2_Flasher).md).
+Application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphone on Qualcomm chipset (like as emmcdl tool) | [Commands in BAT files](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands%20in%20BAT%20files%20(PFT2_Flasher).md).
 
 ## Features
 * Flash and Dump partitions (1 partition or all partitions (Full Dump), Disable Google FRP
@@ -29,8 +29,8 @@ Application for flash/dump partitions for ZTE Blade V9 Vita, ZTE Blade A7 Vita a
 
 ### Setting up the app for you:
 
-1. Launch `PFT2.exe` and immediately open the settings ("Settings")
-2. Now specify the necessary files, folders, and other settings and click "APPLY". To reset all settings, click " RESET"
+1. Launch `PFT2.exe` and immediately configure the app (point "Settings")
+2. Now specify the necessary files, folders, and other settings and click "APPLY". To reset all settings, click "RESET"
 
 *You can open experimental and hidden settings by entering "more" (without quotes) in the text field for EDL code.*
 
@@ -116,7 +116,7 @@ Application for flash/dump partitions for ZTE Blade V9 Vita, ZTE Blade A7 Vita a
 
    6. Go to the instructions for switching to EDL mode using the DFU. Performing **step 1** (but do not pinch the buttons, just look at the COM port in the Device Manager). . If you are doing this for the first time, first install the drivers
 
-   7. Performing **step 2** (DFU)
+   7. Repeat **step 2** (DFU)
 
    8. Skip everything else and quickly, but very carefully, start to restore the smartphone firmware (flash partitions, step **3**) of all partitions | Download firmwares (versions 9, 11, 12) for ZTE Blade V9 Vita: [**2/16**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92021946) or [**3/32**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92437481)
 
@@ -180,4 +180,4 @@ An error may occur due to spaces in the path (folder) to something. You should a
 **Status: 6 The handle is invalid**
 Failure to work with COM port. You should again transfer the smartphone to EDL mode.
 
-*In short, there is a 97% chance that you can fix any problem by re-switching your smartphone to the EDL firmware mode. Another 3% - problems with drivers (for the COM port), "corrupted" dumps for firmware, brick, gaps in the path, missing files.*
+*In short, there is a 97% chance that you can fix any problem by re-switching your smartphone to the EDL firmware mode. Another 3% - problems with drivers (for the COM port), "corrupted" dumps for firmware, brick, gaps in the path, missing files. Also, don't forget that PFT2 doesn't support spaces in file paths (or names with them).*

@@ -34,11 +34,9 @@ Application for flash/dump partitions for ZTE Blade V9 Vita, ZTE Blade A7 Vita a
 
 *You can open experimental and hidden settings by entering "more" (without quotes) in the text field for EDL code.*
 
-### Using application (Flash and Dump):
+### Flash & Dump:
 
-1. Go to "Main Window"
-
-2. Switching the device to firmware mode (EDL) from:
+1. Switching the device to firmware mode (EDL) from:
 
    **a) DFU (only for ZTE Blade V9 Vita and ZTE Blade A7 Vita)**
 
@@ -86,13 +84,13 @@ Application for flash/dump partitions for ZTE Blade V9 Vita, ZTE Blade A7 Vita a
       *It looks like this: COMX, where X is the number*
       
 
-3. In the end, it should turn out to the right "**YES YES**", so you have done everything😊
+2. In the end, it should turn out to the right "**YES YES**", so you have done everything😊
 
-4. Select the action you need from "Actions"
+3. Select the action you need from "Actions"
 
-5. Fill in the necessary fields in the "Main Window"
+4. Fill in the necessary fields in "Dump and Flash"
 
-6. Click " DO IT!" and wait for the end of the process
+5. Click button (before "Do IT!") and wait for the end of the process
 
    **P.S.** *In some cases, especially when after creating a dump you take to firmware, errors may pop up in the command line. If everything ends with success, reading/writing sectors will reach 0 and there will be no errors at the end - then with a 99.7% probability you will have everything*👌
    *If you still want to be safe (or you have a mistake), then **you should**:*
@@ -101,7 +99,7 @@ Application for flash/dump partitions for ZTE Blade V9 Vita, ZTE Blade A7 Vita a
 
 ### If your smartphone has become a brick:
 
-1. **Disassembling the device ([original](https://4pda.ru/forum/index.php?act=findpost&pid=94081175&anchor=Spoil-94081175-2)):**
+1. **Dismantle the device ([original](https://4pda.ru/forum/index.php?act=findpost&pid=94081175&anchor=Spoil-94081175-2)):**
 
    1. Remove the SIM card and microSD tray
 
@@ -120,7 +118,7 @@ Application for flash/dump partitions for ZTE Blade V9 Vita, ZTE Blade A7 Vita a
 
    7. Performing **step 2** (DFU)
 
-   8. Skip everything else and quickly, but very carefully, start to restore the smartphone firmware of all partitions | Download firmwares (versions 9, 11, 12) for ZTE Blade V9 Vita: [**2/16**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92021946) or [**3/32**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92437481)
+   8. Skip everything else and quickly, but very carefully, start to restore the smartphone firmware (flash partitions, step **3**) of all partitions | Download firmwares (versions 9, 11, 12) for ZTE Blade V9 Vita: [**2/16**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92021946) or [**3/32**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92437481)
 
 ### What is the PDF format? (which is used for firmware)
 

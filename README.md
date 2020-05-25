@@ -1,9 +1,9 @@
 # PFT2 | [Official Telegram Channel (RU)](t.me/PFT2_Channel)
-## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.11) | [All versions](https://github.com/Zalexanninev15/PFT2/releases)
+## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.13) | [All versions](https://github.com/Zalexanninev15/PFT2/releases)
 ## [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip) | [MBN file for ZTE Blade V9 Vita](https://github.com/Zalexanninev15/PFT-Linux/raw/master/tools/emmc.mbn)
 
 ## Screenshot
-<img src="https://4pda.ru/forum/dl/post/19398943/68747470733a2f2f692e696d6775722e636f6d2f4e7730656955462e6a7067.png" style="zoom:78%;" />
+<img src="https://i.imgur.com/lAHfd6p.png" style="zoom:6;" />
 
 ## Description
 Application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphone on Qualcomm chipset (like as emmcdl tool) | [Commands in BAT files](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands%20in%20BAT%20files%20(PFT2_Flasher).md).

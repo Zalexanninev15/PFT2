@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
 using System.IO.Ports;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -21,7 +16,7 @@ namespace PFT2
     public partial class MainForm : MaterialForm
     {
         string[] portal;
-        string theme, adbp, cport, emmcdl, fdump, temp, choose;
+        string theme, adbp, cport, emmcdl, fdump, temp, choose, edl;
         Form f;
 
         public MainForm()
@@ -43,8 +38,13 @@ namespace PFT2
             {
                 materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
                 materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green100, Accent.Yellow200, TextShade.WHITE);
+                b_w.Checked = true;
             }
-            if (Properties.Settings.Default.FM == "on") { materialRaisedButton12.Visible = true; }
+            materialSingleLineTextField10.Text = Properties.Settings.Default.ADB;
+            materialSingleLineTextField9.Text = Properties.Settings.Default.EDL_Code;
+            materialSingleLineTextField11.Text = Properties.Settings.Default.MBNFile;
+            materialSingleLineTextField8.Text = Properties.Settings.Default.FDump;
+            materialSingleLineTextField7.Text = Properties.Settings.Default.emmcdl;
         }
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
@@ -229,12 +229,12 @@ namespace PFT2
 
         private void materialRadioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if (materialRadioButton1.Checked == true) { materialSingleLineTextField2.Enabled = true; materialRaisedButton8.Enabled = true; materialSingleLineTextField1.Enabled = true; materialRaisedButton9.Visible = false; materialRaisedButton7.Enabled = true; materialRaisedButton10.Visible = false; materialRaisedButton1.Visible = true; }
+            if (materialRadioButton1.Checked == true) { materialRaisedButton1.Text = "Create Dump"; materialSingleLineTextField2.Enabled = true; materialRaisedButton8.Enabled = true; materialSingleLineTextField1.Enabled = true; materialRaisedButton9.Visible = false; materialRaisedButton7.Enabled = true; materialRaisedButton10.Visible = false; materialRaisedButton1.Visible = true; }
         }
 
         private void materialRadioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            if (materialRadioButton2.Checked == true) { materialSingleLineTextField2.Enabled = true; materialRaisedButton8.Enabled = true; materialSingleLineTextField1.Enabled = true; materialRaisedButton9.Visible = false; materialRaisedButton7.Enabled = true; materialRaisedButton10.Visible = false; materialRaisedButton1.Visible = true; }
+            if (materialRadioButton2.Checked == true) { materialRaisedButton1.Text = "Flash Dump"; materialSingleLineTextField2.Enabled = true; materialRaisedButton8.Enabled = true; materialSingleLineTextField1.Enabled = true; materialRaisedButton9.Visible = false; materialRaisedButton7.Enabled = true; materialRaisedButton10.Visible = false; materialRaisedButton1.Visible = true; }
 
         }
 
@@ -252,13 +252,13 @@ namespace PFT2
 
         private void materialRaisedButton12_Click(object sender, EventArgs e)
         {
-            f = new Firmwares_Manager();
+            f = new FM();
             f.Show();
         }
 
         private void materialRadioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            if (materialRadioButton4.Checked == true) { materialSingleLineTextField2.Clear(); materialSingleLineTextField2.Enabled = false; materialRaisedButton8.Enabled = false; materialSingleLineTextField1.Clear(); materialSingleLineTextField1.Enabled = false; materialRaisedButton9.Visible = false; materialRaisedButton7.Enabled = false; materialRaisedButton10.Visible = false; materialRaisedButton1.Visible = true; }
+            if (materialRadioButton4.Checked == true) { materialRaisedButton1.Text = "Disable Google FRP"; materialSingleLineTextField2.Clear(); materialSingleLineTextField2.Enabled = false; materialRaisedButton8.Enabled = false; materialSingleLineTextField1.Clear(); materialSingleLineTextField1.Enabled = false; materialRaisedButton9.Visible = false; materialRaisedButton7.Enabled = false; materialRaisedButton10.Visible = false; materialRaisedButton1.Visible = true; }
         }
 
         private void materialRaisedButton18_Click(object sender, EventArgs e)
@@ -281,6 +281,7 @@ namespace PFT2
 
         private void materialRaisedButton14_Click(object sender, EventArgs e)
         {
+            openFileDialog1.FileName = "";
             openFileDialog1.Filter = "APK|*.apk";
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
             materialSingleLineTextField5.Text = openFileDialog1.FileName;
@@ -298,6 +299,108 @@ namespace PFT2
             MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
         }
 
+        private void materialRaisedButton11_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.FileName = "";
+            openFileDialog1.Filter = "emmcdl file|emmcdl.exe";
+            if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
+            materialSingleLineTextField7.Text = openFileDialog1.FileName;
+        }
+
+        private void materialRaisedButton21_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.FileName = "";
+            openFileDialog1.Filter = "Flasher file|*.mbn";
+            if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
+            materialSingleLineTextField11.Text = openFileDialog1.FileName;
+        }
+
+        private void materialRaisedButton20_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.FileName = "";
+            openFileDialog1.Filter = "ADB file|adb.exe";
+            if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
+            materialSingleLineTextField10.Text = openFileDialog1.FileName;
+        }
+
+        private void materialRaisedButton19_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog())
+            {
+                if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+                    materialSingleLineTextField8.Text = folderBrowserDialog.SelectedPath;
+            }
+        }
+
+        private void materialSingleLineTextField9_Enter(object sender, EventArgs e)
+        {
+            edl = materialSingleLineTextField9.Text;
+            materialSingleLineTextField9.Clear();
+        }
+
+        private void materialRaisedButton22_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.ADB = "";
+            Properties.Settings.Default.EDL_Code = "0xFE";
+            Properties.Settings.Default.MBNFile = "";
+            Properties.Settings.Default.FDump = ""; ;
+            Properties.Settings.Default.DarkMode = "";
+            Properties.Settings.Default.emmcdl = "";
+            Properties.Settings.Default.Save();
+
+            materialSingleLineTextField7.Clear();
+            materialSingleLineTextField9.Text = "0xFE";
+            materialSingleLineTextField8.Clear();
+            materialSingleLineTextField10.Clear();
+            materialSingleLineTextField11.Clear();
+            b_w.Checked = false;
+        }
+
+        private void materialRaisedButton23_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.ADB = materialSingleLineTextField10.Text;
+            Properties.Settings.Default.EDL_Code = materialSingleLineTextField9.Text;
+            Properties.Settings.Default.MBNFile = materialSingleLineTextField11.Text;
+            Properties.Settings.Default.FDump = materialSingleLineTextField8.Text;
+            Properties.Settings.Default.emmcdl = materialSingleLineTextField7.Text;
+            Properties.Settings.Default.Save();
+        }
+
+        private void materialRaisedButton5_Click(object sender, EventArgs e)
+        {
+            Process.Start("apps.txt");
+        }
+
+        private void b_w_CheckedChanged(object sender, EventArgs e)
+        {
+            if (b_w.Checked)
+            {
+                var materialSkinManager = MaterialSkinManager.Instance;
+                materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+                materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green100, Accent.Yellow200, TextShade.WHITE);
+                Properties.Settings.Default.DarkMode = "1";
+                Properties.Settings.Default.Save();
+            }
+            if (!b_w.Checked)
+            {
+                var materialSkinManager = MaterialSkinManager.Instance;
+                materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+                materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue600, Primary.Blue700, Primary.Blue500, Accent.Blue200, TextShade.WHITE);
+                Properties.Settings.Default.DarkMode = "";
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void materialSingleLineTextField9_TextChanged(object sender, EventArgs e)
+        {
+            if (materialSingleLineTextField9.Text == "more")
+            {
+                materialSingleLineTextField9.Text = edl;
+                f = new More();
+                f.Show();
+            }
+        }
+
         private void materialRaisedButton6_Click(object sender, EventArgs e)
         {
             f = new About();
@@ -309,11 +412,6 @@ namespace PFT2
             Process.Start("Partitions.txt");
         }
 
-        private void materialRaisedButton5_Click(object sender, EventArgs e)
-        {
-            f = new Settings();
-            f.Show();
-        }
         public void FDFminiDump()
         {
             Process FDFmini = new Process();

@@ -28,79 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(More));
+            this.checkBox1 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.checkBox4 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.checkBox5 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(12, 16);
+            this.checkBox1.Depth = 0;
+            this.checkBox1.Font = new System.Drawing.Font("Roboto", 10F);
+            this.checkBox1.Location = new System.Drawing.Point(29, 78);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.checkBox1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.checkBox1.MouseState = MaterialSkin.MouseState.HOVER;
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(252, 17);
-            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Ripple = true;
+            this.checkBox1.Size = new System.Drawing.Size(331, 30);
+            this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Allow using the IMG format for \"system\" partition";
             this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(25, 141);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(239, 36);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Apply";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(12, 96);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(279, 30);
-            this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "Allow using Firmware Manager (restart the application \r\nto apply)";
-            this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(12, 45);
+            this.checkBox4.Depth = 0;
+            this.checkBox4.Font = new System.Drawing.Font("Roboto", 10F);
+            this.checkBox4.Location = new System.Drawing.Point(29, 118);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(0);
+            this.checkBox4.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.checkBox4.MouseState = MaterialSkin.MouseState.HOVER;
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(253, 17);
-            this.checkBox4.TabIndex = 0;
+            this.checkBox4.Ripple = true;
+            this.checkBox4.Size = new System.Drawing.Size(328, 30);
+            this.checkBox4.TabIndex = 4;
             this.checkBox4.Text = "Allow using the IMG format for \"vendor\" partition";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(12, 73);
+            this.checkBox5.Depth = 0;
+            this.checkBox5.Font = new System.Drawing.Font("Roboto", 10F);
+            this.checkBox5.Location = new System.Drawing.Point(29, 159);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(0);
+            this.checkBox5.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.checkBox5.MouseState = MaterialSkin.MouseState.HOVER;
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(225, 17);
-            this.checkBox5.TabIndex = 0;
+            this.checkBox5.Ripple = true;
+            this.checkBox5.Size = new System.Drawing.Size(299, 30);
+            this.checkBox5.TabIndex = 5;
             this.checkBox5.Text = "Allow using the IMG format for all partitions";
             this.checkBox5.UseVisualStyleBackColor = true;
             this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            // 
+            // materialRaisedButton1
+            // 
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(75, 197);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(239, 36);
+            this.materialRaisedButton1.TabIndex = 6;
+            this.materialRaisedButton1.Text = "Apply";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.button1_Click);
             // 
             // More
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(293, 192);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(385, 246);
+            this.Controls.Add(this.materialRaisedButton1);
             this.Controls.Add(this.checkBox5);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "More";
-            this.ShowInTaskbar = false;
+            this.Sizable = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "More";
             this.TopMost = true;
@@ -111,11 +122,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private MaterialSkin.Controls.MaterialCheckBox checkBox1;
+        private MaterialSkin.Controls.MaterialCheckBox checkBox4;
+        private MaterialSkin.Controls.MaterialCheckBox checkBox5;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
     }
 }

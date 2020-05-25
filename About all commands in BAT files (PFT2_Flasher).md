@@ -32,4 +32,4 @@ del [folder_for_full_dump]\"dump_file".temp
 [emmcdl.exe] -p COM[com_port] -f [firehose] -e config
 ```
 
-***Information is taken from here:*** [Pikabu](http://tinyurl.com/tewzyyv)
+***Information is taken from here:*** [Pikabu](https://pikabu.ru/story/eshche_odin_sposob_dostat_dannyie_s_qualcomm_i_ne_tolko_5866571)

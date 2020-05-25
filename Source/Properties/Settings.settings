@@ -23,9 +23,6 @@
     <Setting Name="IMGsys" Type="System.String" Scope="User">
       <Value Profile="(Default)">off</Value>
     </Setting>
-    <Setting Name="FM" Type="System.String" Scope="User">
-      <Value Profile="(Default)">off</Value>
-    </Setting>
     <Setting Name="IMGVedro" Type="System.String" Scope="User">
       <Value Profile="(Default)">off</Value>
     </Setting>

@@ -59,7 +59,7 @@
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(165, 76);
             this.materialLabel2.TabIndex = 14;
-            this.materialLabel2.Text = "PFT2\r\nAuthor: Zalexanninev15\r\nVersion: 1.13\r\nBuild: 25052020";
+            this.materialLabel2.Text = "PFT2\r\nAuthor: Zalexanninev15\r\nVersion: 1.13.1\r\nBuild: 26052020";
             // 
             // pictureBox1
             // 
@@ -83,9 +83,9 @@
             this.MinimizeBox = false;
             this.Name = "About";
             this.Sizable = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "About";
-            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

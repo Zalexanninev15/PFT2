@@ -846,7 +846,7 @@
             this.materialRaisedButton23.Primary = true;
             this.materialRaisedButton23.Size = new System.Drawing.Size(180, 29);
             this.materialRaisedButton23.TabIndex = 46;
-            this.materialRaisedButton23.Text = "Apply";
+            this.materialRaisedButton23.Text = "SAVE SETTINGS";
             this.materialRaisedButton23.UseVisualStyleBackColor = true;
             this.materialRaisedButton23.Click += new System.EventHandler(this.materialRaisedButton23_Click);
             // 

@@ -114,7 +114,6 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "More";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.More_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

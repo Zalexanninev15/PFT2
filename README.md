@@ -120,11 +120,11 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
    8. Skip everything else and quickly, but very carefully, start to restore the smartphone firmware (flash partitions, step **3**) of all partitions | Download firmwares (versions 9, 11, 12) for ZTE Blade V9 Vita: [**2/16**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92021946) or [**3/32**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92437481)
 
-### What is the PDF format? (which is used for firmware)
+### What is the FDF format? (which is used for firmware)
 
 FDF (Firmware Data File) is a file format for firmware that was created to replace the DUMP (later BIN and IMG) firmware file format, since it is the best for storing images. In fact, it is a special archive for dumps, which allows you to upload dumps to the hosting/cloud without data loss, without compression to the archive. To work with this format, you need more space than for a normal IMG / BIN dump (the dump is converted to a temporary format for firmware in the device), but the FDF file will be better stored. 
 
-For example: `system. img`  → `system.fdf`, 3.5 GB → 1.4 GB. Temporary files are deleted after work.
+For example: `system.img`  → `system.fdf`, 3.5 GB → 1.4 GB. Temporary files are deleted after work.
 The utility for working with this format and converting IMG/BIN files to it is located in the folder with the PTT2 application called `FDFmini` (created by Zalexanninev15 and Alexander927).
 PFT2 supports this format since version **1.3**
 For normal operation, the "userdata" section uses regular IMG, because there may be problems with converting too large files (5 GB or more)

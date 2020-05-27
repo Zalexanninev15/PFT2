@@ -303,7 +303,7 @@
             this.materialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton6.Name = "materialRaisedButton6";
             this.materialRaisedButton6.Primary = true;
-            this.materialRaisedButton6.Size = new System.Drawing.Size(211, 38);
+            this.materialRaisedButton6.Size = new System.Drawing.Size(221, 38);
             this.materialRaisedButton6.TabIndex = 21;
             this.materialRaisedButton6.Text = "about";
             this.materialRaisedButton6.UseVisualStyleBackColor = true;
@@ -441,11 +441,11 @@
             // materialRaisedButton12
             // 
             this.materialRaisedButton12.Depth = 0;
-            this.materialRaisedButton12.Location = new System.Drawing.Point(244, 463);
+            this.materialRaisedButton12.Location = new System.Drawing.Point(248, 463);
             this.materialRaisedButton12.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton12.Name = "materialRaisedButton12";
             this.materialRaisedButton12.Primary = true;
-            this.materialRaisedButton12.Size = new System.Drawing.Size(211, 38);
+            this.materialRaisedButton12.Size = new System.Drawing.Size(207, 38);
             this.materialRaisedButton12.TabIndex = 34;
             this.materialRaisedButton12.Text = "Firmwares Manager";
             this.materialRaisedButton12.UseVisualStyleBackColor = true;

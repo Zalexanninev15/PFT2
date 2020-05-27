@@ -38,11 +38,11 @@
             // materialRaisedButton1
             // 
             this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(12, 275);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(11, 267);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(193, 35);
+            this.materialRaisedButton1.Size = new System.Drawing.Size(165, 35);
             this.materialRaisedButton1.TabIndex = 13;
             this.materialRaisedButton1.Text = "GitHub";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
@@ -54,17 +54,17 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(25, 184);
+            this.materialLabel2.Location = new System.Drawing.Point(11, 183);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(165, 76);
             this.materialLabel2.TabIndex = 14;
-            this.materialLabel2.Text = "PFT2\r\nAuthor: Zalexanninev15\r\nVersion: 1.13.1\r\nBuild: 26052020";
+            this.materialLabel2.Text = "PFT2\r\nAuthor: Zalexanninev15\r\nVersion: 1.13.2\r\nBuild: 27052020";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PFT2.Properties.Resources.PFT2;
-            this.pictureBox1.Location = new System.Drawing.Point(54, 71);
+            this.pictureBox1.Location = new System.Drawing.Point(41, 71);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(104, 102);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -74,7 +74,7 @@
             // About
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(217, 322);
+            this.ClientSize = new System.Drawing.Size(187, 315);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialRaisedButton1);

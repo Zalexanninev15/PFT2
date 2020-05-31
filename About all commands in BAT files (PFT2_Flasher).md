@@ -15,9 +15,9 @@
 ### Full Dump: ([this](https://github.com/Zalexanninev15/PFT2/blob/master/PFT2_Flasher/full_dump.bat))
 
 ```
-[emmcdl.exe] -p COM[com_port] -f [firehose] -d "partition" -o [folder_for_full_dump]\"dump_file".temp
-FDFmini -img [folder_for_full_dump]\"dump_file".temp [folder_for_full_dump]\"dump_file".fdf -c
-del [folder_for_full_dump]\"dump_file".temp
+[emmcdl.exe] -p COM[com_port] -f [firehose] -d [partition] -o [folder_for_full_dump]\[dump_file].temp
+FDFmini -img [folder_for_full_dump]\[dump_file].temp [folder_for_full_dump]\[dump_file].fdf -c
+del [folder_for_full_dump]\[dump_file].temp
 ```
 
 ### Flash ([this](https://github.com/Zalexanninev15/PFT2/blob/master/PFT2_Flasher/flash.bat))

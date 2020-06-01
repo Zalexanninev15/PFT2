@@ -3,7 +3,7 @@
 ## [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip) | [MBN file for ZTE Blade V9 Vita](https://github.com/Zalexanninev15/PFT-Linux/raw/master/tools/emmc.mbn)
 
 ## Screenshot
-<img src="https://i.imgur.com/lAHfd6p.png" style="zoom:6;" />
+<img src="https://i.imgur.com/D086BF2.jpg" style="zoom:16;" />
 
 ## Description
 Application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphone on Qualcomm chipset (like as emmcdl tool) | [Commands in BAT files](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands%20in%20BAT%20files%20(PFT2_Flasher).md).
@@ -32,7 +32,9 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 1. Launch `PFT2.exe` and immediately configure the app (point "Settings")
 2. Now specify the necessary files, folders, and other settings and click "APPLY". To reset all settings, click "RESET"
 
-*You can open experimental and hidden settings by entering "more" (without quotes) in the text field for EDL code.*
+*You can open advanced settings by entering "more" (without quotes) in the text field for EDL code.*
+
+![](https://i.imgur.com/ZKH2asb.jpg)
 
 ### Flash & Dump:
 
@@ -42,9 +44,9 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
    1. Connect the smartphone in DFU mode (connect the cable to the PC and hold all 3 buttons, the red light will light up). 
 
-      ***Here's how it should be (photo by [Ambernic](http://t.me/Ampernic_offical)):***
+      ***Here's how it should be (original photo by [Ambernic](http://t.me/Ampernic_offical)):***
 
-      <img src="https://cs5-1.4pda.to/19467283.jpg" style="zoom:%;" />
+      <img src="https://i.imgur.com/mDxNwWF.png" style="zoom:55%;" />
 
    2. The COM port should appear in the Device Manager
 
@@ -129,6 +131,14 @@ The utility for working with this format and converting IMG/BIN files to it is l
 PFT2 supports this format since version **1.3**
 For normal operation, the "userdata" section uses regular IMG, because there may be problems with converting too large files (5 GB or more)
 
+#### GUI:
+
+You can use the official GUI. To do this, activate it in the advanced settings *(you can open advanced settings by entering "more" (without quotes) in the text field for EDL code)*. Next, in the same field, enter "gui" (without quotes) and use :)
+
+![](https://i.imgur.com/nev4qiW.jpg)
+
+#### CMD:
+
 **To convert a FDF file, use the command:**
 
 ```
@@ -159,12 +169,11 @@ FDFmini -fdf system.fdf system.img -u
 
 ### (this is only for ZTE Blade V9 Vita)
 
-* [Official firmware dumps for revision 2/16](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=92021946)
-* [Official firmware dumps for revision 3/32](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=92437481)
+* [Official firmware dumps for revision 3/32 and 2/16](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=92437481)
 * [Unofficial, verified](https://4pda.ru/forum/index.php?act=findpost&pid=85228170&anchor=Spoil-85228170-3)
 * [Unofficial, many unverified and not working](https://4pda.ru/forum/index.php?showtopic=892755) (**only type ARM64-A**)
 
-[About root and TWRP recovery](https://4pda.ru/forum/index.php?act=findpost&pid=93484684&anchor=Spoil-93484684-20)
+- [About root and TWRP recovery](https://4pda.ru/forum/index.php?act=findpost&pid=93484684&anchor=Spoil-93484684-20)
 
 ## All Errors of Flasher (emmcdl)
 

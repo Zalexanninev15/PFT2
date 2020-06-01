@@ -68,14 +68,14 @@ namespace PFT2
                         }
                         c = 1;
                     }
-                    catch { MessageBox.Show("COM port not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
-                    if (c == 1)             // "/C cd " for simple bat files
+                    catch { MessageBox.Show("COM port not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
+                    if (c == 1)             
                     {
                         if ((materialRadioButton3.Checked == true)) // Full Dump
                         {
                             if (fdump == "")
                             {
-                                MessageBox.Show("Folder for Full Dump is missing!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                                MessageBox.Show("Folder for Full Dump is missing!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                             }
                             else
                             {
@@ -95,7 +95,7 @@ namespace PFT2
                             process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\scripts\\flash.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
                             process.Start();
                             process.WaitForExit();
-                            File.Delete(@temp);
+                            File.Delete(temp);
                             MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
 
                         }
@@ -115,15 +115,14 @@ namespace PFT2
                             process.StartInfo.FileName = "cmd.exe";
                             process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\scripts\\dgfrp.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn;
                             process.Start();
-                            //process.WaitForExit();
                              MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                         }
                     }
-                    // else { MessageBox.Show("COM port not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
+                    // else { MessageBox.Show("COM port not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
                 }
-                else { MessageBox.Show("Something is empty!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
+                else { MessageBox.Show("Something is empty!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
             }
-            else { MessageBox.Show("emmcdl not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
+            else { MessageBox.Show("emmcdl not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
         }
 
         private void materialRaisedButton3_Click(object sender, EventArgs e)
@@ -137,7 +136,7 @@ namespace PFT2
             }
             else
             {
-                MessageBox.Show("COM port not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("COM port not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 materialLabel7.Text = "NO";
             }
         }
@@ -157,9 +156,9 @@ namespace PFT2
                     process.WaitForExit();
                     materialLabel8.Text = "YES";
                 }
-                else { MessageBox.Show("Something is empty!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); materialLabel8.Text = "NO"; }
+                else { MessageBox.Show("Something is empty!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); materialLabel8.Text = "NO"; }
             }
-            else { MessageBox.Show("emmcdl not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
+            else { MessageBox.Show("emmcdl not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
         }
 
         private void materialRaisedButton4_Click(object sender, EventArgs e)
@@ -169,7 +168,7 @@ namespace PFT2
             {
                 Process process1 = new Process();
                 process1.StartInfo.FileName = "cmd.exe";
-                process1.StartInfo.Arguments = "/C " + @adbp + " reboot edl";
+                process1.StartInfo.Arguments = "/C " + adbp + " reboot edl";
                 process1.Start();
                 process1.WaitForExit();
                 Thread.Sleep(8000);
@@ -181,7 +180,7 @@ namespace PFT2
                         process2.Kill();
                 }
             }
-            else { MessageBox.Show("ADB not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); materialLabel8.Text = "NO"; }
+            else { MessageBox.Show("ADB not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); materialLabel8.Text = "NO"; }
         }
 
         private void materialRaisedButton8_Click(object sender, EventArgs e)
@@ -399,6 +398,17 @@ namespace PFT2
                 f = new More();
                 f.Show();
             }
+            if (materialSingleLineTextField9.Text == "github")
+            {
+            	materialSingleLineTextField9.Text = edl;
+            	Process.Start("https://github.com/Zalexanninev15/PFT2");
+            }
+            if ((materialSingleLineTextField9.Text == "gui") && (Properties.Settings.Default.GUI == "on"))
+            {
+                materialSingleLineTextField9.Text = edl;
+                f = new FDFminiGUI();
+                f.Show();
+            }
         }
 
         private void materialRaisedButton6_Click(object sender, EventArgs e)
@@ -419,7 +429,7 @@ namespace PFT2
             FDFmini.StartInfo.Arguments = "/C " + Application.StartupPath + "\\FDFmini.exe " + "-img" + " " + temp + " " + materialSingleLineTextField2.Text + " " + "-c";
             FDFmini.Start();
             FDFmini.WaitForExit();
-            File.Delete(@temp);
+            File.Delete(temp);
 
         }
 
@@ -439,7 +449,7 @@ namespace PFT2
             {
                 Process process1 = new Process();
                 process1.StartInfo.FileName = "cmd.exe";
-                process1.StartInfo.Arguments = "/C " + @adbp + " " + command;
+                process1.StartInfo.Arguments = "/C " + adbp + " " + command;
                 process1.StartInfo.RedirectStandardOutput = true;
                 process1.StartInfo.UseShellExecute = false;
                 process1.StartInfo.CreateNoWindow = true;
@@ -453,7 +463,7 @@ namespace PFT2
                         process2.Kill();
                 }
             }
-            else { MessageBox.Show("ADB not found!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
+            else { MessageBox.Show("ADB not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly); }
         }
     }
 

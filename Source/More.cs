@@ -21,6 +21,8 @@ namespace PFT2
             if (checkBox1.Checked == false) { Properties.Settings.Default.IMGsys = "off"; Properties.Settings.Default.Save(); }
             if (checkBox4.Checked == true) { Properties.Settings.Default.IMGVedro = "on"; Properties.Settings.Default.Save(); }
             if (checkBox4.Checked == false) { Properties.Settings.Default.IMGVedro = "off"; Properties.Settings.Default.Save(); }
+            if (materialCheckBox1.Checked == true) { Properties.Settings.Default.GUI = "on"; Properties.Settings.Default.Save(); }
+            if (materialCheckBox1.Checked == false) { Properties.Settings.Default.GUI = "off"; Properties.Settings.Default.Save(); }
         }
 
         private void More_Load(object sender, EventArgs e)
@@ -42,6 +44,7 @@ namespace PFT2
             if (Properties.Settings.Default.IMGAll == "off") { checkBox5.Checked = false; checkBox4.Checked = false; checkBox1.Checked = false; checkBox4.Enabled = true; checkBox1.Enabled = true; }
             if (Properties.Settings.Default.IMGsys == "on") { checkBox1.Checked = true; }
             if (Properties.Settings.Default.IMGVedro == "on") { checkBox4.Checked = true; }
+            if (Properties.Settings.Default.GUI == "on") { materialCheckBox1.Checked = true; }
         }
 
         private void checkBox5_CheckedChanged(object sender, EventArgs e)

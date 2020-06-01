@@ -251,7 +251,7 @@
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(362, 39);
+            this.materialRaisedButton1.Size = new System.Drawing.Size(362, 38);
             this.materialRaisedButton1.TabIndex = 0;
             this.materialRaisedButton1.Text = "Do it!";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
@@ -299,7 +299,7 @@
             // materialRaisedButton6
             // 
             this.materialRaisedButton6.Depth = 0;
-            this.materialRaisedButton6.Location = new System.Drawing.Point(21, 463);
+            this.materialRaisedButton6.Location = new System.Drawing.Point(21, 462);
             this.materialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton6.Name = "materialRaisedButton6";
             this.materialRaisedButton6.Primary = true;
@@ -387,11 +387,11 @@
             // materialRaisedButton9
             // 
             this.materialRaisedButton9.Depth = 0;
-            this.materialRaisedButton9.Location = new System.Drawing.Point(248, 418);
+            this.materialRaisedButton9.Location = new System.Drawing.Point(246, 418);
             this.materialRaisedButton9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton9.Name = "materialRaisedButton9";
             this.materialRaisedButton9.Primary = true;
-            this.materialRaisedButton9.Size = new System.Drawing.Size(209, 39);
+            this.materialRaisedButton9.Size = new System.Drawing.Size(209, 38);
             this.materialRaisedButton9.TabIndex = 29;
             this.materialRaisedButton9.Text = "Folder for Full Dump";
             this.materialRaisedButton9.UseVisualStyleBackColor = true;
@@ -427,11 +427,11 @@
             // materialRaisedButton10
             // 
             this.materialRaisedButton10.Depth = 0;
-            this.materialRaisedButton10.Location = new System.Drawing.Point(20, 418);
+            this.materialRaisedButton10.Location = new System.Drawing.Point(21, 418);
             this.materialRaisedButton10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton10.Name = "materialRaisedButton10";
             this.materialRaisedButton10.Primary = true;
-            this.materialRaisedButton10.Size = new System.Drawing.Size(222, 39);
+            this.materialRaisedButton10.Size = new System.Drawing.Size(219, 38);
             this.materialRaisedButton10.TabIndex = 31;
             this.materialRaisedButton10.Text = "Create full dump";
             this.materialRaisedButton10.UseVisualStyleBackColor = true;
@@ -441,7 +441,7 @@
             // materialRaisedButton12
             // 
             this.materialRaisedButton12.Depth = 0;
-            this.materialRaisedButton12.Location = new System.Drawing.Point(248, 463);
+            this.materialRaisedButton12.Location = new System.Drawing.Point(248, 462);
             this.materialRaisedButton12.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton12.Name = "materialRaisedButton12";
             this.materialRaisedButton12.Primary = true;
@@ -454,7 +454,7 @@
             // materialRaisedButton13
             // 
             this.materialRaisedButton13.Depth = 0;
-            this.materialRaisedButton13.Location = new System.Drawing.Point(647, 478);
+            this.materialRaisedButton13.Location = new System.Drawing.Point(647, 471);
             this.materialRaisedButton13.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton13.Name = "materialRaisedButton13";
             this.materialRaisedButton13.Primary = true;
@@ -468,7 +468,7 @@
             // 
             this.materialSingleLineTextField3.Depth = 0;
             this.materialSingleLineTextField3.Hint = "Name of the package to delete";
-            this.materialSingleLineTextField3.Location = new System.Drawing.Point(647, 442);
+            this.materialSingleLineTextField3.Location = new System.Drawing.Point(647, 435);
             this.materialSingleLineTextField3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField3.Name = "materialSingleLineTextField3";
             this.materialSingleLineTextField3.PasswordChar = '\0';
@@ -538,7 +538,7 @@
             // materialRaisedButton16
             // 
             this.materialRaisedButton16.Depth = 0;
-            this.materialRaisedButton16.Location = new System.Drawing.Point(478, 478);
+            this.materialRaisedButton16.Location = new System.Drawing.Point(478, 471);
             this.materialRaisedButton16.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton16.Name = "materialRaisedButton16";
             this.materialRaisedButton16.Primary = true;
@@ -551,7 +551,7 @@
             // materialRaisedButton17
             // 
             this.materialRaisedButton17.Depth = 0;
-            this.materialRaisedButton17.Location = new System.Drawing.Point(478, 434);
+            this.materialRaisedButton17.Location = new System.Drawing.Point(478, 433);
             this.materialRaisedButton17.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton17.Name = "materialRaisedButton17";
             this.materialRaisedButton17.Primary = true;
@@ -683,7 +683,7 @@
             // materialSingleLineTextField8
             // 
             this.materialSingleLineTextField8.Depth = 0;
-            this.materialSingleLineTextField8.Hint = "Where to store a complete dump? (\"D\")";
+            this.materialSingleLineTextField8.Hint = "Where savr your Full Dump? (\"D\")";
             this.materialSingleLineTextField8.Location = new System.Drawing.Point(618, 217);
             this.materialSingleLineTextField8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField8.Name = "materialSingleLineTextField8";
@@ -880,7 +880,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(949, 520);
+            this.ClientSize = new System.Drawing.Size(949, 513);
             this.Controls.Add(this.materialRaisedButton16);
             this.Controls.Add(this.materialRaisedButton18);
             this.Controls.Add(this.materialRaisedButton23);

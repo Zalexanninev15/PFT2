@@ -46,7 +46,7 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
       ***Here's how it should be (original photo by [Ambernic](http://t.me/Ampernic_offical)):***
 
-      <img src="https://i.imgur.com/mDxNwWF.png" style="zoom:20%;" />
+      <img src="https://i.imgur.com/mDxNwWF.png" style="zoom: 67%;" />
 
    2. The COM port should appear in the Device Manager
 

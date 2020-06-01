@@ -13,11 +13,9 @@ using MaterialSkin;
 
 namespace PFT2
 {
-    public partial class About : MaterialForm
+    public partial class License : MaterialForm
     {
-        Form f;
-
-        public About()
+        public License()
         {
             InitializeComponent();
 
@@ -25,15 +23,9 @@ namespace PFT2
             materialSkinManager.AddFormToManage(this);
         }
 
-        private void MaterialRaisedButton1_Click(object sender, EventArgs e)
+        private void materialRaisedButton10_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/Zalexanninev15/PFT2");
-        }
-
-        private void materialRaisedButton2_Click(object sender, EventArgs e)
-        {
-            f = new License();
-            f.Show();
+            this.Close();
         }
     }
 }

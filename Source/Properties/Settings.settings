@@ -29,5 +29,8 @@
     <Setting Name="IMGAll" Type="System.String" Scope="User">
       <Value Profile="(Default)">off</Value>
     </Setting>
+    <Setting Name="GUI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">off</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

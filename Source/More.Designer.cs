@@ -33,6 +33,7 @@
             this.checkBox4 = new MaterialSkin.Controls.MaterialCheckBox();
             this.checkBox5 = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialCheckBox1 = new MaterialSkin.Controls.MaterialCheckBox();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -40,7 +41,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Depth = 0;
             this.checkBox1.Font = new System.Drawing.Font("Roboto", 10F);
-            this.checkBox1.Location = new System.Drawing.Point(29, 78);
+            this.checkBox1.Location = new System.Drawing.Point(29, 71);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(0);
             this.checkBox1.MouseLocation = new System.Drawing.Point(-1, -1);
             this.checkBox1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -56,7 +57,7 @@
             this.checkBox4.AutoSize = true;
             this.checkBox4.Depth = 0;
             this.checkBox4.Font = new System.Drawing.Font("Roboto", 10F);
-            this.checkBox4.Location = new System.Drawing.Point(29, 118);
+            this.checkBox4.Location = new System.Drawing.Point(29, 104);
             this.checkBox4.Margin = new System.Windows.Forms.Padding(0);
             this.checkBox4.MouseLocation = new System.Drawing.Point(-1, -1);
             this.checkBox4.MouseState = MaterialSkin.MouseState.HOVER;
@@ -72,7 +73,7 @@
             this.checkBox5.AutoSize = true;
             this.checkBox5.Depth = 0;
             this.checkBox5.Font = new System.Drawing.Font("Roboto", 10F);
-            this.checkBox5.Location = new System.Drawing.Point(29, 159);
+            this.checkBox5.Location = new System.Drawing.Point(29, 137);
             this.checkBox5.Margin = new System.Windows.Forms.Padding(0);
             this.checkBox5.MouseLocation = new System.Drawing.Point(-1, -1);
             this.checkBox5.MouseState = MaterialSkin.MouseState.HOVER;
@@ -87,22 +88,40 @@
             // materialRaisedButton1
             // 
             this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(75, 197);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(75, 211);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
             this.materialRaisedButton1.Size = new System.Drawing.Size(239, 36);
             this.materialRaisedButton1.TabIndex = 6;
-            this.materialRaisedButton1.Text = "Apply";
+            this.materialRaisedButton1.Text = "save settings";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
             this.materialRaisedButton1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // materialCheckBox1
+            // 
+            this.materialCheckBox1.AutoSize = true;
+            this.materialCheckBox1.Depth = 0;
+            this.materialCheckBox1.Font = new System.Drawing.Font("Roboto", 10F);
+            this.materialCheckBox1.Location = new System.Drawing.Point(101, 172);
+            this.materialCheckBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCheckBox1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialCheckBox1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCheckBox1.Name = "materialCheckBox1";
+            this.materialCheckBox1.Ripple = true;
+            this.materialCheckBox1.Size = new System.Drawing.Size(172, 30);
+            this.materialCheckBox1.TabIndex = 5;
+            this.materialCheckBox1.Text = "Enable GUI for FDFmini ";
+            this.materialCheckBox1.UseVisualStyleBackColor = true;
+            this.materialCheckBox1.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // More
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 246);
+            this.ClientSize = new System.Drawing.Size(385, 258);
             this.Controls.Add(this.materialRaisedButton1);
+            this.Controls.Add(this.materialCheckBox1);
             this.Controls.Add(this.checkBox5);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox1);
@@ -125,5 +144,6 @@
         private MaterialSkin.Controls.MaterialCheckBox checkBox4;
         private MaterialSkin.Controls.MaterialCheckBox checkBox5;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox1;
     }
 }

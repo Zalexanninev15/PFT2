@@ -21,6 +21,8 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
 ## How to use it? (or [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=93484684))
 
+**I recommend reading this information in [Typora](https://typora.io/) or any other MARKDOWN editor or viewer.**
+
 ### Preparing to configure the app:
 
 1. Download the necessary files: [emmcdl](https://mega.nz/#!Q5kmSI7K!1coqsqWf0SIG6ejFoftd1WU8oyBA3Z0y-oTmnRbQW60), [ADB](https://mega.nz/file/dwdWgYZY#J2LV6nNwIj3jnIsPgCpD2dBAKkkRTk45PXfGnJU6nQY), MBN file and [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device)
@@ -46,7 +48,7 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
       ***Here's how it should be (original photo by [Ambernic](http://t.me/Ampernic_offical)):***
 
-      <img src="https://i.imgur.com/2DN27kS.jpg" style="zoom: 67%;" />
+      <img src="https://i.imgur.com/mDxNwWF.png" style="zoom: 67%;" />
 
    2. The COM port should appear in the Device Manager
 
@@ -92,6 +94,8 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
 4. Fill in the necessary fields in "Dump and Flash"
 
+   *To wipe "userdata" (or other partitions), you can flash the file " Wipe_userdata.pdf "(located in the folder with the application) in the "userdata" partition (or other partition)*
+
 5. Click button (before "Do IT!") and wait for the end of the process
 
    **P.S.** *In some cases, especially when after creating a dump you take to firmware, errors may pop up in the command line. If everything ends with success, reading/writing sectors will reach 0 and there will be no errors at the end - then with a 99.7% probability you will have everything*👌
@@ -116,7 +120,7 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
    5. Close the data 2 contacts with tweezers and connect the smartphone to the PC
 
-   6. Go to the instructions for switching to EDL mode using the DFU. Performing **step 1** (but do not pinch the buttons, just look at the COM port in the Device Manager). . If you are doing this for the first time, first install the drivers
+   6. Go to the instructions for switching to EDL mode using the DFU. Performing **step 1** (but do not pinch the buttons, just look at the COM port in the Device Manager). If you are doing this for the first time, first install the drivers
 
    7. Repeat **step 2** (DFU)
 
@@ -124,12 +128,11 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
 ### What is the FDF format? (which is used for firmware)
 
-FDF (Firmware Data File) is a file format for firmware that was created to replace the DUMP (later BIN and IMG) firmware file format, since it is the best for storing images. In fact, it is a special archive for dumps, which allows you to upload dumps to the hosting/cloud without data loss, without compression to the archive. To work with this format, you need more space than for a normal IMG / BIN dump (the dump is converted to a temporary format for firmware in the device), but the FDF file will be better stored. 
+FDF (Firmware Data File) is a file format for firmware that was created to replace the DUMP (later BIN and IMG) firmware file format, since it is the best for storing images. In fact, it is a special archive for dumps, which allows you to upload dumps to the hosting/cloud without data loss, without compression to the archive. To work with this format, you need more space than for a normal IMG / BIN dump (the dump is converted to a temporary format for firmware in the device), but the FDF file will be better stored. PFT2 support this format since version **1.3**
 
 For example: `system.img`  → `system.fdf`, 3.5 GB → 1.4 GB. Temporary files are deleted after work.
-The utility for working with this format and converting IMG/BIN files to it is located in the folder with the PTT2 application called `FDFmini` (created by Zalexanninev15 and Alexander927).
-PFT2 supports this format since version **1.3**
-For normal operation, the "userdata" section uses regular IMG, because there may be problems with converting too large files (5 GB or more)
+The utility for working with this format and converting IMG/BIN files to it is located in the folder with the PTT2 application called FDFmini (created by Zalexanninev15 and Alexander927).
+For normal operation, the "userdata" partition uses regular IMG, because there may be problems with converting too large files.
 
 #### GUI:
 
@@ -173,7 +176,23 @@ FDFmini -fdf system.fdf system.img -u
 * [Unofficial, verified](https://4pda.ru/forum/index.php?act=findpost&pid=85228170&anchor=Spoil-85228170-3)
 * [Unofficial, many unverified and not working](https://4pda.ru/forum/index.php?showtopic=892755) (**only type ARM64-A**)
 
-- [About root and TWRP recovery](https://4pda.ru/forum/index.php?act=findpost&pid=93484684&anchor=Spoil-93484684-20)
+**About ROOT and TWRP:**
+
+- root - incomplete due to a blocked bootloader (no access to system and vendor)
+  1. Download patched boot and Magisk Manager: https://mega.nz/file/B5MxQSJY#mAbsKzcTr28nPVMyHQqJjepjmai3fA9Mj2tLQ5jT9pM
+  2. Select and flash one of the FDF files in "boot" partition
+  3. After the flash is finished, install either "magisk583.apk" (for "bootmagisk160.fdf") or "magisk591.apk" (for "bootmagisk167.fdf") on the device (via ADB, or via the device's File Manager)
+  
+- TWRP - test build with very limited features (you need to unlock the loader to get more functionality in TWRP)
+  1. Download TWRP recovery: https://mega.nz/file/Y0UTxSDA#Sb6ZzVRepeISKR3a7P5cYMJysE8mmkt_U1PVYQ5VJQE
+  2. Extract ZIP archive and flash FDF file in "recovery" partition
+
+  
+
+  *Notes:*
+
+  *After flashing PDF files (ROOT and/or TWRP), you will need to erase all your data (userdata) from your phone, otherwise you will get a bootloop or they will just !!!encrypt without the possibility of decryption!!! (dump "userdata")*
+  *Also, for users of stock firmware version 12 (v12), we make the flash of all partitions (except system and userdata) from the dumps of stock firmware version 11 (v11) (links for each revision of the smartphone above), otherwise grab the bootloop (!!!even if you erase all the data!!!)*
 
 ## All Errors of Flasher (emmcdl)
 

@@ -186,13 +186,11 @@ FDFmini -fdf system.fdf system.img -u
 - TWRP - test build with very limited features (you need to unlock the loader to get more functionality in TWRP)
   1. Download TWRP recovery: https://mega.nz/file/Y0UTxSDA#Sb6ZzVRepeISKR3a7P5cYMJysE8mmkt_U1PVYQ5VJQE
   2. Extract ZIP archive and flash FDF file in "recovery" partition
-
   
 
-  *Notes:*
-
-  *After flashing PDF files (ROOT and/or TWRP), you will need to erase all your data (userdata) from your phone, otherwise you will get a bootloop or they will just !!!encrypt without the possibility of decryption!!! (dump "userdata")*
-  *Also, for users of stock firmware version 12 (v12), we make the flash of all partitions (except system and userdata) from the dumps of stock firmware version 11 (v11) (links for each revision of the smartphone above), otherwise grab the bootloop (!!!even if you erase all the data!!!)*
+ *Notes:*
+ *After flashing FDF files (ROOT and/or TWRP), you will need to erase all your data (userdata) from your phone, otherwise you will get a bootloop or they will just !!!encrypt without the possibility of decryption!!! (dump "userdata").*
+ *Also, for users of stock firmware version 12 (v12), we make the flash of all partitions (except system and userdata) from the dumps of stock firmware version 11 (v11) (links for each revision of the smartphone above), otherwise grab the bootloop (!!!even if you erase all the data!!!)*
 
 ## All Errors of Flasher (emmcdl)
 

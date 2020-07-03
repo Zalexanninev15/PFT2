@@ -207,3 +207,7 @@ An error may occur due to spaces in the path (folder) to something. You should a
 Failure to work with COM port. You should again transfer the smartphone to EDL mode.
 
 *In short, there is a 97% chance that you can fix any problem by re-switching your smartphone to the EDL firmware mode. Another 3% - problems with drivers (for the COM port), "corrupted" dumps for firmware, brick, gaps in the path, missing files. Also, don't forget that PFT2 doesn't support spaces in file paths (or names with them).*
+
+## Used libraries
+* [MaterialSkin](https://github.com/IgnaceMaes/MaterialSkin) ([MIT License](https://github.com/IgnaceMaes/MaterialSkin/blob/master/LICENSE))
+* [System.IO.Compression](https://www.nuget.org/packages/System.IO.Compression/) ([MS-.NET-Library License](https://dotnet.microsoft.com/en/dotnet_library_license.htm))

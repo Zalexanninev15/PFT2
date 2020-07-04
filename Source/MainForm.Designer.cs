@@ -331,9 +331,9 @@
             this.materialLabel6.Location = new System.Drawing.Point(195, 297);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(98, 19);
+            this.materialLabel6.Size = new System.Drawing.Size(100, 19);
             this.materialLabel6.TabIndex = 23;
-            this.materialLabel6.Text = "Filling in data";
+            this.materialLabel6.Text = "Data for work";
             // 
             // materialRaisedButton8
             // 
@@ -723,6 +723,7 @@
             this.materialSingleLineTextField9.TabIndex = 55;
             this.materialSingleLineTextField9.UseSystemPasswordChar = false;
             this.materialSingleLineTextField9.Enter += new System.EventHandler(this.materialSingleLineTextField9_Enter);
+            this.materialSingleLineTextField9.Leave += new System.EventHandler(this.materialSingleLineTextField9_Leave);
             this.materialSingleLineTextField9.TextChanged += new System.EventHandler(this.materialSingleLineTextField9_TextChanged);
             // 
             // materialRaisedButton20

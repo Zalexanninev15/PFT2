@@ -370,6 +370,11 @@ namespace PFT2
             Process.Start("apps.txt");
         }
 
+        private void materialSingleLineTextField9_Leave(object sender, EventArgs e)
+        {
+            materialSingleLineTextField9.Text = edl;
+        }
+
         private void b_w_CheckedChanged(object sender, EventArgs e)
         {
             if (b_w.Checked)

@@ -198,7 +198,7 @@
             // FDFminiGUI
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(609, 155);
+            this.ClientSize = new System.Drawing.Size(609, 157);
             this.Controls.Add(this.materialCheckBox2);
             this.Controls.Add(this.materialCheckBox1);
             this.Controls.Add(this.materialRaisedButton9);

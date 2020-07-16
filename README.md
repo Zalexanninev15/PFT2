@@ -3,7 +3,7 @@
 ## [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip) | [MBN file for ZTE Blade V9 Vita](https://github.com/Zalexanninev15/PFT-Linux/raw/master/tools/emmc.mbn)
 
 ## Screenshot
-<img src="https://i.imgur.com/D086BF2.jpg" style="zoom:16;" />
+<img src="https://i.imgur.com/gtchaBJ.png" style="zoom:16;" />
 
 ## Description
 Application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphone on Qualcomm chipset (like as emmcdl tool) | [Commands in BAT files](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands%20in%20BAT%20files%20(PFT2_Flasher).md)

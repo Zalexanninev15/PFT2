@@ -17,7 +17,7 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
 ## System requirements
 * **OS:** Windows 7 (SP1)/8/8.1/10
-* **Additional:** [Microsoft .NET Framework 4.7.1](https://www.microsoft.com/en-US/download/details.aspx?id=56116), [emmcdl](https://mega.nz/#!Q5kmSI7K!1coqsqWf0SIG6ejFoftd1WU8oyBA3Z0y-oTmnRbQW60), [ADB](https://mega.nz/file/dwdWgYZY#J2LV6nNwIj3jnIsPgCpD2dBAKkkRTk45PXfGnJU6nQY), [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device) and MBN file
+* **Additional:** [Microsoft .NET Framework 4.7.1](https://www.microsoft.com/en-US/download/details.aspx?id=56116), [emmcdl](https://mega.nz/#!Q5kmSI7K!1coqsqWf0SIG6ejFoftd1WU8oyBA3Z0y-oTmnRbQW60), [ADB](https://mega.nz/file/dwdWgYZY#J2LV6nNwIj3jnIsPgCpD2dBAKkkRTk45PXfGnJU6nQY), [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device) and [MBN file [only for ZTE Blade V9 Vita]](https://mega.nz/file/NxM11YAY#4R43VEFT74xSywdl9iHYzp9O8S0d0lAZ7V2yxrqcFb0) (or other for your device)
 
 ## How to use it? (or [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=93484684))
 
@@ -25,7 +25,7 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
 ### Preparing to configure the app:
 
-1. Download the necessary files: [emmcdl](https://mega.nz/#!Q5kmSI7K!1coqsqWf0SIG6ejFoftd1WU8oyBA3Z0y-oTmnRbQW60), [ADB](https://mega.nz/file/dwdWgYZY#J2LV6nNwIj3jnIsPgCpD2dBAKkkRTk45PXfGnJU6nQY), MBN file and [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device)
+1. Download the necessary files: [emmcdl](https://mega.nz/#!Q5kmSI7K!1coqsqWf0SIG6ejFoftd1WU8oyBA3Z0y-oTmnRbQW60), [ADB](https://mega.nz/file/dwdWgYZY#J2LV6nNwIj3jnIsPgCpD2dBAKkkRTk45PXfGnJU6nQY), [MBN file [only for ZTE Blade V9 Vita]](https://mega.nz/file/NxM11YAY#4R43VEFT74xSywdl9iHYzp9O8S0d0lAZ7V2yxrqcFb0) (or other for your device) and [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device)
 2. Extract all archives in any places (the main thing is that there are no spaces in the path), it is best to create a folder next to PFT2 (again, without spaces) and throw everything there
 3. Install the drivers
 
@@ -48,7 +48,7 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
       ***Here's how it should be (original photo by [Ambernic](http://t.me/Ampernic_offical)):***
 
-      <img src="https://i.imgur.com/mDxNwWF.png" style="zoom: 67%;" />
+      <img src="https://i.imgur.com/mDxNwWF.png" style="zoom: 60%;" />
 
    2. The COM port should appear in the Device Manager
 
@@ -109,7 +109,7 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
    1. Remove the SIM card and microSD tray
 
-   2. We warm up the phone, and carefully poddevaem cover
+   2. We warm up the phone, and carefully open the cover
       Start from the bottom, then slowly click off the latches starting from the left side, because on the right-the trail of the fingerprint scanner
 
    3. **CAREFULLY** remove the cover (**very carefully, otherwise you will be left without a fingerprint scanner!!!**)

@@ -1,36 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PFT2.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
   <Profiles />
-  <Settings>
-    <Setting Name="DarkMode" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="MBNFile" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="ADB" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="EDL_Code" Type="System.String" Scope="User">
-      <Value Profile="(Default)">0xFE</Value>
-    </Setting>
-    <Setting Name="FDump" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="emmcdl" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="IMGsys" Type="System.String" Scope="User">
-      <Value Profile="(Default)">off</Value>
-    </Setting>
-    <Setting Name="IMGVedro" Type="System.String" Scope="User">
-      <Value Profile="(Default)">off</Value>
-    </Setting>
-    <Setting Name="IMGAll" Type="System.String" Scope="User">
-      <Value Profile="(Default)">off</Value>
-    </Setting>
-    <Setting Name="GUI" Type="System.String" Scope="User">
-      <Value Profile="(Default)">off</Value>
-    </Setting>
-  </Settings>
+  <Settings />
 </SettingsFile>

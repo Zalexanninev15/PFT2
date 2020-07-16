@@ -1,11 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin.Animations;
 using MaterialSkin.Controls;
@@ -45,7 +38,7 @@ namespace PFT2
             }
             if ((materialSingleLineTextField1.Text == "") || (materialSingleLineTextField2.Text == ""))
             {
-                MessageBox.Show("Fill in all the fields!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Fill in one of the fields!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

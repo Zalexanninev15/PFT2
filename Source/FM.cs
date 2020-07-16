@@ -1,16 +1,8 @@
 ﻿using MaterialSkin.Controls;
+using MaterialSkin.Animations;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
 using MaterialSkin;
-using System.Windows.Forms.VisualStyles;
 using System.Diagnostics;
 
 namespace PFT2
@@ -25,7 +17,6 @@ namespace PFT2
         string[] du16 = new string[4];
         string[] du32 = new string[4];
         string[] gapps = new string[4];
-        string theme;
         int c = 10;
         public FM()
         {
@@ -36,17 +27,6 @@ namespace PFT2
         {
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
-            theme = Properties.Settings.Default.DarkMode;
-            if (theme == "")
-            {
-                materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-                materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue600, Primary.Blue700, Primary.Blue500, Accent.Blue200, TextShade.WHITE);
-            }
-            if (theme == "1")
-            {
-                materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
-                materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green100, Accent.Yellow200, TextShade.WHITE);
-            }
             ver[0] = "9"; ver[1] = "11"; ver[2] = "12"; ver[3] = "15.1";
             Android[0] = "8.1"; Android[1] = "8.1"; Android[2] = "8.1"; Android[3] = "8.1";
             info[0] = "NO"; info[1] = "NO"; info[2] = "NO"; info[3] = "http://tinyurl.com/y85sl4m5";

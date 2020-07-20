@@ -39,7 +39,7 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
 ### Flash & Dump:
 
-##### **!!!There should be no "spaces" in the path to PFT2, FDFmini, the file for flash and other files, otherwise all sorts of errors will occur!!!**
+### **!!!There should be no "spaces" in the path to PFT2, FDFmini, the file for flash and other files, otherwise all sorts of errors will occur!!!**
 
 1. Switching the device to firmware mode (EDL) from:
 

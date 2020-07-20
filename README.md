@@ -170,7 +170,7 @@ FDFmini -fdf [Path to FDF file] [Path to new IMG/BIN file] -u
 FDFmini -fdf D:\PFT2_DATA\system.fdf D:\PFT2_DATA\img\system.img -u
 ```
 
-#### Other way:
+#### Other way (tests):
 
 You can also "unarchive" a FDF file with firmware using an archiver that supports the GZip format. After the process is complete, you will only need to add the ".img" extension to the file.
 

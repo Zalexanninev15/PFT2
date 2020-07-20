@@ -17,7 +17,7 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
 ## System requirements
 * **OS:** Windows 7 (SP1)/8/8.1/10
-* **Additional:** [Microsoft .NET Framework 4.7.1](https://www.microsoft.com/en-US/download/details.aspx?id=56116), [emmcdl](https://mega.nz/#!Q5kmSI7K!1coqsqWf0SIG6ejFoftd1WU8oyBA3Z0y-oTmnRbQW60), [ADB](https://mega.nz/file/dwdWgYZY#J2LV6nNwIj3jnIsPgCpD2dBAKkkRTk45PXfGnJU6nQY), [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device) and [MBN file [only for ZTE Blade V9 Vita]](https://mega.nz/file/NxM11YAY#4R43VEFT74xSywdl9iHYzp9O8S0d0lAZ7V2yxrqcFb0) (or other for your device)
+* **Additional:** [Microsoft .NET Framework 4.7.1](https://www.microsoft.com/en-US/download/details.aspx?id=56116), [emmcdl](https://mega.nz/#!Q5kmSI7K!1coqsqWf0SIG6ejFoftd1WU8oyBA3Z0y-oTmnRbQW60), [ADB](https://mega.nz/file/dwdWgYZY#J2LV6nNwIj3jnIsPgCpD2dBAKkkRTk45PXfGnJU6nQY), [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device) and [MBN file [only for ZTE Blade V9 Vita]](https://mega.nz/file/NxM11YAY#4R43VEFT74xSywdl9iHYzp9O8S0d0lAZ7V2yxrqcFb0) (or other for your device), original USB cabel (I don't recommend using magnetic cables)
 
 ## How to use it? (or [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=93484684))
 
@@ -40,9 +40,11 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
 ### Flash & Dump:
 
+##### **!!!There should be no "spaces" in the path to PFT2, FDFmini, the file for flash and other files, otherwise all sorts of errors will occur!!!**
+
 1. Switching the device to firmware mode (EDL) from:
 
-   **a) DFU (only for ZTE Blade V9 Vita and ZTE Blade A7 Vita)**
+   **a) DFU (this manual is provided only for ZTE Blade V9 Vita and ZTE Blade A7 Vita)**
 
    1. Connect the smartphone in DFU mode (connect the cable to the PC and hold all 3 buttons, the red light will light up). 
 
@@ -120,18 +122,19 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
    5. Close the data 2 contacts with tweezers and connect the smartphone to the PC
 
-   6. Go to the instructions for switching to EDL mode using the DFU. Performing **step 1** (but do not pinch the buttons, just look at the COM port in the Device Manager). If you are doing this for the first time, first install the drivers
+   6. Go to the instructions for switching to EDL mode using the DFU. Performing step **1** (but do not pinch the buttons, just look at the COM port in the Device Manager). If you are doing this for the first time, first install the drivers
 
-   7. Repeat **step 2** (DFU)
+   7. Repeat step **2** (DFU)
 
    8. Skip everything else and quickly, but very carefully, start to restore the smartphone firmware (flash partitions, step **3**) of all partitions | Download firmwares (versions 9, 11, 12) for ZTE Blade V9 Vita: [**2/16**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92021946) or [**3/32**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92437481)
 
-### What is the FDF format? (which is used for firmware)
+### What is the FDF format, which is used for flash and create dumps?
 
-FDF (Firmware Data File) is a file format for firmware that was created to replace the DUMP (later BIN and IMG) firmware file format, since it is the best for storing images. In fact, it is a special archive for dumps, which allows you to upload dumps to the hosting/cloud without data loss, without compression to the archive. To work with this format, you need more space than for a normal IMG / BIN dump (the dump is converted to a temporary format for firmware in the device), but the FDF file will be better stored. PFT2 support this format since version **1.3**
+FDF (Firmware Data File) is a file format for firmware that was created to replace firmware file formats (dump, bin, img), since it is the best for storing dumps. In fact, it is a special archive for dumps (more precisely the usual GZip archive (gz)), which allows you to upload dumps to the hosting/cloud without data loss, without compression to the archive. To work with this format, you need more space than for a normal IMG / BIN dump (the dump is converted to a temporary format for firmware in the device), but the FDF file will be better stored. PFT2 support this format since version **[1.3](https://github.com/Zalexanninev15/PFT2/releases/tag/1.3)**
 
-For example: `system.img`  → `system.fdf`, 3.5 GB → 1.4 GB. Temporary files are deleted after work.
-The utility for working with this format and converting IMG/BIN files to it is located in the folder with the PTT2 application called FDFmini (created by Zalexanninev15 and Alexander927).
+For example: `system.img`  → `system.fdf`, 3.5 GB → 1.4 GB. Temporary file(s) are deleted after work.
+
+The utility for working with this format and converting IMG/BIN files to it is located in the folder with the PTT2 application called FDFmini (created by Zalexanninev15 and Alexander927). The utility does not support "spaces" in the path and in the names of the files themselves, and also does not know how to create new folders.
 For normal operation, the "userdata" partition uses regular IMG, because there may be problems with converting too large files.
 
 #### GUI:
@@ -165,7 +168,7 @@ FDFmini -fdf [Path to FDF file] [Path to new IMG/BIN file] -u
 *Example:*
 
 ```
-FDFmini -fdf system.fdf system.img -u
+FDFmini -fdf D:\PFT2_DATA\system.fdf D:\PFT2_DATA\img\system.img -u
 ```
 
 ### Where do I get the firmware from? Getting root and TWRP 
@@ -190,7 +193,8 @@ FDFmini -fdf system.fdf system.img -u
 
  *Notes:*
  *After flashing FDF files (ROOT and/or TWRP), you will need to erase all your data (userdata) from your phone, otherwise you will get a bootloop or they will just !!!encrypt without the possibility of decryption!!! (dump "userdata").*
- *Also, for users of stock firmware version 12 (v12), we make the flash of all partitions (except system and userdata) from the dumps of stock firmware version 11 (v11) (links for each revision of the smartphone above), otherwise grab the bootloop (!!!even if you erase all the data!!!)*
+
+ **Also, for users of stock firmware version 12 (v12), we make the flash of all partitions (except system and userdata) from the dumps of stock firmware version 11 (v11) (links for each revision of the smartphone above), otherwise grab the bootloop (!!!even if you erase all the data!!!)**
 
 ## All Errors of Flasher (emmcdl)
 
@@ -206,8 +210,8 @@ An error may occur due to spaces in the path (folder) to something. You should a
 **Status: 6 The handle is invalid**
 Failure to work with COM port. You should again transfer the smartphone to EDL mode.
 
-*In short, there is a 97% chance that you can fix any problem by re-switching your smartphone to the EDL firmware mode. Another 3% - problems with drivers (for the COM port), "corrupted" dumps for firmware, brick, gaps in the path, missing files. Also, don't forget that PFT2 doesn't support spaces in file paths (or names with them).*
+*In short, there is a 97% chance that you can fix any problem by re-switching your smartphone to the EDL firmware mode. Another 3% - problems with drivers (for the COM port), "corrupted" dumps for firmware, brick, gaps in the path, missing files. Also, don't forget that PFT2 doesn't support "spaces" in file paths (or names with them).*
 
-## Used libraries
+## Used libraries and other code
 * [MaterialSkin](https://github.com/IgnaceMaes/MaterialSkin) ([MIT License](https://github.com/IgnaceMaes/MaterialSkin/blob/master/LICENSE))
-* [System.IO.Compression](https://www.nuget.org/packages/System.IO.Compression/) ([MS-.NET-Library License](https://dotnet.microsoft.com/en/dotnet_library_license.htm))
+* Shadow Fix ([code](https://jailbreakvideo.ru/shadow-and-mouse-move-for-borderless-windows-forms-application) by [XpucT](https://www.youtube.com/channel/UC2CiWFIOjQix4E6WrARzDZg))

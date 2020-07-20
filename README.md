@@ -1,6 +1,5 @@
 # PFT2 | [Official Telegram Channel (RU)](https://t.me/PFT2_Channel)
-## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.16) | [All versions](https://github.com/Zalexanninev15/PFT2/releases)
-## [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip) | [MBN file for ZTE Blade V9 Vita](https://github.com/Zalexanninev15/PFT-Linux/raw/master/tools/emmc.mbn)
+## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.16) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
 
 ## Screenshot
 <img src="https://i.imgur.com/gtchaBJ.png" style="zoom:16;" />
@@ -122,11 +121,11 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
    5. Close the data 2 contacts with tweezers and connect the smartphone to the PC
 
-   6. Go to the instructions for switching to EDL mode using the DFU. Performing step **1** (but do not pinch the buttons, just look at the COM port in the Device Manager). If you are doing this for the first time, first install the drivers
+   6. Go to the instructions for switching to EDL mode using the DFU. Performing **step 1** (but do not pinch the buttons, just look at the COM port in the Device Manager). If you are doing this for the first time, first install the drivers
 
-   7. Repeat step **2** (DFU)
+   7. Repeat **step 2** (DFU)
 
-   8. Skip everything else and quickly, but very carefully, start to restore the smartphone firmware (flash partitions, step **3**) of all partitions | Download firmwares (versions 9, 11, 12) for ZTE Blade V9 Vita: [**2/16**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92021946) or [**3/32**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92437481)
+   8. Skip everything else and quickly, but very carefully, start to restore the smartphone firmware (flash partitions, **step 3**) of all partitions | Download firmwares (versions 9, 11, 12) for ZTE Blade V9 Vita: [**2/16**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92021946) or [**3/32**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92437481)
 
 ### What is the FDF format, which is used for flash and create dumps?
 
@@ -170,6 +169,12 @@ FDFmini -fdf [Path to FDF file] [Path to new IMG/BIN file] -u
 ```
 FDFmini -fdf D:\PFT2_DATA\system.fdf D:\PFT2_DATA\img\system.img -u
 ```
+
+#### Other way:
+
+You can also "unarchive" a FDF file with firmware using an archiver that supports the GZip format. After the process is complete, you will only need to add the ".img" extension to the file.
+
+To create an FDF file, I still recommend using FDFmini, so that there are no problems, but you can try to create an archive in a normal GZip archiver, the main thing is to first remove the extension from the current dump file, so that there are no problems during firmware.
 
 ### Where do I get the firmware from? Getting root and TWRP 
 

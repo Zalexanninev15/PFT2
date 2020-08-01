@@ -4,6 +4,9 @@
 ## Screenshot
 <img src="https://i.imgur.com/gtchaBJ.png" style="zoom:16;" />
 
+## Supported 💰 this project
+* [SnowCloudyPie](https://4pda.ru/forum/index.php?showuser=1506787)
+
 ## Description
 Application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphone on Qualcomm chipset (like as emmcdl tool) | [Commands in BAT files](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands%20in%20BAT%20files%20(PFT2_Flasher).md)
 

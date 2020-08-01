@@ -95,7 +95,7 @@
             this.materialRadioButton2.AutoSize = true;
             this.materialRadioButton2.Depth = 0;
             this.materialRadioButton2.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialRadioButton2.Location = new System.Drawing.Point(208, 248);
+            this.materialRadioButton2.Location = new System.Drawing.Point(207, 248);
             this.materialRadioButton2.Margin = new System.Windows.Forms.Padding(0);
             this.materialRadioButton2.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialRadioButton2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -126,7 +126,7 @@
             this.materialRadioButton1.AutoSize = true;
             this.materialRadioButton1.Depth = 0;
             this.materialRadioButton1.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialRadioButton1.Location = new System.Drawing.Point(35, 248);
+            this.materialRadioButton1.Location = new System.Drawing.Point(34, 248);
             this.materialRadioButton1.Margin = new System.Windows.Forms.Padding(0);
             this.materialRadioButton1.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialRadioButton1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -189,7 +189,7 @@
             this.materialRadioButton3.AutoSize = true;
             this.materialRadioButton3.Depth = 0;
             this.materialRadioButton3.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialRadioButton3.Location = new System.Drawing.Point(110, 248);
+            this.materialRadioButton3.Location = new System.Drawing.Point(109, 248);
             this.materialRadioButton3.Margin = new System.Windows.Forms.Padding(0);
             this.materialRadioButton3.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialRadioButton3.MouseState = MaterialSkin.MouseState.HOVER;
@@ -255,7 +255,7 @@
             this.materialRaisedButton1.TabIndex = 0;
             this.materialRaisedButton1.Text = "Do it!";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_ClickAsync);
             // 
             // materialRaisedButton3
             // 
@@ -354,7 +354,7 @@
             this.materialRadioButton4.AutoSize = true;
             this.materialRadioButton4.Depth = 0;
             this.materialRadioButton4.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialRadioButton4.Location = new System.Drawing.Point(279, 248);
+            this.materialRadioButton4.Location = new System.Drawing.Point(278, 248);
             this.materialRadioButton4.Margin = new System.Windows.Forms.Padding(0);
             this.materialRadioButton4.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialRadioButton4.MouseState = MaterialSkin.MouseState.HOVER;
@@ -367,9 +367,14 @@
             this.materialRadioButton4.UseVisualStyleBackColor = true;
             this.materialRadioButton4.CheckedChanged += new System.EventHandler(this.materialRadioButton4_CheckedChanged);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.Title = "File for work";
+            // 
             // saveFileDialog1
             // 
             this.saveFileDialog1.FilterIndex = 3;
+            this.saveFileDialog1.Title = "File for dump";
             // 
             // materialRaisedButton7
             // 
@@ -436,7 +441,7 @@
             this.materialRaisedButton10.Text = "Create full dump";
             this.materialRaisedButton10.UseVisualStyleBackColor = true;
             this.materialRaisedButton10.Visible = false;
-            this.materialRaisedButton10.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            this.materialRaisedButton10.Click += new System.EventHandler(this.materialRaisedButton1_ClickAsync);
             // 
             // materialRaisedButton12
             // 

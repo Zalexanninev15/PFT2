@@ -1,8 +1,8 @@
 # PFT2 | [Official Telegram Channel (RU)](https://t.me/PFT2_Channel)
-## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.17) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
+## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.17.1) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
 
 ## Screenshot
-<img src="https://i.imgur.com/gtchaBJ.png" style="zoom:16;" />
+<img src="https://i.imgur.com/pIAJZVX.png" style="zoom:16;" />
 
 ## Supported 💰 this project
 * [SnowCloudyPie](https://4pda.ru/forum/index.php?showuser=1506787)
@@ -38,7 +38,7 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
 *You can open advanced settings by entering "more" (without quotes) in the text field for EDL code.*
 
-![](https://i.imgur.com/ZKH2asb.jpg)
+![](https://i.imgur.com/ukvCzIF.png)
 
 ### Flash & Dump:
 
@@ -141,13 +141,13 @@ For normal operation, the "userdata" partition uses regular IMG, because there m
 
 #### GUI:
 
-You can use the official GUI. To do this, activate it in the advanced settings *(you can open advanced settings by entering "more" (without quotes) in the text field for EDL code)*. Next, in the same field, enter "gui" (without quotes) and use :)
+You can use the official GUI. To do this, activate it in the advanced settings *(you can open advanced settings by entering "more" (without quotes) in the text field for EDL code)*. Next, in the same field, enter "con" (without quotes) and use :)
 
-![](https://i.imgur.com/nev4qiW.jpg)
+![](https://i.imgur.com/4f0ZXPb.png)
 
 #### CMD:
 
-**To convert a FDF file, use the command:**
+**To convert IMG to FDF use the command:**
 
 ```
 FDFmini -img [Path to IMG/BIN file] [Path to new FDF file] -c
@@ -161,7 +161,7 @@ FDFmini -img boot.img boot.fdf -c
 
 *If you have more than 2 IMG files to convert to FDF, and you don't want to waste time typing commands, then extract the contents of [this](https://github.com/Zalexanninev15/PFT2/raw/master/IMG_to_FDF.zip) archive to the folder with dumps. Run the batch file and wait...*
 
-**To convert to an IMG file use the command:**
+**To convert FDF to IMG use the command:**
 
 ```
 FDFmini -fdf [Path to FDF file] [Path to new IMG/BIN file] -u
@@ -187,7 +187,7 @@ To create an FDF file, I still recommend using FDFmini, so that there are no pro
 * [Unofficial, verified](https://4pda.ru/forum/index.php?act=findpost&pid=85228170&anchor=Spoil-85228170-3)
 * [Unofficial, many unverified and not working](https://4pda.ru/forum/index.php?showtopic=892755) (**only type ARM64-A**)
 
-**About ROOT and TWRP:**
+#### **About ROOT and TWRP:**
 
 - root - incomplete due to a blocked bootloader (no access to system and vendor)
   1. Download patched boot and Magisk Manager: https://mega.nz/file/B5MxQSJY#mAbsKzcTr28nPVMyHQqJjepjmai3fA9Mj2tLQ5jT9pM
@@ -203,6 +203,36 @@ To create an FDF file, I still recommend using FDFmini, so that there are no pro
  *After flashing FDF files (ROOT and/or TWRP), you will need to erase all your data (userdata) from your phone, otherwise you will get a bootloop or they will just !!!encrypt without the possibility of decryption!!! (dump "userdata").*
 
  **Also, for users of stock firmware version 12 (v12), we make the flash of all partitions (except system and userdata) from the dumps of stock firmware version 11 (v11) (links for each revision of the smartphone above), otherwise grab the bootloop (!!!even if you erase all the data!!!)**
+
+#### Modifying image of the "system" partition
+
+* *Unpacking an image*
+
+You can unpack the image using the FDFmini utility (starting from **version 1.4**). This utility will use another utility called "ImgExtractor" (by And_PDA).
+
+**For FDF file:**
+
+```
+FDFmini -fdf [Path to FDF file] [Full path to the new folder] -system
+```
+
+*Example:* 
+
+```
+FDFmini -fdf system.fdf D:\PFT2_DATA\UnSystemFDF -system
+```
+
+**For IMG file:**
+
+```
+FDFmini -img [Path to IMG/BIN file] [Full path to the new folder] -system
+```
+
+*Example:* 
+
+```
+FDFmini -img system.img D:\PFT2_DATA\UnSystemIMG -system
+```
 
 ## All Errors of Flasher (emmcdl)
 
@@ -220,6 +250,8 @@ Failure to work with COM port. You should again transfer the smartphone to EDL m
 
 *In short, there is a 97% chance that you can fix any problem by re-switching your smartphone to the EDL firmware mode. Another 3% - problems with drivers (for the COM port), "corrupted" dumps for firmware, brick, gaps in the path, missing files. Also, don't forget that PFT2 doesn't support "spaces" in file paths (or names with them).*
 
-## Used libraries and other code
-* [MaterialSkin](https://github.com/IgnaceMaes/MaterialSkin) ([MIT License](https://github.com/IgnaceMaes/MaterialSkin/blob/master/LICENSE))
+## Used libraries and other
+* [MaterialSkin](https://github.com/IgnaceMaes/MaterialSkin) ([MIT License](https://github.com/IgnaceMaes/MaterialSkin/blob/master/LICENSE), by [Ignace Maes](https://github.com/IgnaceMaes))
 * Shadow Fix ([code](https://jailbreakvideo.ru/shadow-and-mouse-move-for-borderless-windows-forms-application) by [XpucT](https://www.youtube.com/channel/UC2CiWFIOjQix4E6WrARzDZg))
+* System.IO.Compression ([MS-.NET-Library License](https://go.microsoft.com/fwlink/?LinkId=329770))
+* ImgExtractor (by And_PDA)

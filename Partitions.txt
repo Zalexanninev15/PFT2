@@ -1,4 +1,4 @@
-# Partition Number | Partition Name | Start Section | Number Sections
+Partition Number | Partition Name | Start Section | Number Sections
 
 1. sbl1 16384 1024
 2. sbl1bak 17408 1024

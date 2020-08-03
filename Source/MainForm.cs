@@ -561,12 +561,7 @@ namespace PFT2
                     f.Show();
                 }
             }
-            if (materialSingleLineTextField9.Text == "github")
-            {
-            	materialSingleLineTextField9.Text = edl;
-            	Process.Start("https://github.com/Zalexanninev15/PFT2");
-            }
-            if (materialSingleLineTextField9.Text == "gui")
+            if (materialSingleLineTextField9.Text == "con")
             {
                 string GUI;
                 using (RegistryKey reg = Registry.CurrentUser.CreateSubKey(@"Software\Zalexanninev15\PFT2\More"))
@@ -578,7 +573,7 @@ namespace PFT2
                     materialSingleLineTextField9.Text = edl;
                     foreach (Form f in Application.OpenForms)
                     {
-                        if (f.Name == "FDFminiGUI")
+                        if (f.Name == "FDFminiConverter")
                         {
                             form2 = 1;
                         }
@@ -586,7 +581,7 @@ namespace PFT2
                     }
                     if (form2 == 0)
                     {
-                        f = new FDFminiGUI();
+                        f = new FDFminiConverter();
                         f.Show();
                     }
                 }

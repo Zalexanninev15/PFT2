@@ -109,9 +109,9 @@
             this.materialCheckBox1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCheckBox1.Name = "materialCheckBox1";
             this.materialCheckBox1.Ripple = true;
-            this.materialCheckBox1.Size = new System.Drawing.Size(172, 30);
+            this.materialCheckBox1.Size = new System.Drawing.Size(189, 30);
             this.materialCheckBox1.TabIndex = 5;
-            this.materialCheckBox1.Text = "Enable GUI for FDFmini ";
+            this.materialCheckBox1.Text = "Enable FDFmini Converter";
             this.materialCheckBox1.UseVisualStyleBackColor = true;
             this.materialCheckBox1.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 

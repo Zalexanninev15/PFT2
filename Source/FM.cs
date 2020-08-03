@@ -32,8 +32,8 @@ namespace PFT2
             info[0] = "NO"; info[1] = "NO"; info[2] = "NO"; info[3] = "http://tinyurl.com/y85sl4m5";
             gapps[0] = "YES"; gapps[1] = "YES"; gapps[2] = "YES"; gapps[3] = "NO/YES";
             bugs[0] = "NO"; bugs[1] = "NO"; bugs[2] = "YES"; bugs[3] = "YES";
-            du16[0] = "http://tinyurl.com/yco5cfxp"; du16[1] = "http://tinyurl.com/yco5cfxp"; du16[2] = "http://tinyurl.com/yco5cfxp"; du16[3] = "http://tinyurl.com/y8f6po87";
-            du32[0] = "http://tinyurl.com/yco5cfxp"; du32[1] = "http://tinyurl.com/yco5cfxp"; du32[2] = "http://tinyurl.com/yco5cfxp"; du32[3] = "http://tinyurl.com/y8f6po87";
+            du16[0] = "http://tinyurl.com/y4three7"; du16[1] = "http://tinyurl.com/yxuuseax"; du16[2] = "http://tinyurl.com/y6byyone"; du16[3] = "http://tinyurl.com/y8f6po87";
+            du32[0] = "http://tinyurl.com/y2fs8z63"; du32[1] = "http://tinyurl.com/y5ebcaws"; du32[2] = "http://tinyurl.com/y6zcweux"; du32[3] = "http://tinyurl.com/y8f6po87";
         }
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)

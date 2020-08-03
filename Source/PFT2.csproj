@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>winusb_104012.ico</ApplicationIcon>
+    <ApplicationIcon>PFT2.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -57,10 +57,11 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>PFT2.Program</StartupObject>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -99,11 +100,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FDFminiGUI.cs">
+    <Compile Include="FDFminiConverter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FDFminiGUI.Designer.cs">
-      <DependentUpon>FDFminiGUI.cs</DependentUpon>
+    <Compile Include="FDFminiConverter.Designer.cs">
+      <DependentUpon>FDFminiConverter.cs</DependentUpon>
     </Compile>
     <Compile Include="License.cs">
       <SubType>Form</SubType>
@@ -137,8 +138,8 @@
     <Compile Include="FM.Designer.cs">
       <DependentUpon>FM.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FDFminiGUI.resx">
-      <DependentUpon>FDFminiGUI.cs</DependentUpon>
+    <EmbeddedResource Include="FDFminiConverter.resx">
+      <DependentUpon>FDFminiConverter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="License.resx">
       <DependentUpon>License.cs</DependentUpon>
@@ -183,7 +184,7 @@
     <None Include="Resources\winusb_104012.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="winusb_104012.ico" />
+    <Content Include="PFT2.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

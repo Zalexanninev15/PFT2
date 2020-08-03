@@ -206,7 +206,7 @@ To create an FDF file, I still recommend using FDFmini, so that there are no pro
 
 #### Modifying image of the "system" partition
 
-* *Unpacking an image*
+* ***Unpacking an image***
 
 You can unpack the image using the FDFmini utility (starting from **version 1.4**). This utility will use another utility called "ImgExtractor" (by And_PDA).
 

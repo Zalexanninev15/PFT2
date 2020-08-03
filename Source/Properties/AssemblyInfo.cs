@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCompany("Zalexanninev15")]
 [assembly: AssemblyProduct("PFT2")]
 [assembly: AssemblyCopyright("Copyright©  2020, Zalexanninev15")]
-[assembly: AssemblyTrademark("PFT2")]
+[assembly: AssemblyTrademark("PFT2 (2020)")]
 [assembly: AssemblyCulture("")]
 
 // Установка значения False для параметра ComVisible делает типы в этой сборке невидимыми
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // Можно задать все значения или принять номера сборки и редакции по умолчанию 
 // используя "*", как показано ниже:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.17.0.0")]
-[assembly: AssemblyFileVersion("1.17.0.0")]
+[assembly: AssemblyVersion("1.17.1.0")]
+[assembly: AssemblyFileVersion("1.17.1.0")]

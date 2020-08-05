@@ -63,19 +63,23 @@ namespace PFT2
         private void materialRaisedButton7_Click(object sender, EventArgs e)
         {
             openFileDialog1.FileName = "";
-            if (materialCheckBox1.Checked == true) { openFileDialog1.Filter = "IMG|*.img"; }
-            if (materialCheckBox2.Checked == true) { openFileDialog1.Filter = "FDF|*.fdf"; }
+            if (materialCheckBox1.Checked == true)
+                openFileDialog1.Filter = "IMG|*.img";
+            if (materialCheckBox2.Checked == true)
+            openFileDialog1.Filter = "FDF|*.fdf"; 
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
-            materialSingleLineTextField1.Text = openFileDialog1.FileName;
+                materialSingleLineTextField1.Text = openFileDialog1.FileName;
         }
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             saveFileDialog1.FileName = "";
-            if (materialCheckBox2.Checked == true) { saveFileDialog1.Filter = "IMG|*.img"; }
-            if (materialCheckBox1.Checked == true) { saveFileDialog1.Filter = "FDF|*.fdf"; }
+            if (materialCheckBox2.Checked == true)
+                saveFileDialog1.Filter = "IMG|*.img"; 
+            if (materialCheckBox1.Checked == true)
+                saveFileDialog1.Filter = "FDF|*.fdf"; 
             if (saveFileDialog1.ShowDialog() == DialogResult.Cancel) return;
-            materialSingleLineTextField2.Text = saveFileDialog1.FileName;
+                materialSingleLineTextField2.Text = saveFileDialog1.FileName;
         }
     }
 }

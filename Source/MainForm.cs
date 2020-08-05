@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.IO.Ports;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
@@ -143,6 +144,44 @@ namespace PFT2
                 materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green100, Accent.Yellow200, TextShade.WHITE);
                 b_w.Checked = true;
             }
+            try
+            {
+                string nver = "";
+                WebClient wc = new WebClient();
+                wc.DownloadFile("https://raw.githubusercontent.com/Zalexanninev15/PFT2/master/UpdateData/last-ver.txt", @Application.StartupPath + @"\last_ver.txt");
+                if (File.Exists(@Application.StartupPath + @"\last_ver.txt"))
+                {
+                    using (StreamReader str = new StreamReader(@Application.StartupPath + @"\last_ver.txt", Encoding.UTF8))
+                    {
+                        for (int i = 1; i == 1; i++)
+                        {
+                            nver = str.ReadLine();
+                        }
+                    }
+                    File.Delete(@Application.StartupPath + @"\last_ver.txt");
+                }
+                if (Application.ProductVersion != nver)
+                {
+                    DialogResult result = MessageBox.Show("Want to go to version " + nver + " page?", "New version detected!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        wc.DownloadFile("https://raw.githubusercontent.com/Zalexanninev15/PFT2/master/UpdateData/last-ver-url.txt", @Application.StartupPath + @"\last_ver_url.txt");
+                        if (File.Exists(@Application.StartupPath + @"\last_ver_url.txt"))
+                        {
+                            using (StreamReader str = new StreamReader(@Application.StartupPath + @"\last_ver_url.txt", Encoding.UTF8))
+                            {
+                                for (int i = 1; i == 1; i++)
+                                {
+                                    nver = str.ReadLine();
+                                }
+                            }
+                            Process.Start(nver);
+                            File.Delete(@Application.StartupPath + @"\last_ver_url.txt");
+                        }
+                    }
+                }
+            }
+            catch { }
         }
 
         void materialRaisedButton1_ClickAsync(object sender, EventArgs e)
@@ -153,7 +192,14 @@ namespace PFT2
                 fdump = Convert.ToString(reg.GetValue("FullDump_Folder"));
                 mbn = Convert.ToString(reg.GetValue("MBN"));
             }
-            Task.Run(() => flasher());
+            if (fdump != "")
+            {
+                Task.Run(() => flasher());
+            }
+            else
+            {
+                MessageBox.Show("Folder for Full Dump is missing!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         async void flasher()
@@ -181,26 +227,19 @@ namespace PFT2
                         {
                             if (materialRadioButton3.Checked == true) // Full Dump
                             {
-                                if (fdump == "")
-                                {
-                                    MessageBox.Show("Folder for Full Dump is missing!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                }
-                                else
-                                {
                                     Process process = new Process();
                                     process.StartInfo.FileName = "cmd.exe";
-                                    process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\scripts\\full_dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump + " " + fdump + " " + fdump + " " + fdump;
+                                    process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\full_dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump + " " + fdump + " " + fdump + " " + fdump;
                                     process.Start();
                                     process.WaitForExit();
                                     MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                }
                             }
                             if (materialRadioButton2.Checked == true) // Flash
                             {
                                 if (choose == "1") { FDFminiFlash(); }
                                 Process process = new Process();
                                 process.StartInfo.FileName = "cmd.exe";
-                                process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\scripts\\flash.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
+                                process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\flash.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
                                 process.Start();
                                 process.WaitForExit();
                                 try { File.Delete(temp); } catch { MessageBox.Show("It is not possible to interact with the device or with file for flash!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
@@ -211,7 +250,7 @@ namespace PFT2
                             {
                                 Process process = new Process();
                                 process.StartInfo.FileName = "cmd.exe";
-                                process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\scripts\\dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
+                                process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
                                 process.Start();
                                 process.WaitForExit();
                                 if (choose == "1") { FDFminiDump(); }
@@ -221,7 +260,7 @@ namespace PFT2
                             {
                                 Process process = new Process();
                                 process.StartInfo.FileName = "cmd.exe";
-                                process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\scripts\\dgfrp.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn;
+                                process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\dgfrp.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn;
                                 process.Start();
                                 MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
@@ -365,7 +404,14 @@ namespace PFT2
             {
                 fdump = Convert.ToString(reg.GetValue("FullDump_Folder"));
             }
-            Process.Start("explorer", fdump);
+            if (fdump != "")
+            {
+                Process.Start("explorer", fdump);
+            }
+            else
+            {
+                MessageBox.Show("Folder for Full Dump is missing!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void materialSingleLineTextField4_TextChanged(object sender, EventArgs e)
@@ -419,7 +465,7 @@ namespace PFT2
             openFileDialog1.FileName = "";
             openFileDialog1.Filter = "APK|*.apk";
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
-            materialSingleLineTextField5.Text = openFileDialog1.FileName;
+                materialSingleLineTextField5.Text = openFileDialog1.FileName;
         }
 
         private void materialRaisedButton15_Click(object sender, EventArgs e)
@@ -439,7 +485,7 @@ namespace PFT2
             openFileDialog1.FileName = "";
             openFileDialog1.Filter = "emmcdl file|emmcdl.exe";
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
-            materialSingleLineTextField7.Text = openFileDialog1.FileName;
+                materialSingleLineTextField7.Text = openFileDialog1.FileName;
         }
 
         private void materialRaisedButton21_Click(object sender, EventArgs e)
@@ -447,7 +493,7 @@ namespace PFT2
             openFileDialog1.FileName = "";
             openFileDialog1.Filter = "Flasher file|*.mbn";
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
-            materialSingleLineTextField11.Text = openFileDialog1.FileName;
+                materialSingleLineTextField11.Text = openFileDialog1.FileName;
         }
 
         private void materialRaisedButton20_Click(object sender, EventArgs e)
@@ -455,7 +501,7 @@ namespace PFT2
             openFileDialog1.FileName = "";
             openFileDialog1.Filter = "ADB file|adb.exe";
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
-            materialSingleLineTextField10.Text = openFileDialog1.FileName;
+                materialSingleLineTextField10.Text = openFileDialog1.FileName;
         }
 
         private void materialRaisedButton19_Click(object sender, EventArgs e)

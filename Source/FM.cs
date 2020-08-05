@@ -56,17 +56,20 @@ namespace PFT2
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (c != 10) { Process.Start(du16[c]); }
+            if (c != 10)
+                Process.Start(du16[c]); 
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (c != 10) { Process.Start(du32[c]); }
+            if (c != 10)
+                Process.Start(du32[c]); 
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if ((c != 10) && (info[c] != "NO")) { Process.Start(info[c]); }
+            if ((c != 10) && (info[c] != "NO"))
+                Process.Start(info[c]);
         }
 
         private void materialRaisedButton2_Click(object sender, EventArgs e)

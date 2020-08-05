@@ -360,7 +360,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 335);
+            this.ClientSize = new System.Drawing.Size(577, 335);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel1);

@@ -303,7 +303,7 @@
             this.materialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton6.Name = "materialRaisedButton6";
             this.materialRaisedButton6.Primary = true;
-            this.materialRaisedButton6.Size = new System.Drawing.Size(221, 38);
+            this.materialRaisedButton6.Size = new System.Drawing.Size(219, 38);
             this.materialRaisedButton6.TabIndex = 21;
             this.materialRaisedButton6.Text = "about";
             this.materialRaisedButton6.UseVisualStyleBackColor = true;
@@ -446,11 +446,11 @@
             // materialRaisedButton12
             // 
             this.materialRaisedButton12.Depth = 0;
-            this.materialRaisedButton12.Location = new System.Drawing.Point(248, 462);
+            this.materialRaisedButton12.Location = new System.Drawing.Point(246, 462);
             this.materialRaisedButton12.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton12.Name = "materialRaisedButton12";
             this.materialRaisedButton12.Primary = true;
-            this.materialRaisedButton12.Size = new System.Drawing.Size(207, 38);
+            this.materialRaisedButton12.Size = new System.Drawing.Size(209, 38);
             this.materialRaisedButton12.TabIndex = 34;
             this.materialRaisedButton12.Text = "Firmwares Manager";
             this.materialRaisedButton12.UseVisualStyleBackColor = true;
@@ -862,7 +862,7 @@
             this.materialLabel18.Depth = 0;
             this.materialLabel18.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel18.Location = new System.Drawing.Point(656, 70);
+            this.materialLabel18.Location = new System.Drawing.Point(654, 70);
             this.materialLabel18.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel18.Name = "materialLabel18";
             this.materialLabel18.Size = new System.Drawing.Size(64, 19);

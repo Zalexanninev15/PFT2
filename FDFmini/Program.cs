@@ -10,7 +10,7 @@ namespace FDFmini
 
         static void Main(string[] args)
         {
-            Console.Title = "FDFmini [Version 1.4]";
+            Console.Title = "FDFmini [Version 1.4.1]";
             if (args.Length != 0) 
             {
                 try
@@ -36,7 +36,7 @@ namespace FDFmini
             else
             {
                 Console.WriteLine();
-                Console.WriteLine("FDFmini v1.4 by Zalexanninev15, Alexander927 and And_PDA (ImgExtractor)");
+                Console.WriteLine("FDFmini v1.4.1 by Zalexanninev15, Alexander927 and And_PDA (ImgExtractor)");
                 Console.WriteLine();
                 Console.WriteLine("FDFmini [Argument 1] [path_to_file] [Argument 2] [Argument 3]");
                 Console.WriteLine();
@@ -92,6 +92,10 @@ namespace FDFmini
             {
                 File.Delete(@Environment.GetFolderPath(Environment.SpecialFolder.Templates) + @"\ImgExtractor.exe");
             }
+            if (File.Exists(@targetDir + "_statfile.txt"))
+            {
+                File.Move(@targetDir + "_statfile.txt", @targetDir + ".log");
+            }
             Console.WriteLine("OK!");
         }
 
@@ -113,10 +117,6 @@ namespace FDFmini
             File.WriteAllBytes(Environment.GetFolderPath(Environment.SpecialFolder.Templates) + @"\ImgExtractor.exe", Properties.Resources.ImgExtractor);
             Console.WriteLine("OK!");
             Console.WriteLine("Unpacking IMG file to the folder...");
-            if (File.Exists(@compressedFile + ".img"))
-            {
-                File.Delete(@compressedFile + ".img");
-            }
             ProcessStartInfo psiOpt = new ProcessStartInfo(@Environment.GetFolderPath(Environment.SpecialFolder.Templates) + @"\ImgExtractor.exe", @compressedFile + ".img" + " " + @targetDir + " -i");
             Process procCommand = Process.Start(psiOpt);
             procCommand.WaitForExit();
@@ -129,6 +129,10 @@ namespace FDFmini
             if (File.Exists(@Environment.GetFolderPath(Environment.SpecialFolder.Templates) + @"\ImgExtractor.exe"))
             {
                 File.Delete(@Environment.GetFolderPath(Environment.SpecialFolder.Templates) + @"\ImgExtractor.exe");
+            }
+            if (File.Exists(@targetDir + "_statfile.txt"))
+            {
+                File.Move(@targetDir + "_statfile.txt", @targetDir + ".log");
             }
             Console.WriteLine("OK!");
         }

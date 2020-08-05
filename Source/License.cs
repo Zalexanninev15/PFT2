@@ -13,6 +13,7 @@ namespace PFT2
 
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
+            this.ControlBox = false;
         }
 
         private void materialRaisedButton10_Click(object sender, EventArgs e)

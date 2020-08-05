@@ -30,29 +30,17 @@ namespace PFT2
                     reg.SetValue("IMG_All", "off");
                 }
                 if (checkBox1.Checked == true)
-                {
                     reg.SetValue("IMG_System", "on");
-                }
                 if (checkBox1.Checked == false)
-                {
                     reg.SetValue("IMG_System", "off");
-                }
                 if (checkBox4.Checked == true)
-                {
                     reg.SetValue("IMG_Vendor", "on");
-                }
                 if (checkBox4.Checked == false)
-                {
                     reg.SetValue("IMG_Vendor", "off");
-                }
                 if (materialCheckBox1.Checked == true)
-                {
                     reg.SetValue("GUI", "on");
-                }
                 if (materialCheckBox1.Checked == false)
-                {
                     reg.SetValue("GUI", "off");
-                }
             }
         }
 
@@ -68,12 +56,16 @@ namespace PFT2
                 IMG_All = Convert.ToString(reg.GetValue("IMG_All"));
                 GUI = Convert.ToString(reg.GetValue("GUI"));
             }
-            if (IMG_All == "") { IMG_All = "off"; }
+            if (IMG_All == "")
+                IMG_All = "off"; 
             if (IMG_All == "on") { checkBox5.Checked = true; checkBox4.Checked = true; checkBox1.Checked = true; checkBox4.Enabled = false; checkBox1.Enabled = false; }
             if (IMG_All == "off") { checkBox5.Checked = false; checkBox4.Checked = false; checkBox1.Checked = false; checkBox4.Enabled = true; checkBox1.Enabled = true; }
-            if (IMG_System == "on") { checkBox1.Checked = true; }
-            if (IMG_Vendor == "on") { checkBox4.Checked = true; }
-            if (GUI == "on") { materialCheckBox1.Checked = true; }
+            if (IMG_System == "on")
+                checkBox1.Checked = true;
+            if (IMG_Vendor == "on")
+                checkBox4.Checked = true; 
+            if (GUI == "on")
+                materialCheckBox1.Checked = true;
         }
 
         private void checkBox5_CheckedChanged(object sender, EventArgs e)

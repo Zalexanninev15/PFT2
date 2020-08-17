@@ -224,7 +224,7 @@ namespace PFT2
                                     {
                                        Process process = new Process();
                                        process.StartInfo.FileName = "cmd.exe";
-                                       process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\full_dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump + " " + fdump + " " + fdump + " " + fdump;
+                                       process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\full_dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump + " " + fdump + " " + fdump + " " + fdump;
                                        process.Start();
                                        process.WaitForExit();
                                        MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -239,7 +239,7 @@ namespace PFT2
                                 if (choose == 1) { FDFminiFlash(); }
                                 Process process = new Process();
                                 process.StartInfo.FileName = "cmd.exe";
-                                process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\flash.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
+                                process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\flash.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
                                 process.Start();
                                 process.WaitForExit();
                                 if (choose == 1) 
@@ -253,7 +253,7 @@ namespace PFT2
                             {
                                 Process process = new Process();
                                 process.StartInfo.FileName = "cmd.exe";
-                                process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
+                                process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
                                 process.Start();
                                 process.WaitForExit();
                                 if (choose == 1) { FDFminiDump(); }
@@ -263,7 +263,7 @@ namespace PFT2
                             {
                                 Process process = new Process();
                                 process.StartInfo.FileName = "cmd.exe";
-                                process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\dgfrp.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn;
+                                process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\dgfrp.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn;
                                 process.Start();
                                 MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
@@ -305,7 +305,7 @@ namespace PFT2
                 {
                     Process process = new Process();
                     process.StartInfo.FileName = "cmd.exe";
-                    process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\scripts\\edl.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + code;
+                    process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\edl.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + code;
                     process.Start();
                     process.WaitForExit();
                     materialLabel8.Text = "YES";
@@ -325,7 +325,7 @@ namespace PFT2
             {
                 Process process1 = new Process();
                 process1.StartInfo.FileName = "cmd.exe";
-                process1.StartInfo.Arguments = "/C " + adbp + " reboot edl";
+                process1.StartInfo.Arguments = "/C " + @adbp + " reboot edl";
                 process1.Start();
                 process1.WaitForExit();
                 Thread.Sleep(8000);
@@ -349,13 +349,13 @@ namespace PFT2
                 IMG_Vendor = reg.GetValue("IMG_Vendor").ToString();
                 IMG_All = reg.GetValue("IMG_All").ToString();
             }
-            if (materialRadioButton1.Checked == true)  //Dump (Save file)
+            if (materialRadioButton1.Checked == true)  // Dump (Save file)
             {
                 saveFileDialog1.FileName = materialSingleLineTextField1.Text;
                 if ((materialSingleLineTextField1.Text == "userdata") || (((IMG_System == "on") && (materialSingleLineTextField1.Text == "system")) || ((IMG_Vendor == "on") && (materialSingleLineTextField1.Text == "vendor")) || (IMG_All == "on")))
                 {
                     saveFileDialog1.Filter = "IMG|*.img";
-					choose = 0;
+		    choose = 0;
                 }
                 else
                 {
@@ -367,13 +367,13 @@ namespace PFT2
                 if (choose == 1) { temp = saveFileDialog1.FileName + ".temp"; }
                 else { temp = saveFileDialog1.FileName; }
             }
-            if (materialRadioButton2.Checked == true) //Flash (Open file)
+            if (materialRadioButton2.Checked == true) // Flash (Open file)
             {
                 openFileDialog1.FileName = materialSingleLineTextField1.Text;
                 if ((materialSingleLineTextField1.Text == "userdata") || (((IMG_System == "on") && (materialSingleLineTextField1.Text == "system")) || ((IMG_Vendor == "on") && (materialSingleLineTextField1.Text == "vendor")) || (IMG_All == "on")))
                 {
                     openFileDialog1.Filter = "IMG|*.img";
-					choose = 0;
+		    choose = 0;
                 }
                 else
                 {
@@ -669,7 +669,7 @@ namespace PFT2
         {
             Process FDFmini = new Process();
             FDFmini.StartInfo.FileName = "cmd.exe";
-            FDFmini.StartInfo.Arguments = "/C " + Application.StartupPath + "\\FDFmini.exe " + "-img" + " " + temp + " " + materialSingleLineTextField2.Text + " " + "-c";
+            FDFmini.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\FDFmini.exe " + "-img" + " " + temp + " " + materialSingleLineTextField2.Text + " " + "-c";
             FDFmini.Start();
             FDFmini.WaitForExit();
             File.Delete(temp);
@@ -680,7 +680,7 @@ namespace PFT2
         {
             Process FDFmini = new Process();
             FDFmini.StartInfo.FileName = "cmd.exe";
-            FDFmini.StartInfo.Arguments = "/C " + Application.StartupPath + "\\FDFmini.exe " + "-fdf" + " " + materialSingleLineTextField2.Text + " " + temp + " " + "-u";
+            FDFmini.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\FDFmini.exe " + "-fdf" + " " + materialSingleLineTextField2.Text + " " + temp + " " + "-u";
             FDFmini.Start();
             FDFmini.WaitForExit();
         }
@@ -695,7 +695,7 @@ namespace PFT2
             {
                 Process process1 = new Process();
                 process1.StartInfo.FileName = "cmd.exe";
-                process1.StartInfo.Arguments = "/C " + adbp + " " + command;
+                process1.StartInfo.Arguments = "/C " + @adbp + " " + command;
                 process1.StartInfo.RedirectStandardOutput = true;
                 process1.StartInfo.UseShellExecute = false;
                 process1.StartInfo.CreateNoWindow = true;

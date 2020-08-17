@@ -192,14 +192,7 @@ namespace PFT2
                 fdump = Convert.ToString(reg.GetValue("FullDump_Folder"));
                 mbn = Convert.ToString(reg.GetValue("MBN"));
             }
-            if (fdump != "")
-            {
-                Task.Run(() => flasher());
-            }
-            else
-            {
-                MessageBox.Show("Folder for Full Dump is missing!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            Task.Run(() => flasher());
         }
 
         async void flasher()
@@ -227,12 +220,19 @@ namespace PFT2
                         {
                             if (materialRadioButton3.Checked == true) // Full Dump
                             {
-                                    Process process = new Process();
-                                    process.StartInfo.FileName = "cmd.exe";
-                                    process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\full_dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump + " " + fdump + " " + fdump + " " + fdump;
-                                    process.Start();
-                                    process.WaitForExit();
-                                    MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				    if (fdump != "")
+                                    {
+                                       Process process = new Process();
+                                       process.StartInfo.FileName = "cmd.exe";
+                                       process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\full_dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump + " " + fdump + " " + fdump + " " + fdump;
+                                       process.Start();
+                                       process.WaitForExit();
+                                       MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				    }
+				    else
+                                   {
+                                       MessageBox.Show("Folder for Full Dump is missing!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                   }
                             }
                             if (materialRadioButton2.Checked == true) // Flash
                             {
@@ -243,12 +243,11 @@ namespace PFT2
                                 process.Start();
                                 process.WaitForExit();
                                 if (choose == 1) 
-								{
-									try { File.Delete(temp); } 
-									catch { MessageBox.Show("It is not possible to interact with the device or with file for flash!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-								}
+				{
+					try { File.Delete(temp); } 
+					catch { MessageBox.Show("It is not possible to interact with the device or with file for flash!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+				}
                                 MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                             }
                             if (materialRadioButton1.Checked == true) // Dump
                             {

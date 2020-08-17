@@ -103,8 +103,8 @@ namespace PFT2
         // =======================================================================================================================
 
         string[] portal;
-        string theme, adbp, cport, emmcdl, fdump, temp, choose, edl, mbn, code;
-        int form2;
+        string theme, adbp, cport, emmcdl, fdump, temp, edl, mbn, code;
+        int form2, choose;
         Form f;
 
         public MainForm()
@@ -236,13 +236,17 @@ namespace PFT2
                             }
                             if (materialRadioButton2.Checked == true) // Flash
                             {
-                                if (choose == "1") { FDFminiFlash(); }
+                                if (choose == 1) { FDFminiFlash(); }
                                 Process process = new Process();
                                 process.StartInfo.FileName = "cmd.exe";
                                 process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\flash.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
                                 process.Start();
                                 process.WaitForExit();
-                                try { File.Delete(temp); } catch { MessageBox.Show("It is not possible to interact with the device or with file for flash!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                                if (choose == 1) 
+								{
+									try { File.Delete(temp); } 
+									catch { MessageBox.Show("It is not possible to interact with the device or with file for flash!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+								}
                                 MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                             }
@@ -253,7 +257,7 @@ namespace PFT2
                                 process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
                                 process.Start();
                                 process.WaitForExit();
-                                if (choose == "1") { FDFminiDump(); }
+                                if (choose == 1) { FDFminiDump(); }
                                 MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                             if (materialRadioButton4.Checked == true) // Disable Google FRP
@@ -352,15 +356,16 @@ namespace PFT2
                 if ((materialSingleLineTextField1.Text == "userdata") || (((IMG_System == "on") && (materialSingleLineTextField1.Text == "system")) || ((IMG_Vendor == "on") && (materialSingleLineTextField1.Text == "vendor")) || (IMG_All == "on")))
                 {
                     saveFileDialog1.Filter = "IMG|*.img";
+					choose = 0;
                 }
                 else
                 {
                     saveFileDialog1.Filter = "FDF|*.fdf";
-                    choose = "1";
+                    choose = 1;
                 }
                 if (saveFileDialog1.ShowDialog() == DialogResult.Cancel) return;
                 materialSingleLineTextField2.Text = saveFileDialog1.FileName;
-                if (choose == "1") { temp = saveFileDialog1.FileName + ".temp"; }
+                if (choose == 1) { temp = saveFileDialog1.FileName + ".temp"; }
                 else { temp = saveFileDialog1.FileName; }
             }
             if (materialRadioButton2.Checked == true) //Flash (Open file)
@@ -369,15 +374,16 @@ namespace PFT2
                 if ((materialSingleLineTextField1.Text == "userdata") || (((IMG_System == "on") && (materialSingleLineTextField1.Text == "system")) || ((IMG_Vendor == "on") && (materialSingleLineTextField1.Text == "vendor")) || (IMG_All == "on")))
                 {
                     openFileDialog1.Filter = "IMG|*.img";
+					choose = 0;
                 }
                 else
                 {
                     openFileDialog1.Filter = "FDF|*.fdf";
-                    choose = "1";
+                    choose = 1;
                 }
                 if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
                 materialSingleLineTextField2.Text = openFileDialog1.FileName;
-                if (choose == "1") { temp = openFileDialog1.FileName + ".temp"; }
+                if (choose == 1) { temp = openFileDialog1.FileName + ".temp"; }
                 else { temp = openFileDialog1.FileName; }
             }
         }

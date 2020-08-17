@@ -255,3 +255,6 @@ Failure to work with COM port. You should again transfer the smartphone to EDL m
 * Shadow Fix ([code](https://jailbreakvideo.ru/shadow-and-mouse-move-for-borderless-windows-forms-application) by [XpucT](https://www.youtube.com/channel/UC2CiWFIOjQix4E6WrARzDZg))
 * System.IO.Compression ([MS-.NET-Library License](https://go.microsoft.com/fwlink/?LinkId=329770))
 * ImgExtractor (by And_PDA)
+
+## Build
+Compile using Visual Studio 2017/2019

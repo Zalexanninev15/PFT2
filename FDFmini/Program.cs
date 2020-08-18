@@ -36,7 +36,7 @@ namespace FDFmini
             else
             {
                 Console.WriteLine();
-                Console.WriteLine("FDFmini v1.4.1 by Zalexanninev15, Alexander927 and And_PDA (ImgExtractor)");
+                Console.WriteLine("FDFmini v1.4.2 by Zalexanninev15, Alexander927 and And_PDA (ImgExtractor)");
                 Console.WriteLine();
                 Console.WriteLine("FDFmini [Argument 1] [path_to_file] [Argument 2] [Argument 3]");
                 Console.WriteLine();

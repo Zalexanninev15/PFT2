@@ -8,7 +8,7 @@
 * [SnowCloudyPie](https://4pda.ru/forum/index.php?showuser=1506787)
 
 ## Description
-Partitions Flashing Tool 2 - application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphone on Qualcomm chipset (like as emmcdl tool) | [PFT2_Flasher (BATs)](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands.md)
+Partitions Flashing Tool 2 - application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphone on Qualcomm chipset (like as emmcdl tool) | [PFT2_Flasher](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands.md)
 
 ## Features
 * Flash and Dump partitions (1 partition or all partitions (Full Dump), Disable Google FRP

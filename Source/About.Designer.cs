@@ -45,7 +45,7 @@
             this.materialRaisedButton1.Primary = true;
             this.materialRaisedButton1.Size = new System.Drawing.Size(105, 35);
             this.materialRaisedButton1.TabIndex = 13;
-            this.materialRaisedButton1.Text = "GitHub";
+            this.materialRaisedButton1.Text = "website";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
             this.materialRaisedButton1.Click += new System.EventHandler(this.MaterialRaisedButton1_Click);
             // 
@@ -89,7 +89,7 @@
             // About
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(285, 373);
+            this.ClientSize = new System.Drawing.Size(285, 377);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialRaisedButton2);

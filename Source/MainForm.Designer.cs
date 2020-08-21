@@ -39,11 +39,11 @@
             this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.do_it = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialRaisedButton6 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.about = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.materialRaisedButton8 = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -51,20 +51,20 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.materialRaisedButton7 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton9 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.folder_full_dump = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialRaisedButton10 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton12 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton13 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialSingleLineTextField3 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.create_full_dump = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.fm = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.adb_uninstall = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.adb_package = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialRaisedButton14 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton15 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialSingleLineTextField5 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField6 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialRaisedButton16 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton17 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton18 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.adb_install = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.adb_apk = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.adb_device_status_text = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.adb_recovey = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.adb_reboot = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.adb_status = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
@@ -75,7 +75,7 @@
             this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
             this.materialSingleLineTextField8 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialSingleLineTextField9 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.edl_code = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialRaisedButton20 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton21 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton22 = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -88,6 +88,7 @@
             this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.materialRaisedButton5 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.adb_install_apk_sd = new MaterialSkin.Controls.MaterialCheckBox();
             this.SuspendLayout();
             // 
             // materialRadioButton2
@@ -95,7 +96,7 @@
             this.materialRadioButton2.AutoSize = true;
             this.materialRadioButton2.Depth = 0;
             this.materialRadioButton2.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialRadioButton2.Location = new System.Drawing.Point(206, 248);
+            this.materialRadioButton2.Location = new System.Drawing.Point(201, 257);
             this.materialRadioButton2.Margin = new System.Windows.Forms.Padding(0);
             this.materialRadioButton2.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialRadioButton2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -114,7 +115,7 @@
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(209, 216);
+            this.materialLabel4.Location = new System.Drawing.Point(204, 225);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(61, 19);
@@ -126,7 +127,7 @@
             this.materialRadioButton1.AutoSize = true;
             this.materialRadioButton1.Depth = 0;
             this.materialRadioButton1.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialRadioButton1.Location = new System.Drawing.Point(33, 248);
+            this.materialRadioButton1.Location = new System.Drawing.Point(28, 257);
             this.materialRadioButton1.Margin = new System.Windows.Forms.Padding(0);
             this.materialRadioButton1.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialRadioButton1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -143,7 +144,7 @@
             // 
             this.materialSingleLineTextField4.Depth = 0;
             this.materialSingleLineTextField4.Hint = "Number";
-            this.materialSingleLineTextField4.Location = new System.Drawing.Point(214, 138);
+            this.materialSingleLineTextField4.Location = new System.Drawing.Point(207, 142);
             this.materialSingleLineTextField4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField4.Name = "materialSingleLineTextField4";
             this.materialSingleLineTextField4.PasswordChar = '\0';
@@ -161,7 +162,7 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(17, 334);
+            this.materialLabel1.Location = new System.Drawing.Point(12, 349);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(70, 19);
@@ -173,7 +174,7 @@
             this.materialSingleLineTextField2.Depth = 0;
             this.materialSingleLineTextField2.Enabled = false;
             this.materialSingleLineTextField2.Hint = "File path (\"D\")";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(60, 377);
+            this.materialSingleLineTextField2.Location = new System.Drawing.Point(55, 392);
             this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
             this.materialSingleLineTextField2.PasswordChar = '\0';
@@ -189,7 +190,7 @@
             this.materialRadioButton3.AutoSize = true;
             this.materialRadioButton3.Depth = 0;
             this.materialRadioButton3.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialRadioButton3.Location = new System.Drawing.Point(108, 248);
+            this.materialRadioButton3.Location = new System.Drawing.Point(103, 257);
             this.materialRadioButton3.Margin = new System.Windows.Forms.Padding(0);
             this.materialRadioButton3.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialRadioButton3.MouseState = MaterialSkin.MouseState.HOVER;
@@ -207,7 +208,7 @@
             this.materialSingleLineTextField1.Depth = 0;
             this.materialSingleLineTextField1.Enabled = false;
             this.materialSingleLineTextField1.Hint = "Devices partition (\"A\") for working with emmcdl";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(93, 334);
+            this.materialSingleLineTextField1.Location = new System.Drawing.Point(88, 349);
             this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
             this.materialSingleLineTextField1.PasswordChar = '\0';
@@ -221,7 +222,7 @@
             // materialRaisedButton2
             // 
             this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(214, 178);
+            this.materialRaisedButton2.Location = new System.Drawing.Point(207, 182);
             this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton2.Name = "materialRaisedButton2";
             this.materialRaisedButton2.Primary = true;
@@ -237,30 +238,30 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(16, 377);
+            this.materialLabel2.Location = new System.Drawing.Point(16, 380);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(37, 19);
             this.materialLabel2.TabIndex = 4;
             this.materialLabel2.Text = "File:";
             // 
-            // materialRaisedButton1
+            // do_it
             // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(58, 418);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(362, 38);
-            this.materialRaisedButton1.TabIndex = 0;
-            this.materialRaisedButton1.Text = "Do it!";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_ClickAsync);
+            this.do_it.Depth = 0;
+            this.do_it.Location = new System.Drawing.Point(53, 433);
+            this.do_it.MouseState = MaterialSkin.MouseState.HOVER;
+            this.do_it.Name = "do_it";
+            this.do_it.Primary = true;
+            this.do_it.Size = new System.Drawing.Size(362, 38);
+            this.do_it.TabIndex = 0;
+            this.do_it.Text = "Do it!";
+            this.do_it.UseVisualStyleBackColor = true;
+            this.do_it.Click += new System.EventHandler(this.materialRaisedButton1_ClickAsync);
             // 
             // materialRaisedButton3
             // 
             this.materialRaisedButton3.Depth = 0;
-            this.materialRaisedButton3.Location = new System.Drawing.Point(279, 138);
+            this.materialRaisedButton3.Location = new System.Drawing.Point(272, 142);
             this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton3.Name = "materialRaisedButton3";
             this.materialRaisedButton3.Primary = true;
@@ -273,7 +274,7 @@
             // materialRaisedButton4
             // 
             this.materialRaisedButton4.Depth = 0;
-            this.materialRaisedButton4.Location = new System.Drawing.Point(279, 178);
+            this.materialRaisedButton4.Location = new System.Drawing.Point(272, 182);
             this.materialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton4.Name = "materialRaisedButton4";
             this.materialRaisedButton4.Primary = true;
@@ -289,25 +290,25 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(69, 180);
+            this.materialLabel3.Location = new System.Drawing.Point(62, 184);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(140, 19);
             this.materialLabel3.TabIndex = 20;
             this.materialLabel3.Text = "To EDL mode from:";
             // 
-            // materialRaisedButton6
+            // about
             // 
-            this.materialRaisedButton6.Depth = 0;
-            this.materialRaisedButton6.Location = new System.Drawing.Point(21, 462);
-            this.materialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton6.Name = "materialRaisedButton6";
-            this.materialRaisedButton6.Primary = true;
-            this.materialRaisedButton6.Size = new System.Drawing.Size(219, 38);
-            this.materialRaisedButton6.TabIndex = 21;
-            this.materialRaisedButton6.Text = "about";
-            this.materialRaisedButton6.UseVisualStyleBackColor = true;
-            this.materialRaisedButton6.Click += new System.EventHandler(this.materialRaisedButton6_Click);
+            this.about.Depth = 0;
+            this.about.Location = new System.Drawing.Point(16, 477);
+            this.about.MouseState = MaterialSkin.MouseState.HOVER;
+            this.about.Name = "about";
+            this.about.Primary = true;
+            this.about.Size = new System.Drawing.Size(219, 38);
+            this.about.TabIndex = 21;
+            this.about.Text = "about";
+            this.about.UseVisualStyleBackColor = true;
+            this.about.Click += new System.EventHandler(this.materialRaisedButton6_Click);
             // 
             // materialLabel5
             // 
@@ -315,7 +316,7 @@
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(71, 139);
+            this.materialLabel5.Location = new System.Drawing.Point(64, 143);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(135, 19);
@@ -328,7 +329,7 @@
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(195, 297);
+            this.materialLabel6.Location = new System.Drawing.Point(190, 312);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(100, 19);
@@ -339,7 +340,7 @@
             // 
             this.materialRaisedButton8.Depth = 0;
             this.materialRaisedButton8.Enabled = false;
-            this.materialRaisedButton8.Location = new System.Drawing.Point(428, 374);
+            this.materialRaisedButton8.Location = new System.Drawing.Point(423, 389);
             this.materialRaisedButton8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton8.Name = "materialRaisedButton8";
             this.materialRaisedButton8.Primary = true;
@@ -354,7 +355,7 @@
             this.materialRadioButton4.AutoSize = true;
             this.materialRadioButton4.Depth = 0;
             this.materialRadioButton4.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialRadioButton4.Location = new System.Drawing.Point(277, 248);
+            this.materialRadioButton4.Location = new System.Drawing.Point(272, 257);
             this.materialRadioButton4.Margin = new System.Windows.Forms.Padding(0);
             this.materialRadioButton4.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialRadioButton4.MouseState = MaterialSkin.MouseState.HOVER;
@@ -379,7 +380,7 @@
             // materialRaisedButton7
             // 
             this.materialRaisedButton7.Depth = 0;
-            this.materialRaisedButton7.Location = new System.Drawing.Point(428, 331);
+            this.materialRaisedButton7.Location = new System.Drawing.Point(423, 346);
             this.materialRaisedButton7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton7.Name = "materialRaisedButton7";
             this.materialRaisedButton7.Primary = true;
@@ -389,19 +390,19 @@
             this.materialRaisedButton7.UseVisualStyleBackColor = true;
             this.materialRaisedButton7.Click += new System.EventHandler(this.materialRaisedButton7_Click);
             // 
-            // materialRaisedButton9
+            // folder_full_dump
             // 
-            this.materialRaisedButton9.Depth = 0;
-            this.materialRaisedButton9.Location = new System.Drawing.Point(246, 418);
-            this.materialRaisedButton9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton9.Name = "materialRaisedButton9";
-            this.materialRaisedButton9.Primary = true;
-            this.materialRaisedButton9.Size = new System.Drawing.Size(209, 38);
-            this.materialRaisedButton9.TabIndex = 29;
-            this.materialRaisedButton9.Text = "Folder for Full Dump";
-            this.materialRaisedButton9.UseVisualStyleBackColor = true;
-            this.materialRaisedButton9.Visible = false;
-            this.materialRaisedButton9.Click += new System.EventHandler(this.materialRaisedButton9_Click);
+            this.folder_full_dump.Depth = 0;
+            this.folder_full_dump.Location = new System.Drawing.Point(241, 433);
+            this.folder_full_dump.MouseState = MaterialSkin.MouseState.HOVER;
+            this.folder_full_dump.Name = "folder_full_dump";
+            this.folder_full_dump.Primary = true;
+            this.folder_full_dump.Size = new System.Drawing.Size(209, 38);
+            this.folder_full_dump.TabIndex = 29;
+            this.folder_full_dump.Text = "Folder for Full Dump";
+            this.folder_full_dump.UseVisualStyleBackColor = true;
+            this.folder_full_dump.Visible = false;
+            this.folder_full_dump.Click += new System.EventHandler(this.materialRaisedButton9_Click);
             // 
             // materialLabel7
             // 
@@ -409,7 +410,7 @@
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(355, 139);
+            this.materialLabel7.Location = new System.Drawing.Point(348, 143);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(30, 19);
@@ -422,72 +423,72 @@
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel8.Location = new System.Drawing.Point(355, 178);
+            this.materialLabel8.Location = new System.Drawing.Point(348, 182);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(30, 19);
             this.materialLabel8.TabIndex = 30;
             this.materialLabel8.Text = "NO";
             // 
-            // materialRaisedButton10
+            // create_full_dump
             // 
-            this.materialRaisedButton10.Depth = 0;
-            this.materialRaisedButton10.Location = new System.Drawing.Point(21, 418);
-            this.materialRaisedButton10.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton10.Name = "materialRaisedButton10";
-            this.materialRaisedButton10.Primary = true;
-            this.materialRaisedButton10.Size = new System.Drawing.Size(219, 38);
-            this.materialRaisedButton10.TabIndex = 31;
-            this.materialRaisedButton10.Text = "Create full dump";
-            this.materialRaisedButton10.UseVisualStyleBackColor = true;
-            this.materialRaisedButton10.Visible = false;
-            this.materialRaisedButton10.Click += new System.EventHandler(this.materialRaisedButton1_ClickAsync);
+            this.create_full_dump.Depth = 0;
+            this.create_full_dump.Location = new System.Drawing.Point(16, 433);
+            this.create_full_dump.MouseState = MaterialSkin.MouseState.HOVER;
+            this.create_full_dump.Name = "create_full_dump";
+            this.create_full_dump.Primary = true;
+            this.create_full_dump.Size = new System.Drawing.Size(219, 38);
+            this.create_full_dump.TabIndex = 31;
+            this.create_full_dump.Text = "Create full dump";
+            this.create_full_dump.UseVisualStyleBackColor = true;
+            this.create_full_dump.Visible = false;
+            this.create_full_dump.Click += new System.EventHandler(this.materialRaisedButton1_ClickAsync);
             // 
-            // materialRaisedButton12
+            // fm
             // 
-            this.materialRaisedButton12.Depth = 0;
-            this.materialRaisedButton12.Location = new System.Drawing.Point(246, 462);
-            this.materialRaisedButton12.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton12.Name = "materialRaisedButton12";
-            this.materialRaisedButton12.Primary = true;
-            this.materialRaisedButton12.Size = new System.Drawing.Size(209, 38);
-            this.materialRaisedButton12.TabIndex = 34;
-            this.materialRaisedButton12.Text = "Firmwares Manager";
-            this.materialRaisedButton12.UseVisualStyleBackColor = true;
-            this.materialRaisedButton12.Click += new System.EventHandler(this.materialRaisedButton12_Click);
+            this.fm.Depth = 0;
+            this.fm.Location = new System.Drawing.Point(241, 477);
+            this.fm.MouseState = MaterialSkin.MouseState.HOVER;
+            this.fm.Name = "fm";
+            this.fm.Primary = true;
+            this.fm.Size = new System.Drawing.Size(209, 38);
+            this.fm.TabIndex = 34;
+            this.fm.Text = "Firmwares Manager";
+            this.fm.UseVisualStyleBackColor = true;
+            this.fm.Click += new System.EventHandler(this.materialRaisedButton12_Click);
             // 
-            // materialRaisedButton13
+            // adb_uninstall
             // 
-            this.materialRaisedButton13.Depth = 0;
-            this.materialRaisedButton13.Location = new System.Drawing.Point(647, 471);
-            this.materialRaisedButton13.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton13.Name = "materialRaisedButton13";
-            this.materialRaisedButton13.Primary = true;
-            this.materialRaisedButton13.Size = new System.Drawing.Size(278, 29);
-            this.materialRaisedButton13.TabIndex = 43;
-            this.materialRaisedButton13.Text = "unInstall (without root rights)";
-            this.materialRaisedButton13.UseVisualStyleBackColor = true;
-            this.materialRaisedButton13.Click += new System.EventHandler(this.materialRaisedButton13_Click);
+            this.adb_uninstall.Depth = 0;
+            this.adb_uninstall.Location = new System.Drawing.Point(647, 479);
+            this.adb_uninstall.MouseState = MaterialSkin.MouseState.HOVER;
+            this.adb_uninstall.Name = "adb_uninstall";
+            this.adb_uninstall.Primary = true;
+            this.adb_uninstall.Size = new System.Drawing.Size(278, 36);
+            this.adb_uninstall.TabIndex = 43;
+            this.adb_uninstall.Text = "unInstall (without root rights)";
+            this.adb_uninstall.UseVisualStyleBackColor = true;
+            this.adb_uninstall.Click += new System.EventHandler(this.materialRaisedButton13_Click);
             // 
-            // materialSingleLineTextField3
+            // adb_package
             // 
-            this.materialSingleLineTextField3.Depth = 0;
-            this.materialSingleLineTextField3.Hint = "Name of the package to delete";
-            this.materialSingleLineTextField3.Location = new System.Drawing.Point(647, 435);
-            this.materialSingleLineTextField3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField3.Name = "materialSingleLineTextField3";
-            this.materialSingleLineTextField3.PasswordChar = '\0';
-            this.materialSingleLineTextField3.SelectedText = "";
-            this.materialSingleLineTextField3.SelectionLength = 0;
-            this.materialSingleLineTextField3.SelectionStart = 0;
-            this.materialSingleLineTextField3.Size = new System.Drawing.Size(243, 23);
-            this.materialSingleLineTextField3.TabIndex = 42;
-            this.materialSingleLineTextField3.UseSystemPasswordChar = false;
+            this.adb_package.Depth = 0;
+            this.adb_package.Hint = "Name of the package to delete";
+            this.adb_package.Location = new System.Drawing.Point(647, 450);
+            this.adb_package.MouseState = MaterialSkin.MouseState.HOVER;
+            this.adb_package.Name = "adb_package";
+            this.adb_package.PasswordChar = '\0';
+            this.adb_package.SelectedText = "";
+            this.adb_package.SelectionLength = 0;
+            this.adb_package.SelectionStart = 0;
+            this.adb_package.Size = new System.Drawing.Size(243, 23);
+            this.adb_package.TabIndex = 42;
+            this.adb_package.UseSystemPasswordChar = false;
             // 
             // materialRaisedButton14
             // 
             this.materialRaisedButton14.Depth = 0;
-            this.materialRaisedButton14.Location = new System.Drawing.Point(896, 358);
+            this.materialRaisedButton14.Location = new System.Drawing.Point(896, 373);
             this.materialRaisedButton14.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton14.Name = "materialRaisedButton14";
             this.materialRaisedButton14.Primary = true;
@@ -497,87 +498,87 @@
             this.materialRaisedButton14.UseVisualStyleBackColor = true;
             this.materialRaisedButton14.Click += new System.EventHandler(this.materialRaisedButton14_Click);
             // 
-            // materialRaisedButton15
+            // adb_install
             // 
-            this.materialRaisedButton15.Depth = 0;
-            this.materialRaisedButton15.Location = new System.Drawing.Point(647, 393);
-            this.materialRaisedButton15.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton15.Name = "materialRaisedButton15";
-            this.materialRaisedButton15.Primary = true;
-            this.materialRaisedButton15.Size = new System.Drawing.Size(278, 29);
-            this.materialRaisedButton15.TabIndex = 40;
-            this.materialRaisedButton15.Text = "Install";
-            this.materialRaisedButton15.UseVisualStyleBackColor = true;
-            this.materialRaisedButton15.Click += new System.EventHandler(this.materialRaisedButton15_Click);
+            this.adb_install.Depth = 0;
+            this.adb_install.Location = new System.Drawing.Point(647, 402);
+            this.adb_install.MouseState = MaterialSkin.MouseState.HOVER;
+            this.adb_install.Name = "adb_install";
+            this.adb_install.Primary = true;
+            this.adb_install.Size = new System.Drawing.Size(195, 35);
+            this.adb_install.TabIndex = 40;
+            this.adb_install.Text = "Install";
+            this.adb_install.UseVisualStyleBackColor = true;
+            this.adb_install.Click += new System.EventHandler(this.materialRaisedButton15_Click);
             // 
-            // materialSingleLineTextField5
+            // adb_apk
             // 
-            this.materialSingleLineTextField5.Depth = 0;
-            this.materialSingleLineTextField5.Hint = "Path to the APK file to install (\"D\")";
-            this.materialSingleLineTextField5.Location = new System.Drawing.Point(647, 358);
-            this.materialSingleLineTextField5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField5.Name = "materialSingleLineTextField5";
-            this.materialSingleLineTextField5.PasswordChar = '\0';
-            this.materialSingleLineTextField5.SelectedText = "";
-            this.materialSingleLineTextField5.SelectionLength = 0;
-            this.materialSingleLineTextField5.SelectionStart = 0;
-            this.materialSingleLineTextField5.Size = new System.Drawing.Size(243, 23);
-            this.materialSingleLineTextField5.TabIndex = 39;
-            this.materialSingleLineTextField5.UseSystemPasswordChar = false;
+            this.adb_apk.Depth = 0;
+            this.adb_apk.Hint = "Path to the APK file to install (\"D\")";
+            this.adb_apk.Location = new System.Drawing.Point(647, 373);
+            this.adb_apk.MouseState = MaterialSkin.MouseState.HOVER;
+            this.adb_apk.Name = "adb_apk";
+            this.adb_apk.PasswordChar = '\0';
+            this.adb_apk.SelectedText = "";
+            this.adb_apk.SelectionLength = 0;
+            this.adb_apk.SelectionStart = 0;
+            this.adb_apk.Size = new System.Drawing.Size(243, 23);
+            this.adb_apk.TabIndex = 39;
+            this.adb_apk.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField6
+            // adb_device_status_text
             // 
-            this.materialSingleLineTextField6.Depth = 0;
-            this.materialSingleLineTextField6.Hint = "Device status";
-            this.materialSingleLineTextField6.Location = new System.Drawing.Point(478, 358);
-            this.materialSingleLineTextField6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField6.Name = "materialSingleLineTextField6";
-            this.materialSingleLineTextField6.PasswordChar = '\0';
-            this.materialSingleLineTextField6.SelectedText = "";
-            this.materialSingleLineTextField6.SelectionLength = 0;
-            this.materialSingleLineTextField6.SelectionStart = 0;
-            this.materialSingleLineTextField6.Size = new System.Drawing.Size(137, 23);
-            this.materialSingleLineTextField6.TabIndex = 38;
-            this.materialSingleLineTextField6.UseSystemPasswordChar = false;
+            this.adb_device_status_text.Depth = 0;
+            this.adb_device_status_text.Hint = "Device status";
+            this.adb_device_status_text.Location = new System.Drawing.Point(478, 373);
+            this.adb_device_status_text.MouseState = MaterialSkin.MouseState.HOVER;
+            this.adb_device_status_text.Name = "adb_device_status_text";
+            this.adb_device_status_text.PasswordChar = '\0';
+            this.adb_device_status_text.SelectedText = "";
+            this.adb_device_status_text.SelectionLength = 0;
+            this.adb_device_status_text.SelectionStart = 0;
+            this.adb_device_status_text.Size = new System.Drawing.Size(137, 23);
+            this.adb_device_status_text.TabIndex = 38;
+            this.adb_device_status_text.UseSystemPasswordChar = false;
             // 
-            // materialRaisedButton16
+            // adb_recovey
             // 
-            this.materialRaisedButton16.Depth = 0;
-            this.materialRaisedButton16.Location = new System.Drawing.Point(478, 471);
-            this.materialRaisedButton16.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton16.Name = "materialRaisedButton16";
-            this.materialRaisedButton16.Primary = true;
-            this.materialRaisedButton16.Size = new System.Drawing.Size(137, 29);
-            this.materialRaisedButton16.TabIndex = 37;
-            this.materialRaisedButton16.Text = "Recovery";
-            this.materialRaisedButton16.UseVisualStyleBackColor = true;
-            this.materialRaisedButton16.Click += new System.EventHandler(this.materialRaisedButton16_Click);
+            this.adb_recovey.Depth = 0;
+            this.adb_recovey.Location = new System.Drawing.Point(478, 482);
+            this.adb_recovey.MouseState = MaterialSkin.MouseState.HOVER;
+            this.adb_recovey.Name = "adb_recovey";
+            this.adb_recovey.Primary = true;
+            this.adb_recovey.Size = new System.Drawing.Size(137, 33);
+            this.adb_recovey.TabIndex = 37;
+            this.adb_recovey.Text = "Recovery";
+            this.adb_recovey.UseVisualStyleBackColor = true;
+            this.adb_recovey.Click += new System.EventHandler(this.materialRaisedButton16_Click);
             // 
-            // materialRaisedButton17
+            // adb_reboot
             // 
-            this.materialRaisedButton17.Depth = 0;
-            this.materialRaisedButton17.Location = new System.Drawing.Point(478, 432);
-            this.materialRaisedButton17.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton17.Name = "materialRaisedButton17";
-            this.materialRaisedButton17.Primary = true;
-            this.materialRaisedButton17.Size = new System.Drawing.Size(137, 29);
-            this.materialRaisedButton17.TabIndex = 36;
-            this.materialRaisedButton17.Text = "Reboot";
-            this.materialRaisedButton17.UseVisualStyleBackColor = true;
-            this.materialRaisedButton17.Click += new System.EventHandler(this.materialRaisedButton17_Click);
+            this.adb_reboot.Depth = 0;
+            this.adb_reboot.Location = new System.Drawing.Point(478, 443);
+            this.adb_reboot.MouseState = MaterialSkin.MouseState.HOVER;
+            this.adb_reboot.Name = "adb_reboot";
+            this.adb_reboot.Primary = true;
+            this.adb_reboot.Size = new System.Drawing.Size(137, 33);
+            this.adb_reboot.TabIndex = 36;
+            this.adb_reboot.Text = "Reboot";
+            this.adb_reboot.UseVisualStyleBackColor = true;
+            this.adb_reboot.Click += new System.EventHandler(this.materialRaisedButton17_Click);
             // 
-            // materialRaisedButton18
+            // adb_status
             // 
-            this.materialRaisedButton18.Depth = 0;
-            this.materialRaisedButton18.Location = new System.Drawing.Point(478, 393);
-            this.materialRaisedButton18.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton18.Name = "materialRaisedButton18";
-            this.materialRaisedButton18.Primary = true;
-            this.materialRaisedButton18.Size = new System.Drawing.Size(137, 29);
-            this.materialRaisedButton18.TabIndex = 35;
-            this.materialRaisedButton18.Text = "Status";
-            this.materialRaisedButton18.UseVisualStyleBackColor = true;
-            this.materialRaisedButton18.Click += new System.EventHandler(this.materialRaisedButton18_Click);
+            this.adb_status.Depth = 0;
+            this.adb_status.Location = new System.Drawing.Point(478, 402);
+            this.adb_status.MouseState = MaterialSkin.MouseState.HOVER;
+            this.adb_status.Name = "adb_status";
+            this.adb_status.Primary = true;
+            this.adb_status.Size = new System.Drawing.Size(137, 35);
+            this.adb_status.TabIndex = 35;
+            this.adb_status.Text = "Status";
+            this.adb_status.UseVisualStyleBackColor = true;
+            this.adb_status.Click += new System.EventHandler(this.materialRaisedButton18_Click);
             // 
             // materialLabel10
             // 
@@ -585,7 +586,7 @@
             this.materialLabel10.Depth = 0;
             this.materialLabel10.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel10.Location = new System.Drawing.Point(186, 70);
+            this.materialLabel10.Location = new System.Drawing.Point(174, 73);
             this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel10.Name = "materialLabel10";
             this.materialLabel10.Size = new System.Drawing.Size(116, 19);
@@ -598,7 +599,7 @@
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel9.Location = new System.Drawing.Point(119, 103);
+            this.materialLabel9.Location = new System.Drawing.Point(112, 107);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             this.materialLabel9.Size = new System.Drawing.Size(236, 19);
@@ -611,7 +612,7 @@
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel11.Location = new System.Drawing.Point(631, 326);
+            this.materialLabel11.Location = new System.Drawing.Point(643, 335);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(109, 19);
@@ -621,7 +622,7 @@
             // materialRaisedButton11
             // 
             this.materialRaisedButton11.Depth = 0;
-            this.materialRaisedButton11.Location = new System.Drawing.Point(904, 102);
+            this.materialRaisedButton11.Location = new System.Drawing.Point(904, 105);
             this.materialRaisedButton11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton11.Name = "materialRaisedButton11";
             this.materialRaisedButton11.Primary = true;
@@ -637,7 +638,7 @@
             this.materialLabel12.Depth = 0;
             this.materialLabel12.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel12.Location = new System.Drawing.Point(463, 103);
+            this.materialLabel12.Location = new System.Drawing.Point(463, 106);
             this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel12.Name = "materialLabel12";
             this.materialLabel12.Size = new System.Drawing.Size(67, 19);
@@ -648,7 +649,7 @@
             // 
             this.materialSingleLineTextField7.Depth = 0;
             this.materialSingleLineTextField7.Hint = "Path to the file emmcdl.exe (\"D\")";
-            this.materialSingleLineTextField7.Location = new System.Drawing.Point(543, 103);
+            this.materialSingleLineTextField7.Location = new System.Drawing.Point(543, 106);
             this.materialSingleLineTextField7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField7.Name = "materialSingleLineTextField7";
             this.materialSingleLineTextField7.PasswordChar = '\0';
@@ -662,7 +663,7 @@
             // materialRaisedButton19
             // 
             this.materialRaisedButton19.Depth = 0;
-            this.materialRaisedButton19.Location = new System.Drawing.Point(904, 217);
+            this.materialRaisedButton19.Location = new System.Drawing.Point(904, 220);
             this.materialRaisedButton19.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton19.Name = "materialRaisedButton19";
             this.materialRaisedButton19.Primary = true;
@@ -678,7 +679,7 @@
             this.materialLabel13.Depth = 0;
             this.materialLabel13.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel13.Location = new System.Drawing.Point(463, 217);
+            this.materialLabel13.Location = new System.Drawing.Point(463, 220);
             this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel13.Name = "materialLabel13";
             this.materialLabel13.Size = new System.Drawing.Size(149, 19);
@@ -689,7 +690,7 @@
             // 
             this.materialSingleLineTextField8.Depth = 0;
             this.materialSingleLineTextField8.Hint = "Where to save your Full Dump? (\"D\")";
-            this.materialSingleLineTextField8.Location = new System.Drawing.Point(618, 217);
+            this.materialSingleLineTextField8.Location = new System.Drawing.Point(618, 220);
             this.materialSingleLineTextField8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField8.Name = "materialSingleLineTextField8";
             this.materialSingleLineTextField8.PasswordChar = '\0';
@@ -706,35 +707,35 @@
             this.materialLabel14.Depth = 0;
             this.materialLabel14.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel14.Location = new System.Drawing.Point(586, 255);
+            this.materialLabel14.Location = new System.Drawing.Point(586, 258);
             this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel14.Name = "materialLabel14";
             this.materialLabel14.Size = new System.Drawing.Size(79, 19);
             this.materialLabel14.TabIndex = 56;
             this.materialLabel14.Text = "EDL Code:";
             // 
-            // materialSingleLineTextField9
+            // edl_code
             // 
-            this.materialSingleLineTextField9.Depth = 0;
-            this.materialSingleLineTextField9.Hint = "EDL code";
-            this.materialSingleLineTextField9.Location = new System.Drawing.Point(671, 254);
-            this.materialSingleLineTextField9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField9.Name = "materialSingleLineTextField9";
-            this.materialSingleLineTextField9.PasswordChar = '\0';
-            this.materialSingleLineTextField9.SelectedText = "";
-            this.materialSingleLineTextField9.SelectionLength = 0;
-            this.materialSingleLineTextField9.SelectionStart = 0;
-            this.materialSingleLineTextField9.Size = new System.Drawing.Size(99, 23);
-            this.materialSingleLineTextField9.TabIndex = 55;
-            this.materialSingleLineTextField9.UseSystemPasswordChar = false;
-            this.materialSingleLineTextField9.Enter += new System.EventHandler(this.materialSingleLineTextField9_Enter);
-            this.materialSingleLineTextField9.Leave += new System.EventHandler(this.materialSingleLineTextField9_Leave);
-            this.materialSingleLineTextField9.TextChanged += new System.EventHandler(this.materialSingleLineTextField9_TextChanged);
+            this.edl_code.Depth = 0;
+            this.edl_code.Hint = "EDL code";
+            this.edl_code.Location = new System.Drawing.Point(671, 257);
+            this.edl_code.MouseState = MaterialSkin.MouseState.HOVER;
+            this.edl_code.Name = "edl_code";
+            this.edl_code.PasswordChar = '\0';
+            this.edl_code.SelectedText = "";
+            this.edl_code.SelectionLength = 0;
+            this.edl_code.SelectionStart = 0;
+            this.edl_code.Size = new System.Drawing.Size(99, 23);
+            this.edl_code.TabIndex = 55;
+            this.edl_code.UseSystemPasswordChar = false;
+            this.edl_code.Enter += new System.EventHandler(this.materialSingleLineTextField9_Enter);
+            this.edl_code.Leave += new System.EventHandler(this.materialSingleLineTextField9_Leave);
+            this.edl_code.TextChanged += new System.EventHandler(this.materialSingleLineTextField9_TextChanged);
             // 
             // materialRaisedButton20
             // 
             this.materialRaisedButton20.Depth = 0;
-            this.materialRaisedButton20.Location = new System.Drawing.Point(904, 179);
+            this.materialRaisedButton20.Location = new System.Drawing.Point(904, 182);
             this.materialRaisedButton20.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton20.Name = "materialRaisedButton20";
             this.materialRaisedButton20.Primary = true;
@@ -747,7 +748,7 @@
             // materialRaisedButton21
             // 
             this.materialRaisedButton21.Depth = 0;
-            this.materialRaisedButton21.Location = new System.Drawing.Point(904, 141);
+            this.materialRaisedButton21.Location = new System.Drawing.Point(904, 144);
             this.materialRaisedButton21.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton21.Name = "materialRaisedButton21";
             this.materialRaisedButton21.Primary = true;
@@ -760,7 +761,7 @@
             // materialRaisedButton22
             // 
             this.materialRaisedButton22.Depth = 0;
-            this.materialRaisedButton22.Location = new System.Drawing.Point(781, 250);
+            this.materialRaisedButton22.Location = new System.Drawing.Point(781, 253);
             this.materialRaisedButton22.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton22.Name = "materialRaisedButton22";
             this.materialRaisedButton22.Primary = true;
@@ -776,7 +777,7 @@
             this.materialLabel15.Depth = 0;
             this.materialLabel15.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel15.Location = new System.Drawing.Point(479, 183);
+            this.materialLabel15.Location = new System.Drawing.Point(479, 186);
             this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel15.Name = "materialLabel15";
             this.materialLabel15.Size = new System.Drawing.Size(42, 19);
@@ -787,7 +788,7 @@
             // 
             this.materialSingleLineTextField10.Depth = 0;
             this.materialSingleLineTextField10.Hint = "Path to the file adb.exe (\"D\")";
-            this.materialSingleLineTextField10.Location = new System.Drawing.Point(543, 179);
+            this.materialSingleLineTextField10.Location = new System.Drawing.Point(543, 182);
             this.materialSingleLineTextField10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField10.Name = "materialSingleLineTextField10";
             this.materialSingleLineTextField10.PasswordChar = '\0';
@@ -803,7 +804,7 @@
             this.b_w.AutoSize = true;
             this.b_w.Depth = 0;
             this.b_w.Font = new System.Drawing.Font("Roboto", 10F);
-            this.b_w.Location = new System.Drawing.Point(474, 250);
+            this.b_w.Location = new System.Drawing.Point(474, 253);
             this.b_w.Margin = new System.Windows.Forms.Padding(0);
             this.b_w.MouseLocation = new System.Drawing.Point(-1, -1);
             this.b_w.MouseState = MaterialSkin.MouseState.HOVER;
@@ -821,7 +822,7 @@
             this.materialLabel16.Depth = 0;
             this.materialLabel16.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel16.Location = new System.Drawing.Point(463, 142);
+            this.materialLabel16.Location = new System.Drawing.Point(463, 145);
             this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel16.Name = "materialLabel16";
             this.materialLabel16.Size = new System.Drawing.Size(74, 19);
@@ -832,7 +833,7 @@
             // 
             this.materialSingleLineTextField11.Depth = 0;
             this.materialSingleLineTextField11.Hint = "Path to MBN file (\"D\")";
-            this.materialSingleLineTextField11.Location = new System.Drawing.Point(543, 141);
+            this.materialSingleLineTextField11.Location = new System.Drawing.Point(543, 144);
             this.materialSingleLineTextField11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField11.Name = "materialSingleLineTextField11";
             this.materialSingleLineTextField11.PasswordChar = '\0';
@@ -846,7 +847,7 @@
             // materialRaisedButton23
             // 
             this.materialRaisedButton23.Depth = 0;
-            this.materialRaisedButton23.Location = new System.Drawing.Point(590, 287);
+            this.materialRaisedButton23.Location = new System.Drawing.Point(590, 290);
             this.materialRaisedButton23.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton23.Name = "materialRaisedButton23";
             this.materialRaisedButton23.Primary = true;
@@ -862,7 +863,7 @@
             this.materialLabel18.Depth = 0;
             this.materialLabel18.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel18.Location = new System.Drawing.Point(654, 70);
+            this.materialLabel18.Location = new System.Drawing.Point(654, 73);
             this.materialLabel18.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel18.Name = "materialLabel18";
             this.materialLabel18.Size = new System.Drawing.Size(64, 19);
@@ -872,7 +873,7 @@
             // materialRaisedButton5
             // 
             this.materialRaisedButton5.Depth = 0;
-            this.materialRaisedButton5.Location = new System.Drawing.Point(896, 435);
+            this.materialRaisedButton5.Location = new System.Drawing.Point(896, 448);
             this.materialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton5.Name = "materialRaisedButton5";
             this.materialRaisedButton5.Primary = true;
@@ -882,53 +883,70 @@
             this.materialRaisedButton5.UseVisualStyleBackColor = true;
             this.materialRaisedButton5.Click += new System.EventHandler(this.materialRaisedButton5_Click);
             // 
+            // adb_install_apk_sd
+            // 
+            this.adb_install_apk_sd.AutoSize = true;
+            this.adb_install_apk_sd.Depth = 0;
+            this.adb_install_apk_sd.Font = new System.Drawing.Font("Roboto", 10F);
+            this.adb_install_apk_sd.Location = new System.Drawing.Point(845, 405);
+            this.adb_install_apk_sd.Margin = new System.Windows.Forms.Padding(0);
+            this.adb_install_apk_sd.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.adb_install_apk_sd.MouseState = MaterialSkin.MouseState.HOVER;
+            this.adb_install_apk_sd.Name = "adb_install_apk_sd";
+            this.adb_install_apk_sd.Ripple = true;
+            this.adb_install_apk_sd.Size = new System.Drawing.Size(80, 30);
+            this.adb_install_apk_sd.TabIndex = 49;
+            this.adb_install_apk_sd.Text = "SD Card";
+            this.adb_install_apk_sd.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(949, 513);
-            this.Controls.Add(this.materialRaisedButton16);
-            this.Controls.Add(this.materialRaisedButton18);
+            this.ClientSize = new System.Drawing.Size(950, 531);
+            this.Controls.Add(this.adb_recovey);
+            this.Controls.Add(this.adb_status);
             this.Controls.Add(this.materialRaisedButton23);
-            this.Controls.Add(this.materialRaisedButton17);
+            this.Controls.Add(this.adb_reboot);
             this.Controls.Add(this.materialLabel18);
-            this.Controls.Add(this.materialSingleLineTextField6);
+            this.Controls.Add(this.adb_device_status_text);
             this.Controls.Add(this.materialRaisedButton11);
-            this.Controls.Add(this.materialSingleLineTextField5);
-            this.Controls.Add(this.materialRaisedButton15);
+            this.Controls.Add(this.adb_apk);
+            this.Controls.Add(this.adb_install);
             this.Controls.Add(this.materialLabel11);
             this.Controls.Add(this.materialRaisedButton5);
             this.Controls.Add(this.materialRaisedButton14);
             this.Controls.Add(this.materialLabel12);
-            this.Controls.Add(this.materialSingleLineTextField3);
+            this.Controls.Add(this.adb_package);
             this.Controls.Add(this.materialLabel10);
-            this.Controls.Add(this.materialRaisedButton13);
+            this.Controls.Add(this.adb_uninstall);
             this.Controls.Add(this.materialSingleLineTextField11);
             this.Controls.Add(this.materialSingleLineTextField7);
             this.Controls.Add(this.materialLabel16);
             this.Controls.Add(this.materialRaisedButton19);
+            this.Controls.Add(this.adb_install_apk_sd);
             this.Controls.Add(this.b_w);
             this.Controls.Add(this.materialLabel13);
             this.Controls.Add(this.materialSingleLineTextField10);
             this.Controls.Add(this.materialSingleLineTextField8);
             this.Controls.Add(this.materialLabel15);
             this.Controls.Add(this.materialLabel14);
-            this.Controls.Add(this.materialRaisedButton12);
+            this.Controls.Add(this.fm);
             this.Controls.Add(this.materialRaisedButton22);
             this.Controls.Add(this.materialLabel9);
-            this.Controls.Add(this.materialSingleLineTextField9);
-            this.Controls.Add(this.materialRaisedButton10);
+            this.Controls.Add(this.edl_code);
+            this.Controls.Add(this.create_full_dump);
             this.Controls.Add(this.materialRaisedButton21);
             this.Controls.Add(this.materialLabel8);
             this.Controls.Add(this.materialRaisedButton20);
-            this.Controls.Add(this.materialRaisedButton9);
+            this.Controls.Add(this.folder_full_dump);
             this.Controls.Add(this.materialRaisedButton7);
             this.Controls.Add(this.materialRadioButton4);
             this.Controls.Add(this.materialRaisedButton8);
             this.Controls.Add(this.materialLabel6);
             this.Controls.Add(this.materialLabel7);
             this.Controls.Add(this.materialLabel5);
-            this.Controls.Add(this.materialRaisedButton6);
+            this.Controls.Add(this.about);
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.materialRaisedButton4);
             this.Controls.Add(this.materialRaisedButton2);
@@ -942,7 +960,7 @@
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialSingleLineTextField2);
             this.Controls.Add(this.materialSingleLineTextField1);
-            this.Controls.Add(this.materialRaisedButton1);
+            this.Controls.Add(this.do_it);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";
@@ -968,11 +986,11 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialRaisedButton do_it;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton4;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton6;
+        private MaterialSkin.Controls.MaterialRaisedButton about;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton8;
@@ -980,20 +998,20 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton7;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton9;
+        private MaterialSkin.Controls.MaterialRaisedButton folder_full_dump;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton10;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton12;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton13;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField3;
+        private MaterialSkin.Controls.MaterialRaisedButton create_full_dump;
+        private MaterialSkin.Controls.MaterialRaisedButton fm;
+        private MaterialSkin.Controls.MaterialRaisedButton adb_uninstall;
+        private MaterialSkin.Controls.MaterialSingleLineTextField adb_package;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton14;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton15;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField5;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField6;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton16;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton17;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton18;
+        private MaterialSkin.Controls.MaterialRaisedButton adb_install;
+        private MaterialSkin.Controls.MaterialSingleLineTextField adb_apk;
+        private MaterialSkin.Controls.MaterialSingleLineTextField adb_device_status_text;
+        private MaterialSkin.Controls.MaterialRaisedButton adb_recovey;
+        private MaterialSkin.Controls.MaterialRaisedButton adb_reboot;
+        private MaterialSkin.Controls.MaterialRaisedButton adb_status;
         private MaterialSkin.Controls.MaterialLabel materialLabel10;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
         private MaterialSkin.Controls.MaterialLabel materialLabel11;
@@ -1004,7 +1022,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel13;
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField8;
         private MaterialSkin.Controls.MaterialLabel materialLabel14;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField9;
+        private MaterialSkin.Controls.MaterialSingleLineTextField edl_code;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton20;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton21;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton22;
@@ -1017,6 +1035,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel18;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton5;
+        private MaterialSkin.Controls.MaterialCheckBox adb_install_apk_sd;
     }
 }
 

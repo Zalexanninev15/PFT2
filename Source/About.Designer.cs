@@ -60,13 +60,13 @@
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(255, 133);
             this.materialLabel2.TabIndex = 14;
-            this.materialLabel2.Text = "PFT2\r\nAuthor: Zalexanninev15 | MT License\r\nVersion: 1.20\r\nBuild: Dev\r\n\r\nUs" +
-    "ed: \r\n- MaterialSkin";
+            this.materialLabel2.Text = "PFT2\r\nAuthor: Zalexanninev15 | MT License\r\nVersion: 1.20\r\nBuild: Dev\r\n\r\nUsed: \r\n-" +
+    " MaterialSkin";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PFT2.Properties.Resources.PFT2;
-            this.pictureBox1.Location = new System.Drawing.Point(91, 76);
+            this.pictureBox1.Location = new System.Drawing.Point(95, 68);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(104, 102);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

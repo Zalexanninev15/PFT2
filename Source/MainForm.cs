@@ -191,19 +191,19 @@ namespace PFT2
                 emmcdl = Convert.ToString(reg.GetValue("emmcdl"));
                 fdump = Convert.ToString(reg.GetValue("FullDump_Folder"));
                 mbn = Convert.ToString(reg.GetValue("MBN"));
-				IMG_All = Convert.ToString(reg.GetValue("IMG_All"));
+                IMG_All = Convert.ToString(reg.GetValue("IMG_All"));
             }
-			if (materialRadioButton3.Checked == true) // Full Dump
-		   {
-			    if (IMG_All == "on")
-				{
-					choose = 0;
-				}	
-				else
-				{
-					choose = 1;
-				}
-		   }
+            if (materialRadioButton3.Checked == true) // Full Dump
+            {
+                if (IMG_All == "on")
+                {
+                    choose = 0;
+                }
+                else
+                {
+                    choose = 1;
+                }
+            }
             Task.Run(() => flasher());
         }
 
@@ -232,31 +232,31 @@ namespace PFT2
                         {
                             if (materialRadioButton3.Checked == true) // Full Dump
                             {
-				                     if (fdump != "")
+                                if (fdump != "")
+                                {
+                                    if (choose == 1) // FDF
                                     {
-										if (choose == 1) // FDF
-										{
-                                          Process process = new Process();
-                                          process.StartInfo.FileName = "cmd.exe";
-                                          process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\full_dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump + " " + fdump + " " + fdump + " " + fdump;
-                                          process.Start();
-                                          process.WaitForExit();
-                                          MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-										}
-										if (choose == 0) // IMG
-										{
-                                          Process process = new Process();
-                                          process.StartInfo.FileName = "cmd.exe";
-                                          process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\full_dumpIMG.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump;
-                                          process.Start();
-                                          process.WaitForExit();
-                                          MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-										}
-				                    }
-				                    else
-                                   {
-                                       MessageBox.Show("Folder for Full Dump is missing!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                   }
+                                        Process process = new Process();
+                                        process.StartInfo.FileName = "cmd.exe";
+                                        process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\full_dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump + " " + fdump + " " + fdump + " " + fdump;
+                                        process.Start();
+                                        process.WaitForExit();
+                                        MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    }
+                                    if (choose == 0) // IMG
+                                    {
+                                        Process process = new Process();
+                                        process.StartInfo.FileName = "cmd.exe";
+                                        process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\full_dumpIMG.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump;
+                                        process.Start();
+                                        process.WaitForExit();
+                                        MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Folder for Full Dump is missing!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                }
                             }
                             if (materialRadioButton2.Checked == true) // Flash
                             {
@@ -266,11 +266,11 @@ namespace PFT2
                                 process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\flash.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
                                 process.Start();
                                 process.WaitForExit();
-                               if (choose == 1) 
-				               {
-					                try { File.Delete(temp); } 
-					                catch { MessageBox.Show("It is not possible to interact with the device or with file for flash!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-				                }
+                                if (choose == 1)
+                                {
+                                    try { File.Delete(temp); }
+                                    catch { MessageBox.Show("It is not possible to interact with the device or with file for flash!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                                }
                                 MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                             if (materialRadioButton1.Checked == true) // Dump
@@ -731,8 +731,8 @@ namespace PFT2
                 process1.StartInfo.CreateNoWindow = true;
                 process1.Start();
                 process1.WaitForExit();
-                if ((command == "get-state") || (command == "reboot") || (command == "reboot recovery")) 
-					adb_device_status_text.Text = process1.StandardOutput.ReadToEnd();
+                if ((command == "get-state") || (command == "reboot") || (command == "reboot recovery"))
+                    adb_device_status_text.Text = process1.StandardOutput.ReadToEnd();
                 string str = "adb";
                 foreach (Process process2 in Process.GetProcesses())
                 {

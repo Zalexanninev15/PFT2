@@ -20,7 +20,7 @@ namespace PFT2
 
         private void MaterialRaisedButton1_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/Zalexanninev15/PFT2");
+            System.Diagnostics.Process.Start("https://zalexanninev15.github.io/PFT2");
         }
 
         private void materialRaisedButton2_Click(object sender, EventArgs e)

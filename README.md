@@ -19,7 +19,7 @@ Partitions Flashing Tool 2 - application for flash and dump partitions, disable 
 
 ## System requirements
 * **OS:** Windows 7 (SP1)/8/8.1/10
-* **Additional:** [Microsoft .NET Framework 4.7.1](https://www.microsoft.com/en-US/download/details.aspx?id=56116), [emmcdl](https://mega.nz/#!Q5kmSI7K!1coqsqWf0SIG6ejFoftd1WU8oyBA3Z0y-oTmnRbQW60), [ADB](https://mega.nz/file/dwdWgYZY#J2LV6nNwIj3jnIsPgCpD2dBAKkkRTk45PXfGnJU6nQY), [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device) and [MBN file [only for ZTE Blade V9 Vita]](https://mega.nz/file/NxM11YAY#4R43VEFT74xSywdl9iHYzp9O8S0d0lAZ7V2yxrqcFb0) (or other for your device), original USB cabel (I don't recommend using magnetic cables)
+* **Additional:** Microsoft .NET Framework 4.7.2, [emmcdl](https://mega.nz/#!Q5kmSI7K!1coqsqWf0SIG6ejFoftd1WU8oyBA3Z0y-oTmnRbQW60), [ADB](https://mega.nz/file/dwdWgYZY#J2LV6nNwIj3jnIsPgCpD2dBAKkkRTk45PXfGnJU6nQY), [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device) and [MBN file [only for ZTE Blade V9 Vita]](https://mega.nz/file/NxM11YAY#4R43VEFT74xSywdl9iHYzp9O8S0d0lAZ7V2yxrqcFb0) (or other for your device), original USB cabel (I don't recommend using magnetic cables)
 
 ## How to use it? (or [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=93484684))
 

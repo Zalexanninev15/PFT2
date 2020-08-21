@@ -177,7 +177,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\winusb_104012.png" />
+    <None Include="Resources\PFT2.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="PFT2.ico" />

@@ -10,7 +10,7 @@ namespace FDFmini
 
         static void Main(string[] args)
         {
-            Console.Title = "FDFmini [Version 1.4.1]";
+            Console.Title = "FDFmini [Version 1.4.2]";
             if (args.Length != 0) 
             {
                 try

@@ -10,7 +10,7 @@ namespace FDFmini
 
         static void Main(string[] args)
         {
-            Console.Title = "FDFmini [Version 1.4.2]";
+            Console.Title = "FDFmini [Version 1.5]";
             if (args.Length != 0) 
             {
                 try
@@ -36,7 +36,7 @@ namespace FDFmini
             else
             {
                 Console.WriteLine();
-                Console.WriteLine("FDFmini v1.4.2 by Zalexanninev15, Alexander927 and And_PDA (ImgExtractor)");
+                Console.WriteLine("FDFmini v1.5 by Zalexanninev15, Alexander927 and And_PDA (ImgExtractor)");
                 Console.WriteLine();
                 Console.WriteLine("FDFmini [Argument 1] [path_to_file] [Argument 2] [Argument 3]");
                 Console.WriteLine();
@@ -62,8 +62,6 @@ namespace FDFmini
                 Console.WriteLine(@"FDFmini -fdf system.fdf D:\PFT2_DATA\UnSystemFDF -system");
                 Console.WriteLine();
             }
-            Console.WriteLine("Press Enter for Exit");
-            Console.Read();
         }
 
         static void UnSystemIMG(string fileIMG, string targetDir)

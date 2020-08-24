@@ -4,6 +4,7 @@ using MaterialSkin.Animations;
 using MaterialSkin.Controls;
 using MaterialSkin;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace PFT2
 {
@@ -20,6 +21,11 @@ namespace PFT2
 
         private void materialRaisedButton9_Click(object sender, EventArgs e)
         {
+            Task.Run(() => ConvertLaunch());
+        }
+
+        async void ConvertLaunch()
+        {
             try
             {
                 if ((materialSingleLineTextField1.Text != "") && (materialSingleLineTextField2.Text != ""))
@@ -33,7 +39,6 @@ namespace PFT2
                         {
                             FileName = "FDFmini.exe",
                             Arguments = @par,
-                            CreateNoWindow = false
                         }
                     };
                     process.Start();

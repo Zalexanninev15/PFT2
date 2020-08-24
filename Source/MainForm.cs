@@ -191,7 +191,10 @@ namespace PFT2
                 emmcdl = Convert.ToString(reg.GetValue("emmcdl"));
                 fdump = Convert.ToString(reg.GetValue("FullDump_Folder"));
                 mbn = Convert.ToString(reg.GetValue("MBN"));
-                IMG_All = Convert.ToString(reg.GetValue("IMG_All"));
+            }
+            using (RegistryKey reg = Registry.CurrentUser.CreateSubKey(@"Software\Zalexanninev15\PFT2\more"))
+            {
+               IMG_All = Convert.ToString(reg.GetValue("IMG_All"));
             }
             if (materialRadioButton3.Checked == true) // Full Dump
             {

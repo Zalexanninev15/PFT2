@@ -45,7 +45,7 @@
             this.materialRaisedButton1.Primary = true;
             this.materialRaisedButton1.Size = new System.Drawing.Size(105, 35);
             this.materialRaisedButton1.TabIndex = 13;
-            this.materialRaisedButton1.Text = "GitHub";
+            this.materialRaisedButton1.Text = "website";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
             this.materialRaisedButton1.Click += new System.EventHandler(this.MaterialRaisedButton1_Click);
             // 
@@ -60,13 +60,13 @@
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(255, 133);
             this.materialLabel2.TabIndex = 14;
-            this.materialLabel2.Text = "PFT2\r\nAuthor: Zalexanninev15 | MT License\r\nVersion: 1.17.2\r\nBuild: 05082020\r\n\r\nUs" +
-    "ed: \r\n- MaterialSkin";
+            this.materialLabel2.Text = "PFT2\r\nAuthor: Zalexanninev15 | MT License\r\nVersion: 1.20\r\nBuild: 24082020\r\n\r\nUsed" +
+    ": \r\n- MaterialSkin";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PFT2.Properties.Resources.PFT2;
-            this.pictureBox1.Location = new System.Drawing.Point(91, 76);
+            this.pictureBox1.Location = new System.Drawing.Point(95, 68);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(104, 102);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -89,7 +89,7 @@
             // About
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(285, 373);
+            this.ClientSize = new System.Drawing.Size(285, 377);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialRaisedButton2);

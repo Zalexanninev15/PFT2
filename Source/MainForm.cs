@@ -103,8 +103,8 @@ namespace PFT2
         // =======================================================================================================================
 
         string[] portal;
-        string theme, adbp, cport, emmcdl, fdump, temp, choose, edl, mbn, code;
-        int form2;
+        string theme, adbp, cport, emmcdl, fdump, temp, edl, mbn, code, IMG_All;
+        int form2, choose;
         Form f;
 
         public MainForm()
@@ -120,14 +120,14 @@ namespace PFT2
             {
                 theme = Convert.ToString(reg.GetValue("Dark_Mode"));
                 materialSingleLineTextField10.Text = Convert.ToString(reg.GetValue("ADB"));
-                materialSingleLineTextField9.Text = Convert.ToString(reg.GetValue("EDL_Code"));
+                edl_code.Text = Convert.ToString(reg.GetValue("EDL_Code"));
                 materialSingleLineTextField11.Text = Convert.ToString(reg.GetValue("MBN"));
                 materialSingleLineTextField8.Text = Convert.ToString(reg.GetValue("FullDump_Folder"));
                 materialSingleLineTextField7.Text = Convert.ToString(reg.GetValue("emmcdl"));
             }
-            if (materialSingleLineTextField9.Text == "")
+            if (edl_code.Text == "")
             {
-                materialSingleLineTextField9.Text = "0xFE";
+                edl_code.Text = "0xFE";
                 using (RegistryKey reg = Registry.CurrentUser.CreateSubKey(@"Software\Zalexanninev15\PFT2"))
                 {
                     reg.SetValue("EDL_Code", "0xFE");
@@ -192,14 +192,22 @@ namespace PFT2
                 fdump = Convert.ToString(reg.GetValue("FullDump_Folder"));
                 mbn = Convert.ToString(reg.GetValue("MBN"));
             }
-            if (fdump != "")
+            using (RegistryKey reg = Registry.CurrentUser.CreateSubKey(@"Software\Zalexanninev15\PFT2\more"))
             {
-                Task.Run(() => flasher());
+               IMG_All = Convert.ToString(reg.GetValue("IMG_All"));
             }
-            else
+            if (materialRadioButton3.Checked == true) // Full Dump
             {
-                MessageBox.Show("Folder for Full Dump is missing!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if (IMG_All == "on")
+                {
+                    choose = 0;
+                }
+                else
+                {
+                    choose = 1;
+                }
             }
+            Task.Run(() => flasher());
         }
 
         async void flasher()
@@ -227,40 +235,62 @@ namespace PFT2
                         {
                             if (materialRadioButton3.Checked == true) // Full Dump
                             {
-                                    Process process = new Process();
-                                    process.StartInfo.FileName = "cmd.exe";
-                                    process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\full_dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump + " " + fdump + " " + fdump + " " + fdump;
-                                    process.Start();
-                                    process.WaitForExit();
-                                    MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                if (fdump != "")
+                                {
+                                    if (choose == 1) // FDF
+                                    {
+                                        Process process = new Process();
+                                        process.StartInfo.FileName = "cmd.exe";
+                                        process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\full_dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump + " " + fdump + " " + fdump + " " + fdump;
+                                        process.Start();
+                                        process.WaitForExit();
+                                        MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    }
+                                    if (choose == 0) // IMG
+                                    {
+                                        Process process = new Process();
+                                        process.StartInfo.FileName = "cmd.exe";
+                                        process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\full_dumpIMG.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + fdump;
+                                        process.Start();
+                                        process.WaitForExit();
+                                        MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Folder for Full Dump is missing!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                }
                             }
                             if (materialRadioButton2.Checked == true) // Flash
                             {
-                                if (choose == "1") { FDFminiFlash(); }
+                                if (choose == 1) { FDFminiFlash(); }
                                 Process process = new Process();
                                 process.StartInfo.FileName = "cmd.exe";
-                                process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\flash.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
+                                process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\flash.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
                                 process.Start();
                                 process.WaitForExit();
-                                try { File.Delete(temp); } catch { MessageBox.Show("It is not possible to interact with the device or with file for flash!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                                if (choose == 1)
+                                {
+                                    try { File.Delete(temp); }
+                                    catch { MessageBox.Show("It is not possible to interact with the device or with file for flash!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                                }
                                 MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                             }
                             if (materialRadioButton1.Checked == true) // Dump
                             {
                                 Process process = new Process();
                                 process.StartInfo.FileName = "cmd.exe";
-                                process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
+                                process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\dump.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn + " " + materialSingleLineTextField1.Text + " " + temp;
                                 process.Start();
                                 process.WaitForExit();
-                                if (choose == "1") { FDFminiDump(); }
+                                if (choose == 1) { FDFminiDump(); }
                                 MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                             if (materialRadioButton4.Checked == true) // Disable Google FRP
                             {
                                 Process process = new Process();
                                 process.StartInfo.FileName = "cmd.exe";
-                                process.StartInfo.Arguments = "/C " + Application.StartupPath + @"\scripts\dgfrp.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn;
+                                process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\dgfrp.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + mbn;
                                 process.Start();
                                 MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
@@ -302,7 +332,7 @@ namespace PFT2
                 {
                     Process process = new Process();
                     process.StartInfo.FileName = "cmd.exe";
-                    process.StartInfo.Arguments = "/C " + Application.StartupPath + "\\scripts\\edl.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + code;
+                    process.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\scripts\edl.bat " + emmcdl + " " + materialSingleLineTextField4.Text + " " + code;
                     process.Start();
                     process.WaitForExit();
                     materialLabel8.Text = "YES";
@@ -322,7 +352,7 @@ namespace PFT2
             {
                 Process process1 = new Process();
                 process1.StartInfo.FileName = "cmd.exe";
-                process1.StartInfo.Arguments = "/C " + adbp + " reboot edl";
+                process1.StartInfo.Arguments = "/C " + @adbp + " reboot edl";
                 process1.Start();
                 process1.WaitForExit();
                 Thread.Sleep(8000);
@@ -339,62 +369,64 @@ namespace PFT2
 
         private void materialRaisedButton8_Click(object sender, EventArgs e)
         {
-            string IMG_Vendor, IMG_System, IMG_All;
+            string IMG_Vendor, IMG_System;
             using (RegistryKey reg = Registry.CurrentUser.CreateSubKey(@"Software\Zalexanninev15\PFT2\More"))
             {
                 IMG_System = reg.GetValue("IMG_System").ToString();
                 IMG_Vendor = reg.GetValue("IMG_Vendor").ToString();
                 IMG_All = reg.GetValue("IMG_All").ToString();
             }
-            if (materialRadioButton1.Checked == true)  //Dump (Save file)
+            if (materialRadioButton1.Checked == true)  // Dump (Save file)
             {
                 saveFileDialog1.FileName = materialSingleLineTextField1.Text;
                 if ((materialSingleLineTextField1.Text == "userdata") || (((IMG_System == "on") && (materialSingleLineTextField1.Text == "system")) || ((IMG_Vendor == "on") && (materialSingleLineTextField1.Text == "vendor")) || (IMG_All == "on")))
                 {
                     saveFileDialog1.Filter = "IMG|*.img";
+		           choose = 0;
                 }
                 else
                 {
                     saveFileDialog1.Filter = "FDF|*.fdf";
-                    choose = "1";
+                    choose = 1;
                 }
                 if (saveFileDialog1.ShowDialog() == DialogResult.Cancel) return;
                 materialSingleLineTextField2.Text = saveFileDialog1.FileName;
-                if (choose == "1") { temp = saveFileDialog1.FileName + ".temp"; }
+                if (choose == 1) { temp = saveFileDialog1.FileName + ".temp"; }
                 else { temp = saveFileDialog1.FileName; }
             }
-            if (materialRadioButton2.Checked == true) //Flash (Open file)
+            if (materialRadioButton2.Checked == true) // Flash (Open file)
             {
                 openFileDialog1.FileName = materialSingleLineTextField1.Text;
                 if ((materialSingleLineTextField1.Text == "userdata") || (((IMG_System == "on") && (materialSingleLineTextField1.Text == "system")) || ((IMG_Vendor == "on") && (materialSingleLineTextField1.Text == "vendor")) || (IMG_All == "on")))
                 {
                     openFileDialog1.Filter = "IMG|*.img";
+		           choose = 0;
                 }
                 else
                 {
                     openFileDialog1.Filter = "FDF|*.fdf";
-                    choose = "1";
+                    choose = 1;
                 }
                 if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
-                materialSingleLineTextField2.Text = openFileDialog1.FileName;
-                if (choose == "1") { temp = openFileDialog1.FileName + ".temp"; }
+                      materialSingleLineTextField2.Text = openFileDialog1.FileName;
+                if (choose == 1) { temp = openFileDialog1.FileName + ".temp"; }
                 else { temp = openFileDialog1.FileName; }
             }
         }
 
         private void materialRadioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            if (materialRadioButton3.Checked == true) { materialSingleLineTextField2.Clear(); materialSingleLineTextField2.Enabled = false; materialRaisedButton8.Enabled = false; materialSingleLineTextField1.Clear(); materialSingleLineTextField1.Enabled = false; materialRaisedButton9.Visible = true; materialRaisedButton7.Enabled = true; materialRaisedButton10.Visible = true; materialRaisedButton1.Visible = false; ; }
+            if (materialRadioButton3.Checked == true) { materialSingleLineTextField2.Clear(); materialSingleLineTextField2.Enabled = false; materialRaisedButton8.Enabled = false; materialSingleLineTextField1.Clear(); materialSingleLineTextField1.Enabled = false; folder_full_dump.Visible = true; materialRaisedButton7.Enabled = true; create_full_dump.Visible = true; do_it.Visible = false; ; }
         }
 
         private void materialRadioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if (materialRadioButton1.Checked == true) { materialRaisedButton1.Text = "Create Dump"; materialSingleLineTextField2.Enabled = true; materialRaisedButton8.Enabled = true; materialSingleLineTextField1.Enabled = true; materialRaisedButton9.Visible = false; materialRaisedButton7.Enabled = true; materialRaisedButton10.Visible = false; materialRaisedButton1.Visible = true; }
+            if (materialRadioButton1.Checked == true) { do_it.Text = "Create Dump"; materialSingleLineTextField2.Enabled = true; materialRaisedButton8.Enabled = true; materialSingleLineTextField1.Enabled = true; folder_full_dump.Visible = false; materialRaisedButton7.Enabled = true; create_full_dump.Visible = false; do_it.Visible = true; }
         }
 
         private void materialRadioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            if (materialRadioButton2.Checked == true) { materialRaisedButton1.Text = "Flash Dump"; materialSingleLineTextField2.Enabled = true; materialRaisedButton8.Enabled = true; materialSingleLineTextField1.Enabled = true; materialRaisedButton9.Visible = false; materialRaisedButton7.Enabled = true; materialRaisedButton10.Visible = false; materialRaisedButton1.Visible = true; }
+            if (materialRadioButton2.Checked == true) { do_it.Text = "Flash Dump"; materialSingleLineTextField2.Enabled = true; materialRaisedButton8.Enabled = true; materialSingleLineTextField1.Enabled = true; folder_full_dump.Visible = false; materialRaisedButton7.Enabled = true; create_full_dump.Visible = false; do_it.Visible = true; }
 
         }
 
@@ -439,25 +471,25 @@ namespace PFT2
 
         private void materialRadioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            if (materialRadioButton4.Checked == true) { materialRaisedButton1.Text = "Disable Google FRP"; materialSingleLineTextField2.Clear(); materialSingleLineTextField2.Enabled = false; materialRaisedButton8.Enabled = false; materialSingleLineTextField1.Clear(); materialSingleLineTextField1.Enabled = false; materialRaisedButton9.Visible = false; materialRaisedButton7.Enabled = false; materialRaisedButton10.Visible = false; materialRaisedButton1.Visible = true; }
+            if (materialRadioButton4.Checked == true) { do_it.Text = "Disable Google FRP"; materialSingleLineTextField2.Clear(); materialSingleLineTextField2.Enabled = false; materialRaisedButton8.Enabled = false; materialSingleLineTextField1.Clear(); materialSingleLineTextField1.Enabled = false; folder_full_dump.Visible = false; materialRaisedButton7.Enabled = false; create_full_dump.Visible = false; do_it.Visible = true; }
         }
 
         private void materialRaisedButton18_Click(object sender, EventArgs e)
         {
-            materialSingleLineTextField6.Clear();
-            ADBCommander("get-state");
+			adb_device_status_text.Text = "...";
+             Task.Run(() => ADBCommander("get-state"));
         }
 
         private void materialRaisedButton17_Click(object sender, EventArgs e)
         {
-            materialSingleLineTextField6.Clear();
-            ADBCommander("reboot");
+			adb_device_status_text.Text = "...";
+             Task.Run(() => ADBCommander("reboot"));
         }
 
         private void materialRaisedButton16_Click(object sender, EventArgs e)
         {
-            materialSingleLineTextField6.Clear();
-            ADBCommander("reboot recovery");
+            adb_device_status_text.Text = "...";
+             Task.Run(() => ADBCommander("reboot recovery"));
         }
 
         private void materialRaisedButton14_Click(object sender, EventArgs e)
@@ -465,19 +497,24 @@ namespace PFT2
             openFileDialog1.FileName = "";
             openFileDialog1.Filter = "APK|*.apk";
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
-                materialSingleLineTextField5.Text = openFileDialog1.FileName;
+                adb_apk.Text = openFileDialog1.FileName;
         }
 
         private void materialRaisedButton15_Click(object sender, EventArgs e)
         {
-            ADBCommander("install -r " + materialSingleLineTextField5.Text);
-            MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (adb_install_apk_sd.Checked == true)
+            {
+                Task.Run(() => ADBCommander("install -r -s " + adb_apk.Text));
+            }
+            else
+            {
+                Task.Run(() => ADBCommander("install -r " + adb_apk.Text));
+            }
         }
 
         private void materialRaisedButton13_Click(object sender, EventArgs e)
         {
-            ADBCommander("shell pm uninstall -k --user 0 " + materialSingleLineTextField3.Text);
-            MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Task.Run(() => ADBCommander("shell pm uninstall -k --user 0 " + adb_package.Text));
         }
 
         private void materialRaisedButton11_Click(object sender, EventArgs e)
@@ -515,8 +552,8 @@ namespace PFT2
 
         private void materialSingleLineTextField9_Enter(object sender, EventArgs e)
         {
-            edl = materialSingleLineTextField9.Text;
-            materialSingleLineTextField9.Clear();
+            edl = edl_code.Text;
+            edl_code.Clear();
         }
 
         private void materialRaisedButton22_Click(object sender, EventArgs e)
@@ -531,7 +568,7 @@ namespace PFT2
                 reg.SetValue("emmcdl", "");
             }
             materialSingleLineTextField7.Clear();
-            materialSingleLineTextField9.Text = "0xFE";
+            edl_code.Text = "0xFE";
             materialSingleLineTextField8.Clear();
             materialSingleLineTextField10.Clear();
             materialSingleLineTextField11.Clear();
@@ -543,7 +580,7 @@ namespace PFT2
             using (RegistryKey reg = Registry.CurrentUser.CreateSubKey(@"Software\Zalexanninev15\PFT2"))
             {
                 reg.SetValue("ADB", materialSingleLineTextField10.Text);
-                reg.SetValue("EDL_Code", materialSingleLineTextField9.Text);
+                reg.SetValue("EDL_Code", edl_code.Text);
                 reg.SetValue("MBN", materialSingleLineTextField11.Text);
                 reg.SetValue("FullDump_Folder", materialSingleLineTextField8.Text);
                 reg.SetValue("emmcdl", materialSingleLineTextField7.Text);
@@ -561,7 +598,7 @@ namespace PFT2
 
         private void materialSingleLineTextField9_Leave(object sender, EventArgs e)
         {
-            materialSingleLineTextField9.Text = edl;
+            edl_code.Text = edl;
         }
 
         private void b_w_CheckedChanged(object sender, EventArgs e)
@@ -590,9 +627,9 @@ namespace PFT2
 
         private void materialSingleLineTextField9_TextChanged(object sender, EventArgs e)
         {
-            if (materialSingleLineTextField9.Text == "more")
+            if (edl_code.Text == "more")
             {
-                materialSingleLineTextField9.Text = edl;
+                edl_code.Text = edl;
                 foreach (Form f in Application.OpenForms)
                 {
                     if (f.Name == "More")
@@ -607,7 +644,7 @@ namespace PFT2
                     f.Show();
                 }
             }
-            if (materialSingleLineTextField9.Text == "con")
+            if (edl_code.Text == "con")
             {
                 string GUI;
                 using (RegistryKey reg = Registry.CurrentUser.CreateSubKey(@"Software\Zalexanninev15\PFT2\More"))
@@ -616,7 +653,7 @@ namespace PFT2
                 }
                 if (GUI == "on")
                 {
-                    materialSingleLineTextField9.Text = edl;
+                    edl_code.Text = edl;
                     foreach (Form f in Application.OpenForms)
                     {
                         if (f.Name == "FDFminiConverter")
@@ -664,7 +701,7 @@ namespace PFT2
         {
             Process FDFmini = new Process();
             FDFmini.StartInfo.FileName = "cmd.exe";
-            FDFmini.StartInfo.Arguments = "/C " + Application.StartupPath + "\\FDFmini.exe " + "-img" + " " + temp + " " + materialSingleLineTextField2.Text + " " + "-c";
+            FDFmini.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\FDFmini.exe " + "-img" + " " + temp + " " + materialSingleLineTextField2.Text + " " + "-c";
             FDFmini.Start();
             FDFmini.WaitForExit();
             File.Delete(temp);
@@ -675,12 +712,12 @@ namespace PFT2
         {
             Process FDFmini = new Process();
             FDFmini.StartInfo.FileName = "cmd.exe";
-            FDFmini.StartInfo.Arguments = "/C " + Application.StartupPath + "\\FDFmini.exe " + "-fdf" + " " + materialSingleLineTextField2.Text + " " + temp + " " + "-u";
+            FDFmini.StartInfo.Arguments = "/C " + @Application.StartupPath + @"\FDFmini.exe " + "-fdf" + " " + materialSingleLineTextField2.Text + " " + temp + " " + "-u";
             FDFmini.Start();
             FDFmini.WaitForExit();
         }
 
-        private void ADBCommander(string command)
+        async void ADBCommander(string command)
         {
             using (RegistryKey reg = Registry.CurrentUser.CreateSubKey(@"Software\Zalexanninev15\PFT2"))
             {
@@ -688,24 +725,29 @@ namespace PFT2
             }
             if (File.Exists(adbp))
             {
+                MessageBox.Show("Work is underway...", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Process process1 = new Process();
                 process1.StartInfo.FileName = "cmd.exe";
-                process1.StartInfo.Arguments = "/C " + adbp + " " + command;
+                process1.StartInfo.Arguments = "/C " + @adbp + " " + command;
                 process1.StartInfo.RedirectStandardOutput = true;
                 process1.StartInfo.UseShellExecute = false;
                 process1.StartInfo.CreateNoWindow = true;
                 process1.Start();
                 process1.WaitForExit();
-                if ((command == "get-state") || (command == "reboot") || (command == "reboot recovery")) { materialSingleLineTextField6.Text = process1.StandardOutput.ReadToEnd(); }
+                if ((command == "get-state") || (command == "reboot") || (command == "reboot recovery"))
+                    adb_device_status_text.Text = process1.StandardOutput.ReadToEnd();
                 string str = "adb";
                 foreach (Process process2 in Process.GetProcesses())
                 {
                     if (process2.ProcessName.ToLower().Contains(str.ToLower()))
                         process2.Kill();
                 }
+                if ((command != "get-state") && (command != "reboot") && (command != "reboot recovery"))
+                {
+                    MessageBox.Show("Done!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             else { MessageBox.Show("ADB not found!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
         }
     }
-
 }

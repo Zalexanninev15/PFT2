@@ -1,5 +1,5 @@
 # PFT2 | [Official Telegram Channel (RU)](https://t.me/PFT2_Channel)
-## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.17.2) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
+## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.20) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
 
 ## Screenshot
 <img src="https://i.imgur.com/pIAJZVX.png" style="zoom:16;" />
@@ -8,18 +8,18 @@
 * [SnowCloudyPie](https://4pda.ru/forum/index.php?showuser=1506787)
 
 ## Description
-Application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphone on Qualcomm chipset (like as emmcdl tool) | [Commands in BAT files](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands%20in%20BAT%20files%20(PFT2_Flasher).md)
+Partitions Flashing Tool 2 - application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphone on Qualcomm chipset (like as emmcdl tool) | [PFT2_Flasher](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands.md)
 
 ## Features
 * Flash and Dump partitions (1 partition or all partitions (Full Dump), Disable Google FRP
 * Switching the device to EDL mode in two ways (emmcdl or ADB)
 * Material Design and Dark mode
-* Working with a smartphone using the ADB functionality (installing and deleting apps, rebooting)
+* Working with a smartphone using the ADB functionality (installing and deleting apps, rebooting and view device status)
 * Support for other smartphones (like emmcdl), thanks to the ability to change the EDL code
 
 ## System requirements
 * **OS:** Windows 7 (SP1)/8/8.1/10
-* **Additional:** [Microsoft .NET Framework 4.7.1](https://www.microsoft.com/en-US/download/details.aspx?id=56116), [emmcdl](https://mega.nz/#!Q5kmSI7K!1coqsqWf0SIG6ejFoftd1WU8oyBA3Z0y-oTmnRbQW60), [ADB](https://mega.nz/file/dwdWgYZY#J2LV6nNwIj3jnIsPgCpD2dBAKkkRTk45PXfGnJU6nQY), [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device) and [MBN file [only for ZTE Blade V9 Vita]](https://mega.nz/file/NxM11YAY#4R43VEFT74xSywdl9iHYzp9O8S0d0lAZ7V2yxrqcFb0) (or other for your device), original USB cabel (I don't recommend using magnetic cables)
+* **Additional:** Microsoft .NET Framework 4.7.2, [emmcdl](https://github.com/Zalexanninev15/PFT2/releases/download/1.20/emmcdl.exe), [ADB](https://github.com/Zalexanninev15/PFT2/releases/download/1.20/ADB.zip), [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device) and [MBN file [only for ZTE Blade V9 Vita]](https://mega.nz/file/NxM11YAY#4R43VEFT74xSywdl9iHYzp9O8S0d0lAZ7V2yxrqcFb0) (or other for your device), original USB cabel (I don't recommend using magnetic cables)
 
 ## How to use it? (or [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=93484684))
 
@@ -27,7 +27,7 @@ Application for flash and dump partitions, disable Google FRP and remote by ADB 
 
 ### Preparing to configure the app:
 
-1. Download the necessary files: [emmcdl](https://mega.nz/#!Q5kmSI7K!1coqsqWf0SIG6ejFoftd1WU8oyBA3Z0y-oTmnRbQW60), [ADB](https://mega.nz/file/dwdWgYZY#J2LV6nNwIj3jnIsPgCpD2dBAKkkRTk45PXfGnJU6nQY), [MBN file [only for ZTE Blade V9 Vita]](https://mega.nz/file/NxM11YAY#4R43VEFT74xSywdl9iHYzp9O8S0d0lAZ7V2yxrqcFb0) (or other for your device) and [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device)
+1. Download the necessary files: [emmcdl](https://github.com/Zalexanninev15/PFT2/releases/download/1.20/emmcdl.exe), [ADB](https://github.com/Zalexanninev15/PFT2/releases/download/1.20/ADB.zip), [MBN file [only for ZTE Blade V9 Vita]](https://mega.nz/file/NxM11YAY#4R43VEFT74xSywdl9iHYzp9O8S0d0lAZ7V2yxrqcFb0) (or other for your device) and [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device)
 2. Extract all archives in any places (the main thing is that there are no spaces in the path), it is best to create a folder next to PFT2 (again, without spaces) and throw everything there
 3. Install the drivers
 
@@ -159,7 +159,7 @@ FDFmini -img [Path to IMG/BIN file] [Path to new FDF file] -c
 FDFmini -img boot.img boot.fdf -c
 ```
 
-*If you have more than 2 IMG files to convert to FDF, and you don't want to waste time typing commands, then extract the contents of [this](https://github.com/Zalexanninev15/PFT2/raw/master/IMG_to_FDF.zip) archive to the folder with dumps. Run the batch file and wait...*
+*If you have more than 2 IMG files to convert to FDF, and you don't want to waste time typing commands, then extract the contents of [this](https://github.com/Zalexanninev15/PFT2/releases/download/1.20/IMG_to_FDF.zip) archive to the folder with dumps. Run the batch file and wait...*
 
 **To convert FDF to IMG use the command:**
 
@@ -255,3 +255,6 @@ Failure to work with COM port. You should again transfer the smartphone to EDL m
 * Shadow Fix ([code](https://jailbreakvideo.ru/shadow-and-mouse-move-for-borderless-windows-forms-application) by [XpucT](https://www.youtube.com/channel/UC2CiWFIOjQix4E6WrARzDZg))
 * System.IO.Compression ([MS-.NET-Library License](https://go.microsoft.com/fwlink/?LinkId=329770))
 * ImgExtractor (by And_PDA)
+
+## Build
+Compile using Visual Studio 2017/2019

@@ -250,6 +250,10 @@ Failure to work with COM port. You should again transfer the smartphone to EDL m
 
 *In short, there is a 97% chance that you can fix any problem by re-switching your smartphone to the EDL firmware mode. Another 3% - problems with drivers (for the COM port), "corrupted" dumps for firmware, brick, gaps in the path, missing files. Also, don't forget that PFT2 doesn't support "spaces" in file paths (or names with them).*
 
+### FDFmini
+
+If the utility refuses to work, check the file paths and file names for "spaces". You can also try deleting the file "System.IO.Compression.dll", which is located next to "FDFmini.exe".
+
 ## Used libraries and other
 * [MaterialSkin](https://github.com/IgnaceMaes/MaterialSkin) ([MIT License](https://github.com/IgnaceMaes/MaterialSkin/blob/master/LICENSE), by [Ignace Maes](https://github.com/IgnaceMaes))
 * Shadow Fix ([code](https://jailbreakvideo.ru/shadow-and-mouse-move-for-borderless-windows-forms-application) by [XpucT](https://www.youtube.com/channel/UC2CiWFIOjQix4E6WrARzDZg))

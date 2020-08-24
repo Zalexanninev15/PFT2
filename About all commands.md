@@ -1,4 +1,4 @@
-# About all commands in BAT files (PFT2_Flasher)
+# About all commands in BAT files for PFT2_Flasher
 
 ### DFU → EDL ([this](https://github.com/Zalexanninev15/PFT2/blob/master/PFT2_Flasher/edl.bat))
 
@@ -12,7 +12,7 @@
 [emmcdl.exe] -p COM[com_port] -f [firehose] -d [partition] -o [dump_file]
 ```
 
-### Full Dump: ([this](https://github.com/Zalexanninev15/PFT2/blob/master/PFT2_Flasher/full_dump.bat))
+### Full Dump ([this](https://github.com/Zalexanninev15/PFT2/blob/master/PFT2_Flasher/full_dump.bat))
 
 ```
 [emmcdl.exe] -p COM[com_port] -f [firehose] -d [partition] -o [folder_for_full_dump]\[dump_file].temp

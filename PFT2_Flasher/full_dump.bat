@@ -141,15 +141,15 @@ del %7\tz.temp
 %1 -p COM%2 -f %3 -d tzbak -o %4\tzbak.temp
 FDFmini -img %5\tzbak.temp %6\tzbak.fdf -c
 del %7\tzbak.temp
-%1 -p COM%2 -f %3 -d vendor -o %4\vendor.temp
-FDFmini -img %5\vendor.temp %6\vendor.fdf -c
-del %7\vendor.temp
 %1 -p COM%2 -f %3 -d ztecfg -o %4\ztecfg.temp
 FDFmini -img %5\ztecfg.temp %6\ztecfg.fdf -c
 del %7\ztecfg.temp
 %1 -p COM%2 -f %3 -d fsc -o %4\fsc.temp
 FDFmini -img %5\fsc.temp %6\fsc.fdf -c
 del %7\fsc.temp
+%1 -p COM%2 -f %3 -d vendor -o %4\vendor.temp
+FDFmini -img %5\vendor.temp %6\vendor.fdf -c
+del %7\vendor.temp
 %1 -p COM%2 -f %3 -d system -o %4\system.temp
 FDFmini -img %5\system.temp %6\system.fdf -c
 del %7\system.temp

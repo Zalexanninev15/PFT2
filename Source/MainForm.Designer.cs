@@ -238,7 +238,7 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(16, 380);
+            this.materialLabel2.Location = new System.Drawing.Point(12, 392);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(37, 19);
@@ -340,7 +340,7 @@
             // 
             this.materialRaisedButton8.Depth = 0;
             this.materialRaisedButton8.Enabled = false;
-            this.materialRaisedButton8.Location = new System.Drawing.Point(423, 389);
+            this.materialRaisedButton8.Location = new System.Drawing.Point(423, 393);
             this.materialRaisedButton8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton8.Name = "materialRaisedButton8";
             this.materialRaisedButton8.Primary = true;

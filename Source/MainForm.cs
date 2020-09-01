@@ -372,9 +372,9 @@ namespace PFT2
             string IMG_Vendor, IMG_System;
             using (RegistryKey reg = Registry.CurrentUser.CreateSubKey(@"Software\Zalexanninev15\PFT2\More"))
             {
-                IMG_System = reg.GetValue("IMG_System").ToString();
-                IMG_Vendor = reg.GetValue("IMG_Vendor").ToString();
-                IMG_All = reg.GetValue("IMG_All").ToString();
+                IMG_System = Convert.ToString(reg.GetValue("IMG_System"));
+                IMG_Vendor = Convert.ToString(reg.GetValue("IMG_Vendor"));
+                IMG_All = Convert.ToString(reg.GetValue("IMG_All"));
             }
             if (materialRadioButton1.Checked == true)  // Dump (Save file)
             {

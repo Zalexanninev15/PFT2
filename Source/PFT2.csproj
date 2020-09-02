@@ -131,11 +131,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FM.cs">
+    <Compile Include="FirmwaresManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FM.Designer.cs">
-      <DependentUpon>FM.cs</DependentUpon>
+    <Compile Include="FirmwaresManager.Designer.cs">
+      <DependentUpon>FirmwaresManager.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FDFminiConverter.resx">
       <DependentUpon>FDFminiConverter.cs</DependentUpon>
@@ -162,8 +162,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="FM.resx">
-      <DependentUpon>FM.cs</DependentUpon>
+    <EmbeddedResource Include="FirmwaresManager.resx">
+      <DependentUpon>FirmwaresManager.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />

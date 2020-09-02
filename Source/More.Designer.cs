@@ -51,6 +51,7 @@
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Allow using the IMG format for \"system\" partition";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -67,6 +68,7 @@
             this.checkBox4.TabIndex = 4;
             this.checkBox4.Text = "Allow using the IMG format for \"vendor\" partition";
             this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // checkBox5
             // 
@@ -113,7 +115,7 @@
             this.materialCheckBox1.TabIndex = 5;
             this.materialCheckBox1.Text = "Enable FDFmini Converter";
             this.materialCheckBox1.UseVisualStyleBackColor = true;
-            this.materialCheckBox1.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.materialCheckBox1.CheckedChanged += new System.EventHandler(this.materialCheckBox1_CheckedChanged);
             // 
             // More
             // 

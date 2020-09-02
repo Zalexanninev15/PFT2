@@ -39,7 +39,7 @@
             // materialRaisedButton1
             // 
             this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(15, 327);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(14, 271);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
@@ -58,10 +58,9 @@
             this.materialLabel2.Location = new System.Drawing.Point(13, 183);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(255, 133);
+            this.materialLabel2.Size = new System.Drawing.Size(255, 76);
             this.materialLabel2.TabIndex = 14;
-            this.materialLabel2.Text = "PFT2\r\nAuthor: Zalexanninev15 | MT License\r\nVersion: 1.20\r\nBuild: 24082020\r\n\r\nUsed" +
-    ": \r\n- MaterialSkin";
+            this.materialLabel2.Text = "PFT2\r\nAuthor: Zalexanninev15 | MT License\r\nVersion: 1.20.1\r\nBuild: 02092020";
             // 
             // pictureBox1
             // 
@@ -76,7 +75,7 @@
             // materialRaisedButton2
             // 
             this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(126, 327);
+            this.materialRaisedButton2.Location = new System.Drawing.Point(125, 271);
             this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton2.Name = "materialRaisedButton2";
             this.materialRaisedButton2.Primary = true;
@@ -89,7 +88,7 @@
             // About
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(285, 377);
+            this.ClientSize = new System.Drawing.Size(285, 320);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialRaisedButton2);

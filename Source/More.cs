@@ -73,5 +73,59 @@ namespace PFT2
             if (checkBox5.Checked == true) { checkBox4.Checked = true; checkBox1.Checked = true; checkBox4.Enabled = false; checkBox1.Enabled = false; }
             if (checkBox5.Checked == false) { checkBox4.Checked = false; checkBox1.Checked = false; checkBox4.Enabled = true; checkBox1.Enabled = true; }
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                using (RegistryKey reg = Registry.CurrentUser.CreateSubKey(@"Software\Zalexanninev15\PFT2\More"))
+                {
+                    reg.SetValue("IMG_System", "on");
+                }
+            }
+            if (checkBox1.Checked == false)
+            {
+                using (RegistryKey reg = Registry.CurrentUser.CreateSubKey(@"Software\Zalexanninev15\PFT2\More"))
+                {
+                    reg.SetValue("IMG_System", "off");
+                }
+            }
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox4.Checked == true)
+            {
+                using (RegistryKey reg = Registry.CurrentUser.CreateSubKey(@"Software\Zalexanninev15\PFT2\More"))
+                {
+                    reg.SetValue("IMG_Vendor", "on");
+                }
+            }
+            if (checkBox4.Checked == false)
+            {
+                using (RegistryKey reg = Registry.CurrentUser.CreateSubKey(@"Software\Zalexanninev15\PFT2\More"))
+                {
+                    reg.SetValue("IMG_Vendor", "off");
+                }
+            }
+        }
+
+        private void materialCheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (materialCheckBox1.Checked == true)
+            {
+                using (RegistryKey reg = Registry.CurrentUser.CreateSubKey(@"Software\Zalexanninev15\PFT2\More"))
+                {
+                    reg.SetValue("GUI", "on");
+                }
+            }
+            if (materialCheckBox1.Checked == false)
+            {
+                using (RegistryKey reg = Registry.CurrentUser.CreateSubKey(@"Software\Zalexanninev15\PFT2\More"))
+                {
+                    reg.SetValue("GUI", "off");
+                }
+            }
+        }
     }
 }

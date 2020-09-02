@@ -463,7 +463,7 @@ namespace PFT2
             }
             if (form2 == 0)
             {
-                f = new FM();
+                f = new FirmwaresManager();
                 f.Show();
             }
         }

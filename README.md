@@ -2,7 +2,7 @@
 ## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.20.1) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
 
 ## Screenshot
-<img src="https://i.imgur.com/pIAJZVX.png" style="zoom:16;" />
+![](https://github.com/Zalexanninev15/PFT2/raw/master/pft2_screenshot.png)
 
 ## Supported 💰 this project
 * [SnowCloudyPie](https://4pda.ru/forum/index.php?showuser=1506787)

@@ -1,5 +1,5 @@
 # PFT2 | [Official Telegram Channel (RU)](https://t.me/PFT2_Channel)
-## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.20.1) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
+## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.20.2) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
 
 ## Screenshot
 ![](https://github.com/Zalexanninev15/PFT2/raw/master/pft2_screenshot.png)
@@ -159,7 +159,7 @@ FDFmini -img [Path to IMG/BIN file] [Path to new FDF file] -c
 FDFmini -img boot.img boot.fdf -c
 ```
 
-*If you have more than 2 IMG files to convert to FDF, and you don't want to waste time typing commands, then extract the contents of [this](https://github.com/Zalexanninev15/PFT2/releases/download/1.20/IMG_to_FDF.zip) archive to the folder with dumps. Run the batch file and wait...*
+*If you have more than 2 IMG files to convert to FDF, and you don't want to waste time typing commands, then extract the contents of [this](https://github.com/Zalexanninev15/PFT2/releases/download/1.20.2/IMG_to_FDF.zip) archive to the folder with dumps. Run the batch file and wait...*
 
 **To convert FDF to IMG use the command:**
 

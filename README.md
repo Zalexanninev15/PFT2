@@ -33,7 +33,7 @@ Partitions Flashing Tool 2 - application for flash and dump partitions, disable 
 
 ### Setting up the app for you:
 
-1. Launch `PFT2.exe` and immediately configure the app (point "Settings")
+1. Launch `PFT2.exe` and configure the app ("Settings")
 2. Now specify the necessary files, folders, and other settings and click "APPLY". To reset all settings, click "RESET"
 
 *You can open advanced settings by entering "more" (without quotes) in the text field for EDL code.*
@@ -102,7 +102,7 @@ Partitions Flashing Tool 2 - application for flash and dump partitions, disable 
 
 5. Click button (before "Do IT!") and wait for the end of the process
 
-   **P.S.** * In some cases, especially when after creating a dump you take to firmware, errors may pop up in the command line. If everything ends with success, reading/writing sectors will reach 0 and there will be no errors at the end - then with a 99.7% probability you will have everything*👌
+   **P.S.** In some cases, especially when after creating a dump you take to firmware, errors may pop up in the command line. If everything ends with success, reading/writing sectors will reach 0 and there will be no errors at the end - then with a 99.7% probability you will have everything*👌
    *If you still want to be safe (or you have a mistake), then **you should**:*
    *1) Check the firmware files (they may be damaged/do not fit your device)*
    *2) Disconnect the phone from the PC and reconnect it, then re-enter into EDL mode and perform the desired action*
@@ -261,4 +261,4 @@ If the utility refuses to work, check the file paths and file names for "spaces"
 * ImgExtractor (by And_PDA)
 
 ## Build
-Compile using Visual Studio 2017/2019
+Compile using Visual Studio 2017-2019

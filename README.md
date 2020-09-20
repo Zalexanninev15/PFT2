@@ -98,11 +98,11 @@ Partitions Flashing Tool 2 - application for flash and dump partitions, disable 
 
 4. Fill in the necessary fields in "Dump and Flash"
 
-   *To wipe "userdata" (or other partitions), you can flash the file " Wipe_userdata.pdf "(located in the folder with the application) in the "userdata" partition (or other partition)*
+   *To wipe "userdata" (or other partitions), you can flash the file "Wipe_userdata.pdf" (located in the folder with the application) in the "userdata" partition (or other partition)*
 
 5. Click button (before "Do IT!") and wait for the end of the process
 
-   **P.S.** *In some cases, especially when after creating a dump you take to firmware, errors may pop up in the command line. If everything ends with success, reading/writing sectors will reach 0 and there will be no errors at the end - then with a 99.7% probability you will have everything*👌
+   **P.S.** * In some cases, especially when after creating a dump you take to firmware, errors may pop up in the command line. If everything ends with success, reading/writing sectors will reach 0 and there will be no errors at the end - then with a 99.7% probability you will have everything*👌
    *If you still want to be safe (or you have a mistake), then **you should**:*
    *1) Check the firmware files (they may be damaged/do not fit your device)*
    *2) Disconnect the phone from the PC and reconnect it, then re-enter into EDL mode and perform the desired action*

@@ -1,5 +1,5 @@
 # PFT2 | [Official Telegram Channel (RU)](https://t.me/PFT2_Channel)
-## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.20.3) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
+## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.20.3.5) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
 
 ## Screenshot
 ![](https://github.com/Zalexanninev15/PFT2/blob/master/pft2_screenshot.png?raw=true)
@@ -11,7 +11,7 @@
 
 ## Description
 
-Partitions Flashing Tool 2 - application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphone on Qualcomm chipset (like as emmcdl tool) | [PFT2_Flasher](https://github.com/Zalexanninev15/PFT2/blob/master/Flasher%20commands.md)
+Partitions Flashing Tool 2 - application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphones on Qualcomm chipset (like as emmcdl tool) | [PFT2_Flasher](https://github.com/Zalexanninev15/PFT2/blob/master/Flasher%20commands.md)
 
 ## Features
 * Flash and Dump partitions (1 partition or all partitions (Full Dump), Disable Google FRP

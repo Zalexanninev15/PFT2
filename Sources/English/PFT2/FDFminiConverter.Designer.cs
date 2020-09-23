@@ -74,7 +74,7 @@
             // 
             this.materialSingleLineTextField1.Depth = 0;
             this.materialSingleLineTextField1.Enabled = false;
-            this.materialSingleLineTextField1.Hint = "File for convert";
+            this.materialSingleLineTextField1.Hint = "File for convert (\"D\")";
             this.materialSingleLineTextField1.Location = new System.Drawing.Point(58, 79);
             this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
@@ -90,7 +90,7 @@
             // 
             this.materialSingleLineTextField2.Depth = 0;
             this.materialSingleLineTextField2.Enabled = false;
-            this.materialSingleLineTextField2.Hint = "File after convert";
+            this.materialSingleLineTextField2.Hint = "File after convert (\"D\")";
             this.materialSingleLineTextField2.Location = new System.Drawing.Point(58, 118);
             this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
@@ -142,10 +142,6 @@
             this.materialRaisedButton9.UseVisualStyleBackColor = true;
             this.materialRaisedButton9.Click += new System.EventHandler(this.materialRaisedButton9_Click);
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // materialCheckBox1
             // 
             this.materialCheckBox1.AutoSize = true;
@@ -195,7 +191,7 @@
             this.materialLabel3.TabIndex = 29;
             this.materialLabel3.Text = "To:";
             // 
-            // FDFminiGUI
+            // FDFminiConverter
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(609, 157);
@@ -212,7 +208,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FDFminiGUI";
+            this.Name = "FDFminiConverter";
             this.Sizable = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

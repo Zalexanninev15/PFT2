@@ -74,7 +74,7 @@
             // 
             this.materialSingleLineTextField1.Depth = 0;
             this.materialSingleLineTextField1.Enabled = false;
-            this.materialSingleLineTextField1.Hint = "Файл для преобразования";
+            this.materialSingleLineTextField1.Hint = "Файл для преобразования (\"D\")";
             this.materialSingleLineTextField1.Location = new System.Drawing.Point(69, 79);
             this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
@@ -90,7 +90,7 @@
             // 
             this.materialSingleLineTextField2.Depth = 0;
             this.materialSingleLineTextField2.Enabled = false;
-            this.materialSingleLineTextField2.Hint = "Файл после преобразования";
+            this.materialSingleLineTextField2.Hint = "Файл после преобразования (\"D\")";
             this.materialSingleLineTextField2.Location = new System.Drawing.Point(140, 118);
             this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
@@ -141,10 +141,6 @@
             this.materialRaisedButton9.Text = "Преобразовать";
             this.materialRaisedButton9.UseVisualStyleBackColor = true;
             this.materialRaisedButton9.Click += new System.EventHandler(this.materialRaisedButton9_Click);
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // materialCheckBox1
             // 

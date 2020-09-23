@@ -370,12 +370,12 @@
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.Title = "File for work";
+            this.openFileDialog1.Title = "Файл для работы";
             // 
             // saveFileDialog1
             // 
             this.saveFileDialog1.FilterIndex = 3;
-            this.saveFileDialog1.Title = "File for dump";
+            this.saveFileDialog1.Title = "Файл для бэкапа";
             // 
             // materialRaisedButton7
             // 

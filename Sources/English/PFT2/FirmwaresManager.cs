@@ -15,7 +15,6 @@ namespace PFT2
         string[] info = new string[4];
         string[] bugs = new string[4];
         string[] du16 = new string[4];
-        string[] du32 = new string[4];
         string[] gapps = new string[4];
         int c = 10;
         public FirmwaresManager()
@@ -33,7 +32,6 @@ namespace PFT2
             gapps[0] = "YES"; gapps[1] = "YES"; gapps[2] = "YES"; gapps[3] = "NO/YES";
             bugs[0] = "NO"; bugs[1] = "NO"; bugs[2] = "YES"; bugs[3] = "YES";
             du16[0] = "http://tinyurl.com/y4three7"; du16[1] = "http://tinyurl.com/yxuuseax"; du16[2] = "http://tinyurl.com/y6byyone"; du16[3] = "http://tinyurl.com/y8f6po87";
-            du32[0] = "http://tinyurl.com/y2fs8z63"; du32[1] = "http://tinyurl.com/y5ebcaws"; du32[2] = "http://tinyurl.com/y6zcweux"; du32[3] = "http://tinyurl.com/y8f6po87";
         }
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
@@ -46,7 +44,6 @@ namespace PFT2
             materialLabel15.Text = gapps[c];
             materialLabel10.Text = bugs[c];
             linkLabel1.Text = du16[c];
-            linkLabel2.Text = du32[c];
         }
 
         private void materialRaisedButton5_Click(object sender, EventArgs e)
@@ -58,12 +55,6 @@ namespace PFT2
         {
             if (c != 10)
                 Process.Start(du16[c]); 
-        }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            if (c != 10)
-                Process.Start(du32[c]); 
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -82,7 +73,6 @@ namespace PFT2
             materialLabel15.Text = gapps[c];
             materialLabel10.Text = bugs[c];
             linkLabel1.Text = du16[c];
-            linkLabel2.Text = du32[c];
         }
 
         private void materialRaisedButton3_Click(object sender, EventArgs e)
@@ -95,7 +85,6 @@ namespace PFT2
             materialLabel15.Text = gapps[c];
             materialLabel10.Text = bugs[c];
             linkLabel1.Text = du16[c];
-            linkLabel2.Text = du32[c];
         }
 
         private void materialRaisedButton4_Click(object sender, EventArgs e)
@@ -108,7 +97,6 @@ namespace PFT2
             materialLabel15.Text = gapps[c];
             materialLabel10.Text = bugs[c];
             linkLabel1.Text = du16[c];
-            linkLabel2.Text = du32[c];
         }
     }
 }

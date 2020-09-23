@@ -519,7 +519,7 @@ namespace PFT2
         private void materialRaisedButton11_Click(object sender, EventArgs e)
         {
             openFileDialog1.FileName = "";
-            openFileDialog1.Filter = "emmcdl file|emmcdl.exe";
+            openFileDialog1.Filter = "emmcdl|emmcdl.exe";
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
                 materialSingleLineTextField7.Text = openFileDialog1.FileName;
         }
@@ -535,7 +535,7 @@ namespace PFT2
         private void materialRaisedButton20_Click(object sender, EventArgs e)
         {
             openFileDialog1.FileName = "";
-            openFileDialog1.Filter = "ADB file|adb.exe";
+            openFileDialog1.Filter = "ADB|adb.exe";
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
                 materialSingleLineTextField10.Text = openFileDialog1.FileName;
         }

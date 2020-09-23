@@ -1,14 +1,17 @@
 # PFT2 | [Official Telegram Channel (RU)](https://t.me/PFT2_Channel)
-## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.20.2) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
+## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.20.3) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
 
 ## Screenshot
 ![](https://github.com/Zalexanninev15/PFT2/blob/master/pft2_screenshot.png?raw=true)
 
 ## Supported 💰 this project
+
 * [SnowCloudyPie](https://4pda.ru/forum/index.php?showuser=1506787)
+* kilovar337
 
 ## Description
-Partitions Flashing Tool 2 - application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphone on Qualcomm chipset (like as emmcdl tool) | [PFT2_Flasher](https://github.com/Zalexanninev15/PFT2/blob/master/About%20all%20commands.md)
+
+Partitions Flashing Tool 2 - application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphone on Qualcomm chipset (like as emmcdl tool) | [PFT2_Flasher](https://github.com/Zalexanninev15/PFT2/blob/master/Flasher%20commands.md)
 
 ## Features
 * Flash and Dump partitions (1 partition or all partitions (Full Dump), Disable Google FRP
@@ -19,15 +22,17 @@ Partitions Flashing Tool 2 - application for flash and dump partitions, disable 
 
 ## System requirements
 * **OS:** Windows 7 (SP1)/8/8.1/10
-* **Additional:** Microsoft .NET Framework 4.7.2, [emmcdl](https://github.com/Zalexanninev15/PFT2/releases/download/1.20/emmcdl.exe), [ADB](https://github.com/Zalexanninev15/PFT2/releases/download/1.20/ADB.zip), [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device) and [MBN file [only for ZTE Blade V9 Vita]](https://mega.nz/file/NxM11YAY#4R43VEFT74xSywdl9iHYzp9O8S0d0lAZ7V2yxrqcFb0) (or other for your device), original USB cabel (I don't recommend using magnetic cables)
+* **Additional:** Microsoft .NET Framework 4.8, [emmcdl](https://github.com/Zalexanninev15/PFT2/releases/download/1.20.3/emmcdl.exe), [ADB](https://github.com/Zalexanninev15/PFT2/releases/download/1.20.3/ADB.zip), [ZTE + Qualcomm USB Drivers + ADB Drivers](https://mega.nz/file/MhdGwYKb#00MsgumREKAUc20Ot_wy4FlnAOi0nNqW2ZNUpDnVqSI) (or others for your device) and [MBN file [only for ZTE Blade V9 Vita]](https://github.com/Zalexanninev15/PFT-Linux/raw/master/tools/emmc.mbn) (or other for your device), original USB cabel (I don't recommend using magnetic cables)
 
-## How to use it? (or [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=93484684))
+## How to use it?
+
+For Russian speakers: [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=93484684), [Video on YouTube](https://youtu.be/NCe7R45jYhM)
 
 **I recommend reading this information in [Typora](https://typora.io/) or any other MARKDOWN editor or viewer.**
 
 ### Preparing to configure the app:
 
-1. Download the necessary files: [emmcdl](https://github.com/Zalexanninev15/PFT2/releases/download/1.20/emmcdl.exe), [ADB](https://github.com/Zalexanninev15/PFT2/releases/download/1.20/ADB.zip), [MBN file [only for ZTE Blade V9 Vita]](https://mega.nz/file/NxM11YAY#4R43VEFT74xSywdl9iHYzp9O8S0d0lAZ7V2yxrqcFb0) (or other for your device) and [ZTE + Qualcomm USB Drivers](https://cloud.mail.ru/public/CSQ9/4y878mma8) (or others for your device)
+1. Download the necessary files: [emmcdl](https://github.com/Zalexanninev15/PFT2/releases/download/1.20.3/emmcdl.exe), [ADB](https://github.com/Zalexanninev15/PFT2/releases/download/1.20.3/ADB.zip), [MBN file [only for ZTE Blade V9 Vita]](https://github.com/Zalexanninev15/PFT-Linux/raw/master/tools/emmc.mbn) (or other for your device) and [ZTE + Qualcomm USB Drivers + ADB Drivers](https://mega.nz/file/MhdGwYKb#00MsgumREKAUc20Ot_wy4FlnAOi0nNqW2ZNUpDnVqSI) (or others for your device)
 2. Extract all archives in any places (the main thing is that there are no spaces in the path), it is best to create a folder next to PFT2 (again, without spaces) and throw everything there
 3. Install the drivers
 
@@ -159,7 +164,7 @@ FDFmini -img [Path to IMG/BIN file] [Path to new FDF file] -c
 FDFmini -img boot.img boot.fdf -c
 ```
 
-*If you have more than 2 IMG files to convert to FDF, and you don't want to waste time typing commands, then extract the contents of [this](https://github.com/Zalexanninev15/PFT2/releases/download/1.20.2/IMG_to_FDF.zip) archive to the folder with dumps. Run the batch file and wait...*
+*If you have more than 2 IMG files to convert to FDF, and you don't want to waste time typing commands, then extract the contents of [this](https://github.com/Zalexanninev15/PFT2/releases/download/1.20.3/IMG_to_FDF.zip) archive to the folder with dumps. Run the batch file and wait...*
 
 **To convert FDF to IMG use the command:**
 
@@ -255,10 +260,12 @@ Failure to work with COM port. You should again transfer the smartphone to EDL m
 If the utility refuses to work, check the file paths and file names for "spaces". You can also try deleting the file "System.IO.Compression.dll", which is located next to "FDFmini.exe".
 
 ## Used libraries and other
+
 * [MaterialSkin](https://github.com/IgnaceMaes/MaterialSkin) ([MIT License](https://github.com/IgnaceMaes/MaterialSkin/blob/master/LICENSE), by [Ignace Maes](https://github.com/IgnaceMaes))
 * Shadow Fix ([code](https://jailbreakvideo.ru/shadow-and-mouse-move-for-borderless-windows-forms-application) by [XpucT](https://www.youtube.com/channel/UC2CiWFIOjQix4E6WrARzDZg))
 * System.IO.Compression ([MS-.NET-Library License](https://go.microsoft.com/fwlink/?LinkId=329770))
 * ImgExtractor (by And_PDA)
 
 ## Build
+
 Compile using Visual Studio 2017-2019

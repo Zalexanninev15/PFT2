@@ -207,7 +207,7 @@
             // 
             this.materialSingleLineTextField1.Depth = 0;
             this.materialSingleLineTextField1.Enabled = false;
-            this.materialSingleLineTextField1.Hint = "Devices partition (\"A\") for working with emmcdl";
+            this.materialSingleLineTextField1.Hint = "Device partition (\"A\")";
             this.materialSingleLineTextField1.Location = new System.Drawing.Point(88, 349);
             this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
@@ -316,7 +316,7 @@
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(64, 143);
+            this.materialLabel5.Location = new System.Drawing.Point(68, 143);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(135, 19);

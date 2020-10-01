@@ -19,6 +19,7 @@ Partitions Flashing Tool 2 - application for flash and dump partitions, disable 
 * Fast firmware and backup of partitions (one partition or all (except "userdata")), disabling Google FRP protection
 * Switch your smartphone to EDL mode using 2 options: emmcdl (DFU) or ADB
 * Work with your smartphone using minimal ADB functionality (installing and deleting apps, restarting and viewing the current status of the device)
+* A "Firmwares Manager" is also available for ZTE Blade V9 Vita, which contains information about stock firmware (all versions) and [LineageOS 15.1](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=86029984)
 * Support for other smartphones (which are also flashed using emmcdl), thanks to the ability to change the EDL code. You can also change the application code and scripts that are used to interact with emmcdl
 * Material design and Dark mode
 * Automatically check for updates for new versions

@@ -8,6 +8,7 @@
 
 * [SnowCloudyPie](https://4pda.ru/forum/index.php?showuser=1506787)
 * kilovar337
+* [MuchelTy6](https://forum.xda-developers.com/member.php?u=11046943)
 
 ## Description
 

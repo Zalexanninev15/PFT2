@@ -14,11 +14,14 @@
 Partitions Flashing Tool 2 - application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphones on Qualcomm chipset (like as emmcdl tool) | [PFT2_Flasher](https://github.com/Zalexanninev15/PFT2/blob/master/Flasher%20commands.md)
 
 ## Features
-* Flash and Dump partitions (1 partition or all partitions (Full Dump), Disable Google FRP
-* Switching the device to EDL mode in two ways (emmcdl or ADB)
-* Material Design and Dark mode
-* Working with a smartphone using the ADB functionality (installing and deleting apps, rebooting and view device status)
-* Support for other smartphones (like emmcdl), thanks to the ability to change the EDL code
+
+* Fast firmware and backup of partitions (one partition or all (except "userdata")), disabling Google FRP protection
+* Switch your smartphone to EDL mode using 2 options: emmcdl (DFU) or ADB
+* Work with your smartphone using minimal ADB functionality (installing and deleting apps, restarting and viewing the current status of the device)
+* Support for other smartphones (which are also flashed using emmcdl), thanks to the ability to change the EDL code. You can also change the application code and scripts that are used to interact with emmcdl
+* Material design and Dark mode
+* Automatically check for updates for new versions
+* Support for the Russian language using a separate Russifier
 
 ## System requirements
 * **OS:** Windows 7 (SP1)/8/8.1/10

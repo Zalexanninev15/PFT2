@@ -199,10 +199,11 @@ To create an FDF file, I still recommend using FDFmini, so that there are no pro
 
 #### **About ROOT and TWRP:**
 
-- root - incomplete due to a blocked bootloader (no access to system and vendor)
+- root - incomplete due to a blocked bootloader (no access to system and vendor) | [Post on XDA](https://forum.xda-developers.com/showpost.php?p=83652475&postcount=7)
   1. Download patched boot and Magisk Manager: https://mega.nz/file/B5MxQSJY#mAbsKzcTr28nPVMyHQqJjepjmai3fA9Mj2tLQ5jT9pM
-  2. Extract ZIP archive, select and flash one of the FDF files in "boot" partition
-  3. After the flash is finished, install either "magisk583.apk" (for "bootmagisk160.fdf") or "magisk591.apk" (for "bootmagisk167.fdf") on the device (via ADB, or via the device's File Manager)
+  2. Extract ZIP archive, flash "bootmagisk160.fdf" to "boot" partition
+  3. Through device recovery mode, erase all data
+  3. Install the file "magisk591.apk" on Android and check for root rights
   
 - TWRP - test build with very limited features (you need to unlock the loader to get more functionality in TWRP)
   1. Download TWRP recovery: https://mega.nz/file/Y0UTxSDA#Sb6ZzVRepeISKR3a7P5cYMJysE8mmkt_U1PVYQ5VJQE

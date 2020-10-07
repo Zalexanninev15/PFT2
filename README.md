@@ -12,7 +12,9 @@
 
 ## Description
 
-Partitions Flashing Tool 2 - application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphones on Qualcomm chipset (like as emmcdl tool) | [PFT2_Flasher](https://github.com/Zalexanninev15/PFT2/blob/master/Flasher%20commands.md)
+Application for flashing & backing up partitions and disabling Google FRP protection on ZTE Blade V9 Vista and ZTE Blade A7 Vita smartphones, as well as, possibly, on other devices running on Qualcomm processors | [PFT2_Flasher](https://github.com/Zalexanninev15/PFT2/blob/master/Flasher%20commands.md)
+
+It is a continuation of the development of the [PFT utility](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=85383238) from [friendki11er](https://4pda.ru/forum/index.php?showuser=198744), but with a graphical interface and a new author.
 
 ## Features
 
@@ -31,7 +33,7 @@ Partitions Flashing Tool 2 - application for flash and dump partitions, disable 
 
 ## How to use it?
 
-For Russian speakers: [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=93484684), [Video on YouTube](https://youtu.be/NCe7R45jYhM)
+For Russian speakers: [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=93484684), [Video on YouTube](https://youtu.be/NCe7R45jYhM) | Full Russification: Copy the contents of the "Russifier (русификатор)" folder to the "PFT2" folder
 
 **I recommend reading this information in [Typora](https://typora.io/) or any other MARKDOWN editor or viewer.**
 

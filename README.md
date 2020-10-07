@@ -199,11 +199,11 @@ To create an FDF file, I still recommend using FDFmini, so that there are no pro
 
 #### **About ROOT and TWRP:**
 
-- root - incomplete due to a blocked bootloader (no access to system and vendor) | [Post on XDA](https://forum.xda-developers.com/showpost.php?p=83652475&postcount=7)
+- root - incomplete due to a blocked bootloader (no access to "system" and "vendor") | [Post on XDA](https://forum.xda-developers.com/showpost.php?p=83652475&postcount=7)
   1. Download patched boot and Magisk Manager: https://mega.nz/file/B5MxQSJY#mAbsKzcTr28nPVMyHQqJjepjmai3fA9Mj2tLQ5jT9pM
-  2. Extract ZIP archive, flash "bootmagisk160.fdf" to "boot" partition
-  3. Through device recovery mode, erase all data
-  3. Install the file "magisk591.apk" on Android and check for root rights
+  2. Extract ZIP archive, flash "bootmagisk160.fdf" to "boot" partition (or flash "bootmagisk167.fdf" [Beta])
+  3. Through device recovery mode, erase (wipe) all data
+  3. Install the file "magisk583.apk" (or "magisk591.apk" [Beta] for "bootmagisk167.fdf") on Android and check for root rights
   
 - TWRP - test build with very limited features (you need to unlock the loader to get more functionality in TWRP)
   1. Download TWRP recovery: https://mega.nz/file/Y0UTxSDA#Sb6ZzVRepeISKR3a7P5cYMJysE8mmkt_U1PVYQ5VJQE
@@ -217,9 +217,9 @@ To create an FDF file, I still recommend using FDFmini, so that there are no pro
 
 #### Modifying image of the "system" partition
 
-* ***Unpacking an image***
+***Unpacking the image***
 
-You can unpack the image using the FDFmini utility (starting from **version 1.4**). This utility will use another utility called "ImgExtractor" (by And_PDA).
+You can unpack the image using the FDFmini utility. This utility will use another utility called "ImgExtractor" (by And_PDA).
 
 **For FDF file:**
 

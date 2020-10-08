@@ -60,11 +60,11 @@
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(276, 76);
             this.materialLabel2.TabIndex = 14;
-            this.materialLabel2.Text = "PFT2\r\nАвтор: Zalexanninev15 | Лицензия MIT\r\nВерсия: 1.20.3.5\r\nСборка: 23092020";
+            this.materialLabel2.Text = "PFT2\r\nАвтор: Zalexanninev15 | Лицензия MIT\r\nВерсия: 1.20.3.6\r\nСборка: 08102020";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::PFT2.Properties.Resources.PFT2;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(95, 68);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(104, 102);

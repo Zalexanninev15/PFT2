@@ -207,7 +207,7 @@ To create an FDF file, I still recommend using FDFmini, so that there are no pro
   3. Through device recovery mode, erase (wipe) all data
   3. Install the file "magisk583.apk" (or "magisk591.apk" [Beta] for "bootmagisk167.fdf") on Android and check for root rights
   
-- TWRP - test build with very limited features (you need to unlock the loader to get more functionality in TWRP)
+- TWRP - test build with very limited features (you need to unlock the bootloader to get more functionality in TWRP)
   1. Download TWRP recovery: https://mega.nz/file/Y0UTxSDA#Sb6ZzVRepeISKR3a7P5cYMJysE8mmkt_U1PVYQ5VJQE
   2. Extract ZIP archive and flash FDF file in "recovery" partition
   
@@ -265,7 +265,7 @@ Failure to work with COM port. You should again transfer the smartphone to EDL m
 
 ### FDFmini
 
-If the utility refuses to work, check the file paths and file names for "spaces". You can also try deleting the file "System.IO.Compression.dll", which is located next to "FDFmini.exe".
+If the utility refuses to work, check the file paths and file names for "spaces". You can also try deleting the file "System.IO.Compression.dll", which is located with "FDFmini.exe".
 
 ## Used libraries and other
 

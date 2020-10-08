@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
 [assembly: AssemblyTitle("PFT2")]
-[assembly: AssemblyDescription("Приложение для прошивки и бэкапа разделов, отключения Google FRP и управления с помощью ADB для ZTE Blade V9 Vita, ZTE Blade A7 Vita и других смартфонов на процессоре Qualcomm (также как и emmcdl)")]
+[assembly: AssemblyDescription("Приложение для прошивки и бэкапа разделов и снятия защиты Google FRP на смартфонах ZTE Blade V9 Vita и ZTE Blade A7 Vita, а также, возможно, и на других устройствах на процессорах Qualcomm")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Zalexanninev15")]
 [assembly: AssemblyProduct("PFT2")]

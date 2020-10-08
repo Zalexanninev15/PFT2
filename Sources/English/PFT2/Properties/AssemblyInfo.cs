@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
 [assembly: AssemblyTitle("PFT2")]
-[assembly: AssemblyDescription("Application for flash and dump partitions, disable Google FRP and remote by ADB for ZTE Blade V9 Vita, ZTE Blade A7 Vita and other smartphones on Qualcomm chipset (like as emmcdl tool)")]
+[assembly: AssemblyDescription("Application for flashing & backing up partitions and disabling Google FRP protection on ZTE Blade V9 Vista and ZTE Blade A7 Vita smartphones, as well as, possibly, on other devices running on Qualcomm processors")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Zalexanninev15")]
 [assembly: AssemblyProduct("PFT2")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // Можно задать все значения или принять номера сборки и редакции по умолчанию 
 // используя "*", как показано ниже:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.20.3.5")]
-[assembly: AssemblyFileVersion("1.20.3.5")]
+[assembly: AssemblyVersion("1.20.3.6")]
+[assembly: AssemblyFileVersion("1.20.3.6")]

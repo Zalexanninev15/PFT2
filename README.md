@@ -1,5 +1,5 @@
 # PFT2 | [Official Telegram Channel (RU)](https://t.me/PFT2_Channel)
-## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.20.3.6) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
+## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.20.3.5) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
 
 ## Screenshot
 ![](https://github.com/Zalexanninev15/PFT2/blob/master/pft2_screenshot.png?raw=true)

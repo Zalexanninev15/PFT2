@@ -181,8 +181,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="PFT2.ico" />
     <None Include="Resources\PFT2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PFT2.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

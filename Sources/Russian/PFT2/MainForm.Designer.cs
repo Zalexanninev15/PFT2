@@ -96,7 +96,7 @@
             this.materialRadioButton2.AutoSize = true;
             this.materialRadioButton2.Depth = 0;
             this.materialRadioButton2.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialRadioButton2.Location = new System.Drawing.Point(201, 258);
+            this.materialRadioButton2.Location = new System.Drawing.Point(200, 258);
             this.materialRadioButton2.Margin = new System.Windows.Forms.Padding(0);
             this.materialRadioButton2.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialRadioButton2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -127,7 +127,7 @@
             this.materialRadioButton1.AutoSize = true;
             this.materialRadioButton1.Depth = 0;
             this.materialRadioButton1.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialRadioButton1.Location = new System.Drawing.Point(130, 258);
+            this.materialRadioButton1.Location = new System.Drawing.Point(128, 258);
             this.materialRadioButton1.Margin = new System.Windows.Forms.Padding(0);
             this.materialRadioButton1.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialRadioButton1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -190,7 +190,7 @@
             this.materialRadioButton3.AutoSize = true;
             this.materialRadioButton3.Depth = 0;
             this.materialRadioButton3.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialRadioButton3.Location = new System.Drawing.Point(7, 258);
+            this.materialRadioButton3.Location = new System.Drawing.Point(3, 258);
             this.materialRadioButton3.Margin = new System.Windows.Forms.Padding(0);
             this.materialRadioButton3.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialRadioButton3.MouseState = MaterialSkin.MouseState.HOVER;
@@ -355,7 +355,7 @@
             this.materialRadioButton4.AutoSize = true;
             this.materialRadioButton4.Depth = 0;
             this.materialRadioButton4.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialRadioButton4.Location = new System.Drawing.Point(289, 258);
+            this.materialRadioButton4.Location = new System.Drawing.Point(288, 258);
             this.materialRadioButton4.Margin = new System.Windows.Forms.Padding(0);
             this.materialRadioButton4.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialRadioButton4.MouseState = MaterialSkin.MouseState.HOVER;
@@ -804,7 +804,7 @@
             this.b_w.AutoSize = true;
             this.b_w.Depth = 0;
             this.b_w.Font = new System.Drawing.Font("Roboto", 10F);
-            this.b_w.Location = new System.Drawing.Point(466, 253);
+            this.b_w.Location = new System.Drawing.Point(475, 253);
             this.b_w.Margin = new System.Windows.Forms.Padding(0);
             this.b_w.MouseLocation = new System.Drawing.Point(-1, -1);
             this.b_w.MouseState = MaterialSkin.MouseState.HOVER;
@@ -847,7 +847,7 @@
             // materialRaisedButton23
             // 
             this.materialRaisedButton23.Depth = 0;
-            this.materialRaisedButton23.Location = new System.Drawing.Point(588, 290);
+            this.materialRaisedButton23.Location = new System.Drawing.Point(598, 290);
             this.materialRaisedButton23.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton23.Name = "materialRaisedButton23";
             this.materialRaisedButton23.Primary = true;
@@ -888,7 +888,7 @@
             this.adb_install_apk_sd.AutoSize = true;
             this.adb_install_apk_sd.Depth = 0;
             this.adb_install_apk_sd.Font = new System.Drawing.Font("Roboto", 10F);
-            this.adb_install_apk_sd.Location = new System.Drawing.Point(850, 403);
+            this.adb_install_apk_sd.Location = new System.Drawing.Point(849, 403);
             this.adb_install_apk_sd.Margin = new System.Windows.Forms.Padding(0);
             this.adb_install_apk_sd.MouseLocation = new System.Drawing.Point(-1, -1);
             this.adb_install_apk_sd.MouseState = MaterialSkin.MouseState.HOVER;

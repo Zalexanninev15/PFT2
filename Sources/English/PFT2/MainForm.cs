@@ -161,7 +161,7 @@ namespace PFT2
                 }
                 if (Application.ProductVersion != nver)
                 {
-                    DialogResult result = MessageBox.Show("Want to go to version " + nver + " page?", "New version detected!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MessageBox.Show("Want to go to version " + nver + "?", "New version detected!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
                         wc.DownloadFile("https://raw.githubusercontent.com/Zalexanninev15/PFT2/master/UpdateData/last-ver-url.txt", @Application.StartupPath + @"\last_ver_url.txt");

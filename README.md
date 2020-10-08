@@ -1,5 +1,5 @@
 # PFT2 | [Official Telegram Channel (RU)](https://t.me/PFT2_Channel)
-## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.20.3.5) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
+## [Download the latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.20.3.6) | [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
 
 ## Screenshot
 ![](https://github.com/Zalexanninev15/PFT2/blob/master/pft2_screenshot.png?raw=true)
@@ -12,7 +12,7 @@
 
 ## Description
 
-Application for flashing & backing up partitions and disabling Google FRP protection on ZTE Blade V9 Vista and ZTE Blade A7 Vita smartphones, as well as, possibly, on other devices running on Qualcomm processors | [PFT2_Flasher](https://github.com/Zalexanninev15/PFT2/blob/master/Flasher%20commands.md)
+Application for flashing & dump partitions and disabling Google FRP protection on ZTE Blade V9 Vista and ZTE Blade A7 Vita smartphones, as well as, possibly, on other devices running on Qualcomm processors | [PFT2_Flasher](https://github.com/Zalexanninev15/PFT2/blob/master/Flasher%20commands.md)
 
 It is a continuation of the development of the [PFT utility](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=85383238) from [friendki11er](https://4pda.ru/forum/index.php?showuser=198744), but with a graphical interface and a new author.
 

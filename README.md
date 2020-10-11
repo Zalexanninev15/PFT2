@@ -66,7 +66,7 @@ For Russian speakers: [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic
 
       <img src="https://i.imgur.com/mDxNwWF.png" style="zoom: 60%;" />
 
-   2. The COM port should appear in the Device Manager
+   2. The COM port should appear in the Devices Manager
 
       <img src="https://cs5-1.4pda.to/19426622.png" style="zoom:100%;" />
 
@@ -108,11 +108,11 @@ For Russian speakers: [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic
 
 3. Select the action you need from "Actions"
 
-4. Fill in the necessary fields in "Dump and Flash"
+4. Fill in the necessary fields in "Data for work"
 
    *To wipe "userdata" (or other partitions), you can flash the file "Wipe_userdata.pdf" (located in the folder with the application) in the "userdata" partition (or other partition)*
 
-5. Click button (before "Do IT!") and wait for the end of the process
+5. Click button (before "DO IT!") and wait for the end of the process
 
    **P.S.** In some cases, especially when after creating a dump you take to firmware, errors may pop up in the command line. If everything ends with success, reading/writing sectors will reach 0 and there will be no errors at the end - then with a 99.7% probability you will have everything*👌
    *If you still want to be safe (or you have a mistake), then **you should**:*

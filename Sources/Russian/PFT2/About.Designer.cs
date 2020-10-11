@@ -60,7 +60,8 @@
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(276, 76);
             this.materialLabel2.TabIndex = 14;
-            this.materialLabel2.Text = "PFT2\r\nАвтор: Zalexanninev15 | Лицензия MIT\r\nВерсия: 1.20.3.6\r\nСборка: 08102020";
+            this.materialLabel2.Text = "PFT2\r\nАвтор: Zalexanninev15 | Лицензия MIT\r\nВерсия: 1.21 (Финальная)\r\nСборка: 111" +
+    "02020";
             // 
             // pictureBox1
             // 

@@ -14,7 +14,7 @@
 
 Application for flashing & dump partitions and disabling Google FRP protection on ZTE Blade V9 Vista and ZTE Blade A7 Vita smartphones, as well as, possibly, on other devices running on Qualcomm processors | [PFT2_Flasher](https://github.com/Zalexanninev15/PFT2/blob/master/Flasher%20commands.md)
 
-It is a continuation of the development of the [PFT utility](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=85383238) from [friendki11er](https://4pda.ru/forum/index.php?showuser=198744), but with a graphical interface and a new author.
+It is a continuation of the development of the [PFT utility](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=85383238) (by [friendki11er](https://4pda.ru/forum/index.php?showuser=198744)), but with a graphical interface, new author and new functionality.
 
 ## Features
 

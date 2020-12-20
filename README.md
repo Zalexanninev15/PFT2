@@ -33,7 +33,7 @@ The app supports 2 file formats:
 
 ## System requirements
 * **OS:** Windows 7 (SP1)/8/8.1/10
-* **Additional:** Microsoft .NET Framework 4.8, [emmcdl](https://github.com/Zalexanninev15/PFT2/releases/download/1.20.3/emmcdl.exe), [ADB](https://github.com/Zalexanninev15/PFT2/releases/download/1.20.3/ADB.zip), [ZTE + Qualcomm USB Drivers + ADB Drivers](https://mega.nz/file/MhdGwYKb#00MsgumREKAUc20Ot_wy4FlnAOi0nNqW2ZNUpDnVqSI) (or others for your device) and [MBN file [only for ZTE Blade V9 Vita]](https://github.com/Zalexanninev15/PFT-Linux/raw/master/tools/emmc.mbn) (or other for your device), original USB cabel (I don't recommend using magnetic cables)
+* **Additional:** Microsoft .NET Framework 4.6, [emmcdl](https://github.com/Zalexanninev15/PFT2/releases/download/1.20.3/emmcdl.exe), [ADB](https://github.com/Zalexanninev15/PFT2/releases/download/1.20.3/ADB.zip), [ZTE + Qualcomm USB Drivers + ADB Drivers](https://mega.nz/file/MhdGwYKb#00MsgumREKAUc20Ot_wy4FlnAOi0nNqW2ZNUpDnVqSI) (or others for your device) and [MBN file [only for ZTE Blade V9 Vita]](https://github.com/Zalexanninev15/PFT-Linux/raw/master/tools/emmc.mbn) (or other for your device), original USB cabel (I don't recommend using magnetic cables)
 
 ## How to use it?
 

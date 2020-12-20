@@ -1,4 +1,4 @@
-# PFT2 | [Latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.21)
+# PFT2 | [Latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.21.1)
 ## [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
 
 ## Screenshot
@@ -15,6 +15,10 @@
 Application for flashing & dump partitions and disabling Google FRP protection on ZTE Blade V9 Vista and ZTE Blade A7 Vita smartphones, as well as, possibly, on other devices running on Qualcomm processors | [PFT2_Flasher](https://github.com/Zalexanninev15/PFT2/blob/master/Flasher%20commands.md)
 
 It is a continuation of the development of the [PFT utility](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=85383238) (by [friendki11er](https://4pda.ru/forum/index.php?showuser=198744)), but with a graphical interface, new author and new functionality.
+
+The app supports 2 file formats:
+- Native FDF (compressed IMG)
+- Directly IMG itself (How to activate support - see in **Setting the app for you:**)
 
 ## Features
 
@@ -43,7 +47,7 @@ For Russian speakers: [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic
 2. Extract all archives in any places (the main thing is that there are no spaces in the path), it is best to create a folder next to PFT2 (again, without spaces) and throw everything there
 3. Install the drivers
 
-### Setting up the app for you:
+### Setting the app for you:
 
 1. Launch `PFT2.exe` and configure the app ("Settings")
 2. Now specify the necessary files, folders, and other settings and click "APPLY". To reset all settings, click "RESET"

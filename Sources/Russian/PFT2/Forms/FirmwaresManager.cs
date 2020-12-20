@@ -48,7 +48,7 @@ namespace PFT2
 
         private void materialRaisedButton5_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/Zalexanninev15/PFT2#where-do-i-get-the-firmware-from-getting-root-and-twrp");
+            Process.Start("https://tinyurl.com/y89arflu");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

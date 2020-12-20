@@ -175,7 +175,7 @@ FDFmini -img [Path to IMG/BIN file] [Path to new FDF file] -c
 FDFmini -img boot.img boot.fdf -c
 ```
 
-*If you have more than 2 IMG files to convert to FDF, and you don't want to waste time typing commands, then extract the contents of [this](https://github.com/Zalexanninev15/PFT2/releases/download/1.20.3/IMG_to_FDF.zip) archive to the folder with dumps. Run the batch file and wait...*
+*If you have more than 2 IMG files to convert to FDF, and you don't want to waste time typing commands, then extract the contents of [this](https://github.com/Zalexanninev15/PFT2/releases/download/1.21.1/IMG_to_FDF.zip) archive to the folder with dumps. Run the batch file and wait...*
 
 **To convert FDF to IMG use the command:**
 

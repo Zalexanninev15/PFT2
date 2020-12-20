@@ -10,7 +10,7 @@ namespace FDFmini
 
         static void Main(string[] args)
         {
-            Console.Title = "FDFmini [Версия 1.5.1.1]";
+            Console.Title = "FDFmini [Версия 1.5.1.2]";
             if (args.Length != 0) 
             {
                 try
@@ -36,7 +36,7 @@ namespace FDFmini
             else
             {
                 Console.WriteLine();
-                Console.WriteLine("FDFmini v1.5.1.1, создатели: Zalexanninev15, Alexander927 и And_PDA (ImgExtractor)");
+                Console.WriteLine("FDFmini v1.5.1.2, создатели: Zalexanninev15, Alexander927 и And_PDA (ImgExtractor)");
                 Console.WriteLine();
                 Console.WriteLine("FDFmini [Аргумент 1] [путь_к_файлу] [Аргумент 2] [Аргумент 3]");
                 Console.WriteLine();

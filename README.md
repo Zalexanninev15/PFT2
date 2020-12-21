@@ -1,4 +1,4 @@
-# PFT2 | [Latest version](https://github.com/Zalexanninev15/PFT2/releases/tag/1.21.1) | [Telegram channel (RU)](https://t.me/PFT2_News)
+# PFT2 | [Latest version]https://github.com/Zalexanninev15/PFT2/releases/latest) | [Telegram channel (RU)](https://t.me/PFT2_News)
 ## [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
 
 ## Screenshot

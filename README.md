@@ -1,12 +1,27 @@
-# PFT2 | [Latest version](https://github.com/Zalexanninev15/PFT2/releases/latest) | [Telegram channel (RU)](https://t.me/PFT2_News)
-## [All versions](https://github.com/Zalexanninev15/PFT2/releases) | [Download source (ZIP)](https://github.com/Zalexanninev15/PFT2/archive/master.zip)
+# PFT2
+
+[![](https://img.shields.io/badge/platform-Windows-informational)](https://github.com/Zalexanninev15/PFT2)
+[![](https://img.shields.io/badge/written_on-.NET_Framework_4.6-512BD4.svg?logo=dotnet)](https://dotnet.microsoft.com/download/dotnet-framework/net46)
+[![](https://img.shields.io/badge/written_on-C%23-%23239120.svg?logo=sharp&logoColor=white)](https://github.com/Zalexanninev15/PFT2)
+[![](https://img.shields.io/github/v/release/Zalexanninev15/PFT2)](https://github.com/Zalexanninev15/PFT2/releases/latest)
+[![](https://img.shields.io/github/downloads/Zalexanninev15/PFT2/total.svg)](https://github.com/Zalexanninev15/PFT2/releases)
+[![](https://img.shields.io/github/last-commit/Zalexanninev15/PFT2)](https://github.com/Zalexanninev15/PFT2/commits/master)
+[![](https://img.shields.io/github/stars/Zalexanninev15/PFT2.svg)](https://github.com/Zalexanninev15/PFT2/stargazers)
+[![](https://img.shields.io/github/forks/Zalexanninev15/PFT2.svg)](https://github.com/Zalexanninev15/PFT2/network/members)
+[![](https://img.shields.io/github/issues/Zalexanninev15/PFT2.svg)](https://github.com/Zalexanninev15/PFT2/issues?q=is%3Aopen+is%3Aissue)
+[![](https://img.shields.io/github/issues-closed/Zalexanninev15/PFT2.svg)](https://github.com/Zalexanninev15/PFT2/issues?q=is%3Aissue+is%3Aclosed)
+[![](https://img.shields.io/badge/Пост_на_4PDA-0072BC?logo=android&logoColor=mediumspringgreen&borderRadius=30)](https://4pda.to/forum/index.php?showtopic=952274&view=findpost&p=93484684)
+[![](https://img.shields.io/badge/Telegram_канал-FFFFFF.svg?logo=telegram)](https://t.me/ZTEBV9VitaNews)
+[![](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![](https://img.shields.io/badge/Donate-FFDD00.svg?logo=buymeacoffee&logoColor=black)](https://z15.neocities.org/donate)
 
 ## Screenshot
+
 ![](https://github.com/Zalexanninev15/PFT2/blob/master/pft2_screenshot.png?raw=true)
 
 ## Supported 💰 this project
 
-* [SnowCloudyPie](https://4pda.ru/forum/index.php?showuser=1506787)
+* [SnowCloudyPie](https://4pda.to/forum/index.php?showuser=1506787)
 * kilovar337
 * [MuchelTy6](https://forum.xda-developers.com/member.php?u=11046943)
 
@@ -14,30 +29,31 @@
 
 Application for flashing & dump partitions and disabling Google FRP protection on ZTE Blade V9 Vista and ZTE Blade A7 Vita smartphones, as well as, possibly, on other devices running on Qualcomm processors | [PFT2_Flasher](https://github.com/Zalexanninev15/PFT2/blob/master/Flasher%20commands.md)
 
-It is a continuation of the development of the [PFT utility](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=85383238) (by [friendki11er](https://4pda.ru/forum/index.php?showuser=198744)), but with a graphical interface, new author and new functionality.
+It is a continuation of the development of the [PFT utility](https://4pda.to/forum/index.php?s=&showtopic=952274&view=findpost&p=85383238) (by [friendki11er](https://4pda.to/forum/index.php?showuser=198744)), but with a graphical interface, new author and new functionality.
 
 The app supports 2 file formats:
-- Native FDF (compressed IMG)
+- Native FDF (compressed IMG, GZip)
 - Directly IMG itself (How to activate support - see in **Setting the app for you:**)
 
 ## Features
 
-* Fast firmware and backup of partitions (one partition or all (except "userdata")), disabling Google FRP protection
-* Switch your smartphone to EDL mode using 2 options: emmcdl (DFU) or ADB
-* Work with your smartphone using minimal ADB functionality (installing and deleting apps, restarting and viewing the current status of the device)
-* A "Firmwares Manager" is also available for ZTE Blade V9 Vita, which contains information about stock firmware (all versions) and [LineageOS 15.1](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=86029984)
-* Support for other smartphones (which are also flashed using emmcdl), thanks to the ability to change the EDL code. You can also change the application code and scripts that are used to interact with emmcdl
-* Material design and Dark mode
-* Automatically check for updates for new versions
-* Support for the Russian language using a separate Russifier
+* Fast firmware and backup of partitions (one partition or all (except "userdata")), disabling Google FRP protection.
+* Switch your smartphone to EDL mode using 2 options: emmcdl (DFU) or ADB.
+* Work with your smartphone using minimal ADB functionality (installing and deleting apps, restarting and viewing the current status of the device).
+* A "Firmwares Manager" is also available for ZTE Blade V9 Vita, which contains information about stock firmware (all versions) and [LineageOS 15.1](https://4pda.to/forum/index.php?s=&showtopic=952274&view=findpost&p=86029984).
+* Support for other smartphones (which are also flashed using emmcdl), thanks to the ability to change the EDL code. You can also change the application code and scripts that are used to interact with emmcdl.
+* Material design and Dark mode.
+* Automatically check for updates for new versions.
+* Support for the Russian language (*отдельный русификатор*)
 
 ## System requirements
-* **OS:** Windows 7 (SP1)/8/8.1/10
+
+* **OS:** Windows 7 (SP1) or higher
 * **Additional:** Microsoft .NET Framework 4.6, [emmcdl](https://github.com/Zalexanninev15/PFT2/releases/download/1.20.3/emmcdl.exe), [ADB](https://github.com/Zalexanninev15/PFT2/releases/download/1.20.3/ADB.zip), [ZTE + Qualcomm USB Drivers + ADB Drivers](https://mega.nz/file/MhdGwYKb#00MsgumREKAUc20Ot_wy4FlnAOi0nNqW2ZNUpDnVqSI) (or others for your device) and [MBN file [only for ZTE Blade V9 Vita]](https://github.com/Zalexanninev15/PFT-Linux/raw/master/tools/emmc.mbn) (or other for your device), original USB cabel (I don't recommend using magnetic cables)
 
 ## How to use it?
 
-For Russian speakers: [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=93484684), [Video on YouTube](https://youtu.be/NCe7R45jYhM) | Full Russification: Copy the contents of the "Russifier (русификатор)" folder to the "PFT2" folder
+For Russian speakers: [FAQ on 4PDA](https://4pda.to/forum/index.php?s=&showtopic=952274&view=findpost&p=93484684), [Video on YouTube](https://youtu.be/NCe7R45jYhM) | Full Russification: Copy the contents of the "Russifier (русификатор)" folder to the "PFT2" folder
 
 **I recommend reading this information in [Typora](https://typora.io/) or any other MARKDOWN editor or viewer.**
 
@@ -54,7 +70,7 @@ For Russian speakers: [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic
 
 *You can open advanced settings by entering "more" (without quotes) in the text field for EDL code.*
 
-![](https://i.imgur.com/ukvCzIF.png)
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/rfMpLyV/ukvCzIF.png" alt="ukvCzIF" border="0"></a>
 
 ### Flash & Dump:
 
@@ -68,11 +84,11 @@ For Russian speakers: [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic
 
       ***Here's how it should be (original photo by [Ambernic](http://t.me/Ampernic_offical)):***
 
-      <img src="https://i.imgur.com/mDxNwWF.png" style="zoom: 60%;" />
+     <a href="https://ibb.co/YtBRs3x"><img src="https://i.ibb.co/YtBRs3x/mDxNwWF.png" alt="mDxNwWF" border="0"></a>
 
    2. The COM port should appear in the Devices Manager
 
-      <img src="https://cs5-1.4pda.to/19426622.png" style="zoom:100%;" />
+      <a href="https://ibb.co/fN4tB9y"><img src="https://i.ibb.co/dpG61tV/PFT2-O1.png" alt="PFT2-O1" border="0"></a>
 
       *If there was, but not the one (I mean in a different way called, the number after COM can be any), which is on the screenshot, then put the driver that was previously unpacked*
 
@@ -84,7 +100,7 @@ For Russian speakers: [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic
 
       What it looks like
 
-      ![](https://cs5-1.4pda.to/19426769.png)
+      <a href="https://ibb.co/xX4HDR6"><img src="https://i.ibb.co/mbx8GM4/PFT2-O2.png" alt="PFT2-O2" border="0"></a>
 
       *If it hasn't changed, try reinstalling the drivers/messing with Windows/changing the USB wire*
 
@@ -99,7 +115,7 @@ For Russian speakers: [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic
 
    3. The COM port should appear in the Device Manager
 
-      ![](https://cs5-1.4pda.to/19426622.png)
+      <a href="https://ibb.co/fN4tB9y"><img src="https://i.ibb.co/dpG61tV/PFT2-O1.png" alt="PFT2-O1" border="0"></a>
 
       *If there was, but not the one (I mean in a different way called, the number after COM can be any), which is on the screenshot, then put the driver that was previously unpacked*
 
@@ -125,7 +141,7 @@ For Russian speakers: [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic
 
 ### If your smartphone has become a brick:
 
-1. **Dismantle the device ([original](https://4pda.ru/forum/index.php?act=findpost&pid=94081175&anchor=Spoil-94081175-2)):**
+1. **Dismantle the device ([original](https://4pda.to/forum/index.php?act=findpost&pid=94081175&anchor=Spoil-94081175-2)):**
 
    1. Remove the SIM card and microSD tray
 
@@ -136,7 +152,7 @@ For Russian speakers: [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic
 
    4. We peel off the black film, and these 2 contacts should appear to our eyes. These are **EDL test points**
 
-      <img src="https://cs5-1.4pda.to/18887438.png" style="zoom:80%;" />
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/8Bc1Yng/18887438.png" alt="18887438" border="0"></a>
 
    5. Close the data 2 contacts with tweezers and connect the smartphone to the PC
 
@@ -144,7 +160,7 @@ For Russian speakers: [FAQ on 4PDA](https://4pda.ru/forum/index.php?s=&showtopic
 
    7. Repeat **step 2** (DFU)
 
-   8. Skip everything else and quickly, but very carefully, start to restore the smartphone firmware (flash partitions, **step 3**) of all partitions | Download firmwares (versions 9, 11, 12) for ZTE Blade V9 Vita: [**2/16**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92021946) or [**3/32**](https://4pda.ru/forum/index.php?showtopic=952274&view=findpost&p=92437481)
+   8. Skip everything else and quickly, but very carefully, start to restore the smartphone firmware (flash partitions, **step 3**) of all partitions | Download firmwares (versions 9, 11, 12) for ZTE Blade V9 Vita: [**2/16**](https://4pda.to/forum/index.php?showtopic=952274&view=findpost&p=92021946) or [**3/32**](https://4pda.to/forum/index.php?showtopic=952274&view=findpost&p=92437481)
 
 ### What is the FDF format, which is used for flash and create dumps?
 
@@ -159,19 +175,19 @@ For normal operation, the "userdata" partition uses regular IMG, because there m
 
 You can use the official GUI. To do this, activate it in the advanced settings *(you can open advanced settings by entering "more" (without quotes) in the text field for EDL code)*. Next, in the same field, enter "con" (without quotes) and use :)
 
-![](https://i.imgur.com/4f0ZXPb.png)
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/fvtNK5M/4f0ZXPb.png" alt="4f0ZXPb" border="0"></a>
 
 #### CMD:
 
 **To convert IMG to FDF use the command:**
 
-```
+```batch
 FDFmini -img [Path to IMG/BIN file] [Path to new FDF file] -c
 ```
 
-*Example:* 
+*Example:*
 
-```
+```batch
 FDFmini -img boot.img boot.fdf -c
 ```
 
@@ -179,13 +195,13 @@ FDFmini -img boot.img boot.fdf -c
 
 **To convert FDF to IMG use the command:**
 
-```
+```batch
 FDFmini -fdf [Path to FDF file] [Path to new IMG/BIN file] -u
 ```
 
 *Example:*
 
-```
+```batch
 FDFmini -fdf D:\PFT2_DATA\system.fdf D:\PFT2_DATA\img\system.img -u
 ```
 
@@ -199,9 +215,9 @@ To create an FDF file, I still recommend using FDFmini, so that there are no pro
 
 ### (this is only for ZTE Blade V9 Vita)
 
-* [Official firmware dumps for revision 3/32 and 2/16](https://4pda.ru/forum/index.php?s=&showtopic=952274&view=findpost&p=92437481)
-* [Unofficial, verified](https://4pda.ru/forum/index.php?act=findpost&pid=85228170&anchor=Spoil-85228170-3)
-* [Unofficial, many unverified and not working](https://4pda.ru/forum/index.php?showtopic=892755) (**only type ARM64-A**)
+* [Official firmware dumps for revision 3/32 and 2/16](https://4pda.to/forum/index.php?s=&showtopic=952274&view=findpost&p=92437481)
+* [Unofficial, verified](https://4pda.to/forum/index.php?act=findpost&pid=85228170&anchor=Spoil-85228170-3)
+* [Unofficial, many unverified and not working](https://4pda.to/forum/index.php?showtopic=892755) (**only type ARM64-A**)
 
 #### **About ROOT and TWRP:**
 
@@ -229,25 +245,25 @@ You can unpack the image using the FDFmini utility. This utility will use anothe
 
 **For FDF file:**
 
-```
+```batch
 FDFmini -fdf [Path to FDF file] [Full path to the new folder] -system
 ```
 
-*Example:* 
+*Example:*
 
-```
+```batch
 FDFmini -fdf system.fdf D:\PFT2_DATA\UnSystemFDF -system
 ```
 
 **For IMG file:**
 
-```
+```batch
 FDFmini -img [Path to IMG/BIN file] [Full path to the new folder] -system
 ```
 
-*Example:* 
+*Example:*
 
-```
+```batch
 FDFmini -img system.img D:\PFT2_DATA\UnSystemIMG -system
 ```
 

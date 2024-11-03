@@ -2,19 +2,19 @@
 
 ### DFU → EDL ([this](https://github.com/Zalexanninev15/PFT2/blob/master/PFT2_Flasher/edl.bat))
 
-```
+```batch
 [emmcdl.exe] -p com[com_port] -raw [code]
 ```
 
 ### Dump ([this](https://github.com/Zalexanninev15/PFT2/blob/master/PFT2_Flasher/dump.bat))
 
-```
+```batch
 [emmcdl.exe] -p COM[com_port] -f [firehose] -d [partition] -o [dump_file]
 ```
 
 ### Full Dump ([this](https://github.com/Zalexanninev15/PFT2/blob/master/PFT2_Flasher/full_dump.bat))
 
-```
+```batch
 [emmcdl.exe] -p COM[com_port] -f [firehose] -d [partition] -o [folder_for_full_dump]\[dump_file].temp
 FDFmini -img [folder_for_full_dump]\[dump_file].temp [folder_for_full_dump]\[dump_file].fdf -c
 del [folder_for_full_dump]\[dump_file].temp
@@ -22,13 +22,13 @@ del [folder_for_full_dump]\[dump_file].temp
 
 ### Flash ([this](https://github.com/Zalexanninev15/PFT2/blob/master/PFT2_Flasher/flash.bat))
 
-```
+```batch
 [emmcdl.exe] -p COM[com_port] -f [firehose] -b [partition] [file]
 ```
 
 ### Disable Google FRP ([this](https://github.com/Zalexanninev15/PFT2/blob/master/PFT2_Flasher/dgfrp.bat))
 
-```
+```batch
 [emmcdl.exe] -p COM[com_port] -f [firehose] -e config
 ```
 

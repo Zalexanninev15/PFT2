@@ -70,7 +70,7 @@ For Russian speakers: [FAQ on 4PDA](https://4pda.to/forum/index.php?s=&showtopic
 
 *You can open advanced settings by entering "more" (without quotes) in the text field for EDL code.*
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/rfMpLyV/ukvCzIF.png" alt="ukvCzIF" border="0"></a>
+![](https://z15.neocities.org/images/imgbb_clone/ukvCzIF.png)
 
 ### Flash & Dump:
 
@@ -84,11 +84,11 @@ For Russian speakers: [FAQ on 4PDA](https://4pda.to/forum/index.php?s=&showtopic
 
       ***Here's how it should be (original photo by [Ambernic](http://t.me/Ampernic_offical)):***
 
-     <a href="https://ibb.co/YtBRs3x"><img src="https://i.ibb.co/YtBRs3x/mDxNwWF.png" alt="mDxNwWF" border="0"></a>
+     ![](https://z15.neocities.org/images/imgbb_clone/mDxNwWF.png)
 
    2. The COM port should appear in the Devices Manager
 
-      <a href="https://ibb.co/fN4tB9y"><img src="https://i.ibb.co/dpG61tV/PFT2-O1.png" alt="PFT2-O1" border="0"></a>
+      ![](https://z15.neocities.org/images/imgbb_clone/PFT2-O1.png)
 
       *If there was, but not the one (I mean in a different way called, the number after COM can be any), which is on the screenshot, then put the driver that was previously unpacked*
 
@@ -100,7 +100,7 @@ For Russian speakers: [FAQ on 4PDA](https://4pda.to/forum/index.php?s=&showtopic
 
       What it looks like
 
-      <a href="https://ibb.co/xX4HDR6"><img src="https://i.ibb.co/mbx8GM4/PFT2-O2.png" alt="PFT2-O2" border="0"></a>
+      ![](https://z15.neocities.org/images/imgbb_clone/PFT2-O2.png)
 
       *If it hasn't changed, try reinstalling the drivers/messing with Windows/changing the USB wire*
 
@@ -115,7 +115,7 @@ For Russian speakers: [FAQ on 4PDA](https://4pda.to/forum/index.php?s=&showtopic
 
    3. The COM port should appear in the Device Manager
 
-      <a href="https://ibb.co/fN4tB9y"><img src="https://i.ibb.co/dpG61tV/PFT2-O1.png" alt="PFT2-O1" border="0"></a>
+      ![](https://z15.neocities.org/images/imgbb_clone/PFT2-O1.png)
 
       *If there was, but not the one (I mean in a different way called, the number after COM can be any), which is on the screenshot, then put the driver that was previously unpacked*
 
@@ -152,7 +152,7 @@ For Russian speakers: [FAQ on 4PDA](https://4pda.to/forum/index.php?s=&showtopic
 
    4. We peel off the black film, and these 2 contacts should appear to our eyes. These are **EDL test points**
 
-      <a href="https://imgbb.com/"><img src="https://i.ibb.co/8Bc1Yng/18887438.png" alt="18887438" border="0"></a>
+      ![](https://z15.neocities.org/images/imgbb_clone/18887438.png)
 
    5. Close the data 2 contacts with tweezers and connect the smartphone to the PC
 
@@ -175,7 +175,7 @@ For normal operation, the "userdata" partition uses regular IMG, because there m
 
 You can use the official GUI. To do this, activate it in the advanced settings *(you can open advanced settings by entering "more" (without quotes) in the text field for EDL code)*. Next, in the same field, enter "con" (without quotes) and use :)
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/fvtNK5M/4f0ZXPb.png" alt="4f0ZXPb" border="0"></a>
+![](https://z15.neocities.org/images/imgbb_clone/4f0ZXPb.png)
 
 #### CMD:
 
